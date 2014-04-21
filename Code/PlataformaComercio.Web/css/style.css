@@ -1,0 +1,20 @@
+﻿
+
+/*------------------------------------------------------------------
+[Main Stylesheet]
+
+Project:		
+Version:		1.0
+Last change:	00/Jam/2008
+Developed by:	Diego Herrera O.(dh)
+-------------------------------------------------------------------*/
+
+@import "src/reset.css";
+@import "src/classes.css";
+@import "src/forms.css";
+@import "src/ie6.css";
+/*@import "src/ie7.css";*/
+/*@import "src/layout.css";*/
+@import "src/tables.css";
+@import "src/type.css";
+

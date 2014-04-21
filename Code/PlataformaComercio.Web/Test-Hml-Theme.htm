@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="http://jqueryui.com/themes/base/ui.all.css" />
+    <script type="text/javascript" src="http://jqueryui.com/js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#switcher').themeswitcher();
+        });
+    </script>
+    <style>
+            #buttonBar { background-image: none; padding: 0; }
+#buttonBar li, #buttonBar li a { float: left; margin: 0; padding: 0; list-style: none; text-decoration: none; }
+#buttonBar li a  { padding: .5em 1em; border-width: 0; margin: 1px; text-decoration: none; display: block; }
+
+    </style>
+</head>
+<body style="font-size: 62.5%;">
+    <script type="text/javascript" src="http://jqueryui.com/themeroller/themeswitchertool/">
+    </script>
+    <div id="switcher">
+    </div>
+    <div class="ui-widget">
+        <div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+            <p>
+                <span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+                <strong>Alert:</strong> Sample ui-state-error style.</p>
+        </div>
+    </div>
+    <div class="ui-widget">
+    <ul id="buttonBar" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+	<li class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all ui-tabs-selected ui-state-selected"><a href="#" >Selected</a></li>
+	<li class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all ui-tabs-default ui-state-default" ><a href="#">Default</a></li>
+	<li class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all ui-tabs-hover ui-state-hover"><a href="#"  >Hover</a></li>
+	<li class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all ui-tabs-disabled ui-state-disabled"><a href="#">Disabled</a></li>
+    <li class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all ui-tabs-active ui-state-active"><a href="#" >Active</a></li>
+    <li class="ui-tabs-selected"><a href="#">Selected</a></li>
+    <li class="ui-state-default"><a href="#">Default</a></li>
+    <li class="ui-state-disabled"><a href="#">disabled</a></li>
+    <li class="ui-state-active"><a href="#">active</a></li>
+    </ul>
+    </div>
+    
+    </body>
+</html>

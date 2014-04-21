@@ -1,0 +1,271 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPagePrincipal.master.cs"  Inherits="PlataformaComercio.Web.MasterPagePrincipal" %>
+<%@ Register assembly="PlataformaComercio.UI" namespace="PlataformaComercio.UI.Controls" tagprefix="PlataformaComercio" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <meta name="description" content="Portal Tienda en Linea de Biometria Aplicada">
+    <meta name="keywords" content="Biometria, Segurida, Autentificacion, Dispositivos">
+    <meta name="author" content="Javier Peña Quiroz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="6EbDbKeO7lJS6yM9KDjG8baqc_4RGicpvqGW28i2Mn4" />
+    <meta name="google-site-verification" content="fcHj4WXXxcaDD3QsdeSG3V7vU4-XtHMDvk13Kmb2vfQ" />
+    <meta name="msvalidate.01" content="32DC277067627EA6494A04F2C2EFCF9B" />
+    <META name="y_key" content="69fb09799dd623d9">
+    <meta name="msvalidate.01" content="32DC277067627EA6494A04F2C2EFCF9B" />
+
+    <title>E-Commmerce Biometria Aplicada</title>
+    <link rel="shortcut icon" type="image/x-icon" href="..  \images\iconos\cuadritobio.ico" />
+
+    <%-- Begin Styles --%>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/styletemplate.css" />
+    <link rel="stylesheet" type="text/css" href="css/src/jquery.jgrowl.css"/>
+    <link rel="stylesheet" type="text/css" href="css/cupertino/jquery-ui-1.7.2.custom.css"/> 
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="css/src/jGlideMenuNotAbsolute.css" />
+
+     <%--Begin Menu--%>
+        <%--<style type="text/css">        
+            #launch
+            {
+                font-family: tahoma,sans-serif;
+            }
+            a#launch
+            {
+                text-decoration: none;
+                color: #535353;
+            }
+            a#launch:HOVER
+            {
+                text-decoration: underline;
+                color: #f90;
+            }
+            .ifM_header
+            {
+                cursor: Move;
+            }
+            #overview a
+            {
+                color: green;
+                text-decoration: none;
+            }
+            #overview a:HOVER
+            {
+                color: #f90;
+            }
+            #jGlide_001
+            {            
+                display: none; /* Hide Menu Until Ready(Optional) */
+            }
+        </style>
+        --%>
+    <%--End Menu--%>
+
+    <%-- End Styles --%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    	
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+ 
+    <div id="main_container">
+    	
+    	<div id="header">
+            
+            <div id="logo">
+                <a href="~/default.aspx" runat="server"><img runat="server" src="~/images/logo-medium.png" alt="Logotipo Biometria Aplicada" title="" border="0"  /></a>
+    	    </div>
+            
+         
+    		
+    		<div class="right_content">
+       		<div class="shopping_cart">
+            	<div class="cart_title">Carrito de Compras</div>
+                
+                <div class="cart_details"> <asp:Label runat="server" ID="lblCartItems" /><br />
+                <span class="border_cart"></span>
+                Total: <span class="price"><asp:Label runat="server" ID="lblCartPrice" /> MXN</span>
+                </div>
+                
+                <div class="cart_icon"><a href="~/proceso-compra/carrito" runat="server" title="header=[Carrito de compras] body=[&nbsp;] fade=[on]"><img runat="server" src="~/images/shoppingcart.png" alt="carrito de compras" title="" width="48" height="48" border="0" /></a></div>
+            
+            </div>
+    		
+       
+       
+         <%--<div class="title_box">What’s new</div>  
+         <div class="border_box">
+             <div class="product_title"><a href="details.html">Motorola 156 MX-VL</a></div>
+             <div class="product_img"><a href="details.html"><img runat="server" src="~/images/p2.gif" alt="" title="" border="0" /></a></div>
+             <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
+         </div>  --%>
+            
+     
+        </div>
+    	
+    
+    
+       <div id="main_content">
+       
+       			<div class="clear"></div>
+                <div id="menu_tab">
+                <div class="left_menu_corner"></div>
+                        <ul class="menu">
+                             <li><a href="~/default.aspx" class="nav1" runat="server">  Principal </a></li>
+                             <li class="divider"></li>
+                             <%--<li><a href="#" class="nav2">Products</a></li>
+                             <li class="divider"></li>
+                             <li><a href="#" class="nav3">Specials</a></li>
+                             <li class="divider"></li>
+                             <li><a href="#" class="nav4">Mi Cuenta</a></li>
+                             <li class="divider"></li>--%>
+                             <li>
+                                 <asp:HyperLink Text="text" runat="server" id="hplSession"   CssClass="nav4"/></li>
+                             <li class="divider"></li>                         
+                             <%--<li><a href="#" class="nav5">Shipping </a></li>
+                             <li class="divider"></li>--%>
+                             <li><a href="~/contacto.aspx" class="nav6" runat="server">Contactanos</a></li>
+                             <li class="divider"></li>
+                             <%--<li class="currencies">Currencies
+                             <select>
+                             <option>US Dollar</option>
+                             <option>Euro</option>
+                             </select>
+                             </li>--%>
+                        </ul>
+    			
+    			<div class="top_search">        
+            	<div class="search_text"><a href="#">Busqueda</a></div>
+                <%--<input type="text" class="search_input" name="search" />--%>
+                <asp:TextBox ID="txtSearch" runat="server" CssClass="search_input"/>
+                <asp:RequiredFieldValidator ID="rfvSearch" runat="server" ErrorMessage="*" SetFocusOnError="true" ControlToValidate="txtSearch" ValidationGroup="VGSearch" />
+                <%--<input type="image" runat="server" src="~/images/search.gif" class="search_bt"/>--%>
+                <asp:ImageButton ID="btnSearch" ImageUrl="~/images/search.gif" runat="server" CssClass="search_bt" OnClick="btnSearch_Click" ValidationGroup="VGSearch"/>
+    
+            </div>
+     
+                 <div class="right_menu_corner"></div>
+                </div><!-- end of menu tab -->
+                
+        <div class="crumb_navigation">
+        Navigation: <span class="current">Home</span>
+        
+        </div>        
+        
+        
+       <div class="left_content">
+        <div class="title_box">Categorías</div>
+        
+            <%--<ul class="left_menu">
+            <li class="odd"><a href="services.html">Processors</a></li>
+            <li class="even"><a href="services.html">Motherboards</a></li>
+             <li class="odd"><a href="services.html">Desktops</a></li>
+            <li class="even"><a href="services.html">Laptops & Notebooks</a></li>
+             <li class="odd"><a href="services.html">Processors</a></li>
+             <li class="even"><a href="services.html">Motherboards</a></li>
+            <li class="odd"><a href="services.html">Processors</a></li>
+            <li class="even"><a href="services.html">Motherboards</a></li>
+             <li class="odd"><a href="services.html">Desktops</a></li>
+            <li class="even"><a href="services.html">Laptops & Notebooks</a></li>
+             <li class="odd"><a href="services.html">Processors</a></li>
+             <li class="even"><a href="services.html">Motherboards</a></li>
+            </ul> --%>
+            
+            <PlataformaComercio:CatalogMenu ID="MenuItems1" runat="server"/> <%--Se agrega por el error del menu que no genera el cirre del div--%>
+
+       </div>
+            
+         <%--<div class="title_box">Special Products</div>  
+         <div class="border_box">
+             <div class="product_title"><a href="details.html">Motorola 156 MX-VL</a></div>
+             <div class="product_img"><a href="details.html"><img runat="server" src="~/images/laptop.png" alt="" title="" border="0" /></a></div>
+             <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
+         </div>  
+         
+         
+         <div class="title_box">Newsletter</div>  
+         <div class="border_box">
+    		<input type="text" name="newsletter" class="newsletter_input" value="your email"/>
+            <a href="#" class="join">join</a>
+         </div>  --%>
+         
+         <div class="banner_adds">
+         
+         <%--<a href="#"><img runat="server" src="~/images/bann2.jpg" alt="" title="" border="0" /></a>--%>
+         </div>   
+    	 
+    	 <div class="title_box">Marcas</div>
+           <asp:Repeater runat="server" ID="rptTrades">
+                <HeaderTemplate>
+                    <ul class="left_menu">
+                </HeaderTemplate>
+               <ItemTemplate>
+                    <li class="odd"><a href="<%# ResolveClientUrl("~/marca/" + Eval("Name")) + "/productos" %>"><%# Eval("Name")%></a></li>
+               </ItemTemplate>
+               <AlternatingItemTemplate>
+                    <li class="even"><a href="<%# ResolveClientUrl("~/marca/" + Eval("Name")) + "/productos" %>"><%# Eval("Name")%></a></li>
+               </AlternatingItemTemplate>
+               <FooterTemplate>
+                    </ul>      
+               </FooterTemplate>
+           </asp:Repeater>
+    
+            
+         
+         <div class="banner_adds">
+         
+         <%--<a href="#"><img runat="server" src="~/images/bann1.jpg" alt="" title="" border="0" /></a>--%>
+         </div>        
+         
+       </div><!-- end of right content --> 
+            
+        
+       </div><!-- end of left content -->
+       
+       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">   
+       </asp:ContentPlaceHolder>
+                
+       </div>
+        <!-- end of main content -->
+
+   
+   
+   <div class="footer">
+   
+ 
+        <div class="left_footer">
+        <%--<img runat="server" src="~/images/footer_logo.png" alt="" title="" width="170" height="49"/>--%>
+        </div>
+        
+        <div class="center_footer">
+        Biometria Aplicada 2012<br />
+        <%--<a href="http://csscreme.com/freecsstemplates/" title="free templates"><img runat="server" src="~/images/csscreme.jpg" alt="free templates" title="free templates" border="0" /></a><br />--%>
+        <img runat="server" src="~/images/payment.gif" alt="metodos de pago" title="" />
+        </div>
+        
+        <div class="right_footer">
+        <a href="~/default.aspx" runat="server">inicio</a>
+        <%--<a href="details.html">about</a>
+        <a href="details.html">sitemap</a>
+        <a href="details.html">rss</a>--%>
+        <a href="~/contacto.aspx" runat="server">contactanos</a>
+        </div>   
+   
+   </div>                 
+ 
+ 
+</div>
+<!-- end of main_container -->
+    </form>
+
+</body>
+</html>

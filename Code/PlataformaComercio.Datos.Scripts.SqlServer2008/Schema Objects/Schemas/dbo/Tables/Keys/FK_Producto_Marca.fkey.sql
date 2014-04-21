@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[Product]
+    ADD CONSTRAINT [FK_Producto_Marca] FOREIGN KEY ([TradeID]) REFERENCES [dbo].[Trade] ([TradeID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+

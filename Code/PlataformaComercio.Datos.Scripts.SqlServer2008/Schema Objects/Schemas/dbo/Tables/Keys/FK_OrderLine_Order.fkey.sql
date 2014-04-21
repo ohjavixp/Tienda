@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[OrderLine]
+    ADD CONSTRAINT [FK_OrderLine_Order] FOREIGN KEY ([OrderID]) REFERENCES [dbo].[Order] ([OrderID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+

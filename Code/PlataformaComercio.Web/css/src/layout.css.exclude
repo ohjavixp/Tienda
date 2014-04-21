@@ -1,0 +1,248 @@
+/*
+	Developed by Rubik Media Mexico
+	Developer: Diego Herrera Ojeda
+	Website: http://www.rubikmedia.com
+	E-Mail: diego@rubikmedia.com
+
+	December 2007
+*/
+
+
+/* GENERAL */
+
+/*
+
+html, body, div {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+body {
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* COMMON LAYOUT */
+
+#container {
+	margin: 0 auto;
+	width: 922px;
+}
+
+#header {
+	color: #333;
+	width: 900px;
+	float: left;
+	padding: 10px;
+	border: 1px solid #666;
+	height: 100px;
+	margin: 10px 0px 5px 0px;	
+	
+}
+
+#subheader {
+	float: left;
+	width: 900px;
+	color: #333;
+	padding: 10px;
+	border: 1px solid #666;
+	margin: 0px 0px 5px 0px;	
+}
+
+#footer { 
+	width: 900px;
+	clear: both;
+	/*color: #333;*/
+	border: 1px solid #666;
+	/*background: #999;*/
+	margin: 0px 0px 10px 0px;
+	padding: 10px;
+}
+
+/* LEFT SIDEBAR, RIGHT CONTENT */
+
+#leftsidebar { 
+	color: #333;
+	border: 1px solid #666; 	
+	margin: 0px 5px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 227px;
+	float: left;
+}
+
+#rightcontent { 
+	float: right;
+	color: #333;
+	border: 1px solid #666;	
+	margin: 0px 0px 5px 0px;
+	padding: 10px;
+	width: 646px;
+	display: inline;
+}
+
+/* LEFT CONTENT, RIGHT SIDEBAR */
+
+#leftcontent { 
+	color: #333;
+	border: 1px solid #666;
+	margin: 0px 5px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 678px;
+	float: left;
+	background: #999;
+}
+
+#rightsidebar { 
+	float: right;
+	color: #333;
+	border: 1px solid #666;
+	margin: 0px 0px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 195px;
+	display: inline;
+	background: #999;
+}
+
+/* SIDEBARS IN LEFT AND RIGHT, CENTER CONTENT */
+
+#firstsidebar { 
+	color: #333;
+	border: 1px solid #666;
+	background: #999;
+	margin: 0px 5px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 195px;
+	float: left;
+}
+
+#centercontent { 
+	float: left;
+	color: #333;
+	border: 1px solid #666;
+	background: #999;
+	margin: 0px 5px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 456px;
+	display: inline;
+}
+
+#secondsidebar { 
+	color: #333;
+	border: 1px solid #666;
+	background: #999;
+	margin: 0px 0px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 195px;
+	float: left;
+}
+
+/* TWO COLUMNS */
+
+#lefthalf { 
+	color: #333;
+	border: 1px solid #666;
+	background: #999;
+	margin: 0px 5px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 436px;
+	float: left;
+}
+
+#righthalf { 
+	float: right;
+	color: #333;
+	border: 1px solid #666;
+	background: #999;
+	margin: 0px 0px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 436px;
+	display: inline;
+}
+
+/* THREE COLUMNS */
+
+#leftcolumn {
+	color: #333;
+	border: 1px solid #666;
+	background: #999;
+	margin: 0px 5px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 282px;
+	float: left;
+}
+#centercolumn {
+	float: left;
+	color: #333;
+	border: 1px solid #666;
+	background: #999;
+	margin: 0px 5px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 282px;
+	display: inline;
+}
+#rightcolumn {
+	color: #333;
+	border: 1px solid #666;
+	background: #999;
+	margin: 0px 0px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 282px;
+	float: left;
+}
+
+/* FOUR COLUMNS */
+
+#firstcolumn { 
+	color: #333;
+	border: 1px solid #666;
+	background: #999;
+	margin: 0px 5px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 205px;
+	float: left;
+}
+
+#secondcolumn { 
+	Color: #333;
+	border: 1px solid #666;
+	background: #999;
+	margin: 0px 5px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 205px;
+	float: left;
+}
+
+#thirdcolumn { 
+	color: #333;
+	border: 1px solid #666;
+	background: #999;
+	margin: 0px 5px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 205px;
+	float: left;
+}
+
+#fourthcolumn { 
+	color: #333;
+	border: 1px solid #666;
+	background: #999;
+	margin: 0px 0px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 204px;
+	float: left;
+}

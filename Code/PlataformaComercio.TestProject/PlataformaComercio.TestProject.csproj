@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2E8DCFB-3742-49A7-A18F-2057DAAC00C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PlataformaComercio.TestProject</RootNamespace>
+    <AssemblyName>PlataformaComercio.TestProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="paypal_base">
+      <HintPath>..\PlataformaComercio.Negocio\bin\Debug\paypal_base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasketTest.cs" />
+    <Compile Include="CatalogTest.cs" />
+    <Compile Include="EmailManagementTest.cs" />
+    <Compile Include="EmailSendConfigTest.cs" />
+    <Compile Include="InventoryTest.cs" />
+    <Compile Include="OrderTest.cs" />
+    <Compile Include="ProductTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteMapTest.cs" />
+    <Compile Include="TradeTest.cs" />
+    <Compile Include="UserTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PlataformaComercio.Datos.Fachada\PlataformaComercio.Datos.Fachada.csproj">
+      <Project>{7C6C079B-DD86-48F8-81D0-38F0886A69D2}</Project>
+      <Name>PlataformaComercio.Datos.Fachada</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlataformaComercio.Datos.SqlServer\PlataformaComercio.Datos.SqlServer.csproj">
+      <Project>{0EC126FC-04EB-480C-B41A-97D79A72A433}</Project>
+      <Name>PlataformaComercio.Datos.SqlServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlataformaComercio.Entidades\PlataformaComercio.Entities.csproj">
+      <Project>{BFC0D555-9C05-4225-A03B-5FACB33E70B2}</Project>
+      <Name>PlataformaComercio.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlataformaComercio.FrameWork\PlataformaComercio.FrameWork.csproj">
+      <Project>{3B119A6C-3F03-434A-B932-7FE525D5BD30}</Project>
+      <Name>PlataformaComercio.FrameWork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlataformaComercio.Negocio\PlataformaComercio.Business.csproj">
+      <Project>{36B2F2DA-0B6B-4CE1-93C3-41ECEFB087F8}</Project>
+      <Name>PlataformaComercio.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Shadow Include="Test References\PlataformaComercio.Business.accessor" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="InventoryOrderedTest.orderedtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

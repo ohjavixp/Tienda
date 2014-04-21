@@ -1,0 +1,18 @@
+﻿<Advertisements>
+  <!--
+  <Ad>
+    <ImageUrl>/Path/Banner.gif</ImageUrl>
+    <NavigateUrl>http://aspnet101.com</NavigateUrl>
+    <AlternateText>
+      The best ASP.Net web site in the world!
+    </AlternateText>
+    <Impressions>3</Impressions>
+  </Ad>
+  -->
+  <Ad>
+    <ImageUrl>~/images/banners/comprastelefono.png</ImageUrl>    
+    <AlternateText>
+      Compras por teléfono, Marca el numero 01-55-5955-9877
+    </AlternateText>    
+  </Ad>
+</Advertisements>

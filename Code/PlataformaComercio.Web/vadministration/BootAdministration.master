@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BootAdministration.master.cs" Inherits="PlataformaComercio.Web.vadministration.BootAdministration" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Administracion</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="..\images\iconos\cuadritobio.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    </head>
+    <body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                        <h1>Administracion</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <asp:ContentPlaceHolder ID="breadcrumb" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">Navegacion</li>
+                        
+                        <li><a href="<%= ResolveClientUrl("~/administracion/ordenes") %>"><i class="glyphicon glyphicon-list"></i> Ordenes</a></li>
+                        
+                        <li><a href="<%= ResolveClientUrl("~/administracion/productos") %>"><i class="glyphicon glyphicon-shopping-cart"></i> Lista Productos</a></li>
+                        <li><a href="<%= ResolveClientUrl("~/administracion/productos/agregar") %>"><i class="glyphicon glyphicon-plus"></i> Agregar o Editar Productos</a></li>
+                        
+                        <li><a href="<%= ResolveClientUrl("~/administracion/categorias") %>"><i class="glyphicon glyphicon-folder-open"></i> Categorias</a></li>
+                        
+                        <li><a href="<%= ResolveClientUrl("~/administracion/marcas") %>"><i class="glyphicon glyphicon-tag"></i> Lista de Marcas</a></li>
+                        <li><a href="<%= ResolveClientUrl("~/administracion/marcas/agregar") %>"><i class="glyphicon glyphicon-plus"></i> Agregar o Editar Marcas</a></li>
+                        
+                        <li><a href="<%= ResolveClientUrl("~/administracion/tipodecambio") %>"><i class="glyphicon glyphicon-usd"></i> Tipo de Cambio</a></li>
+                    </ul>
+                </div>
+                <div class="span9">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+    <script src="<% Page.ResolveUrl("~/Scripts/bootstrap/bootstrap.min.js"); %>" type="text/javascript"></script>
+
+</body>
+</html>

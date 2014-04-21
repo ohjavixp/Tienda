@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Callout Test</title>
+
+    <script type="text/javascript">
+
+    function initializeCalloutDiv() {
+
+        var tbl = document.createElement("table");
+        var tb = document.createElement("tbody");
+        
+        tbl.border = "0px";
+        tbl.cellPadding = "0px";
+        tbl.cellSpacing = "0px";
+        
+        for (var i = 0; i < 20; i++) {
+            var tr = document.createElement("tr");
+
+            for (var j = 0; j < 20; j++) {
+                var tc = document.createElement("td");
+               
+                if (j > i - 1) {
+                    tc.style.backgroundColor = "#7C6F57";
+                    var opacity = 1 - (j * 5/100);
+                    tc.style.filter = "alpha(opacity=" + 100 * opacity + ")";
+                    tc.style.MozOpacity = opacity;
+                }
+                if ((j == i) || (i ==0)) {
+                    tc.style.backgroundColor = "black"
+                }
+                tc.style.width = "1px";
+                tc.style.height = "1px";
+                tr.appendChild(tc);
+            }
+            tb.appendChild(tr);
+        }
+        
+       
+        tbl.appendChild(tb);
+        
+        var div = document.getElementById("test");
+        div.appendChild(tbl);
+    }
+    
+    window.onload = initializeCalloutDiv;
+    
+    </script>
+
+</head>
+<body>
+    <div id="test">
+    </div>
+</body>
+</html>

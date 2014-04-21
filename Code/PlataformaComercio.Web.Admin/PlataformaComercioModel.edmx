@@ -1,0 +1,2671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PlataformaComercio.Data.Entities.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="PlataformaComercioDataEntitiesStoreContainer">
+          <EntitySet Name="Basket" EntityType="PlataformaComercio.Data.Entities.Store.Basket" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="BasketDetail" EntityType="PlataformaComercio.Data.Entities.Store.BasketDetail" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="BasketLine" EntityType="PlataformaComercio.Data.Entities.Store.BasketLine" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="BasketPayment" EntityType="PlataformaComercio.Data.Entities.Store.BasketPayment" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="BasketPaymentPayPal" EntityType="PlataformaComercio.Data.Entities.Store.BasketPaymentPayPal" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="BasketShipping" EntityType="PlataformaComercio.Data.Entities.Store.BasketShipping" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="BasketShippingAddress" EntityType="PlataformaComercio.Data.Entities.Store.BasketShippingAddress" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="BasketShippingMethod" EntityType="PlataformaComercio.Data.Entities.Store.BasketShippingMethod" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Colonia" EntityType="PlataformaComercio.Data.Entities.Store.Colonia" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ControlId" EntityType="PlataformaComercio.Data.Entities.Store.ControlId" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Estado" EntityType="PlataformaComercio.Data.Entities.Store.Estado" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Inventory" EntityType="PlataformaComercio.Data.Entities.Store.Inventory" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="InventoryCategory" EntityType="PlataformaComercio.Data.Entities.Store.InventoryCategory" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="InventoryProduct" EntityType="PlataformaComercio.Data.Entities.Store.InventoryProduct" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="InventoryProductCategory" EntityType="PlataformaComercio.Data.Entities.Store.InventoryProductCategory" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Municipio" EntityType="PlataformaComercio.Data.Entities.Store.Municipio" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Order" EntityType="PlataformaComercio.Data.Entities.Store.Order" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="OrderLine" EntityType="PlataformaComercio.Data.Entities.Store.OrderLine" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="OrderLineDetail" EntityType="PlataformaComercio.Data.Entities.Store.OrderLineDetail" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="OrderPayment" EntityType="PlataformaComercio.Data.Entities.Store.OrderPayment" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="OrderPaymentPayPal" EntityType="PlataformaComercio.Data.Entities.Store.OrderPaymentPayPal" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="OrderShipping" EntityType="PlataformaComercio.Data.Entities.Store.OrderShipping" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="OrderShippingAddress" EntityType="PlataformaComercio.Data.Entities.Store.OrderShippingAddress" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Pais" EntityType="PlataformaComercio.Data.Entities.Store.Pais" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Payment" EntityType="PlataformaComercio.Data.Entities.Store.Payment" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Product" EntityType="PlataformaComercio.Data.Entities.Store.Product" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SearchNotFound" EntityType="PlataformaComercio.Data.Entities.Store.SearchNotFound" store:Type="Tables" store:Schema="dbo" store:Name="SearchNotFound" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator">
+            <DefiningQuery>SELECT 
+      [SearchNotFound].[InventoryId] AS [InventoryId], 
+      [SearchNotFound].[SearchString] AS [SearchString]
+      FROM [dbo].[SearchNotFound] AS [SearchNotFound]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="ShippingCompany" EntityType="PlataformaComercio.Data.Entities.Store.ShippingCompany" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ShippingCost" EntityType="PlataformaComercio.Data.Entities.Store.ShippingCost" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ShippingType" EntityType="PlataformaComercio.Data.Entities.Store.ShippingType" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SiteMap" EntityType="PlataformaComercio.Data.Entities.Store.SiteMap" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="sysdiagrams" EntityType="PlataformaComercio.Data.Entities.Store.sysdiagrams" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Trade" EntityType="PlataformaComercio.Data.Entities.Store.Trade" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Usuario" EntityType="PlataformaComercio.Data.Entities.Store.Usuario" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UsuarioDireccion" EntityType="PlataformaComercio.Data.Entities.Store.UsuarioDireccion" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <AssociationSet Name="FK_BasketDetail_BasketLine" Association="PlataformaComercio.Data.Entities.Store.FK_BasketDetail_BasketLine">
+            <End Role="BasketLine" EntitySet="BasketLine" />
+            <End Role="BasketDetail" EntitySet="BasketDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketLine_Basket" Association="PlataformaComercio.Data.Entities.Store.FK_BasketLine_Basket">
+            <End Role="Basket" EntitySet="Basket" />
+            <End Role="BasketLine" EntitySet="BasketLine" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketPayment_Basket" Association="PlataformaComercio.Data.Entities.Store.FK_BasketPayment_Basket">
+            <End Role="Basket" EntitySet="Basket" />
+            <End Role="BasketPayment" EntitySet="BasketPayment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketPayment_Payment" Association="PlataformaComercio.Data.Entities.Store.FK_BasketPayment_Payment">
+            <End Role="Payment" EntitySet="Payment" />
+            <End Role="BasketPayment" EntitySet="BasketPayment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketPaymentPayPal_Basket" Association="PlataformaComercio.Data.Entities.Store.FK_BasketPaymentPayPal_Basket">
+            <End Role="Basket" EntitySet="Basket" />
+            <End Role="BasketPaymentPayPal" EntitySet="BasketPaymentPayPal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketPaymentPayPal_BasketPayment1" Association="PlataformaComercio.Data.Entities.Store.FK_BasketPaymentPayPal_BasketPayment1">
+            <End Role="BasketPayment" EntitySet="BasketPayment" />
+            <End Role="BasketPaymentPayPal" EntitySet="BasketPaymentPayPal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketPaymentPayPal_Payment" Association="PlataformaComercio.Data.Entities.Store.FK_BasketPaymentPayPal_Payment">
+            <End Role="Payment" EntitySet="Payment" />
+            <End Role="BasketPaymentPayPal" EntitySet="BasketPaymentPayPal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketShipping_Basket" Association="PlataformaComercio.Data.Entities.Store.FK_BasketShipping_Basket">
+            <End Role="Basket" EntitySet="Basket" />
+            <End Role="BasketShipping" EntitySet="BasketShipping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketShipping_BasketShippingAddress" Association="PlataformaComercio.Data.Entities.Store.FK_BasketShipping_BasketShippingAddress">
+            <End Role="BasketShippingAddress" EntitySet="BasketShippingAddress" />
+            <End Role="BasketShipping" EntitySet="BasketShipping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketShippingAddress_Basket" Association="PlataformaComercio.Data.Entities.Store.FK_BasketShippingAddress_Basket">
+            <End Role="Basket" EntitySet="Basket" />
+            <End Role="BasketShippingAddress" EntitySet="BasketShippingAddress" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketShippingAddress_Pais" Association="PlataformaComercio.Data.Entities.Store.FK_BasketShippingAddress_Pais">
+            <End Role="Pais" EntitySet="Pais" />
+            <End Role="BasketShippingAddress" EntitySet="BasketShippingAddress" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Colonia_Municipio" Association="PlataformaComercio.Data.Entities.Store.FK_Colonia_Municipio">
+            <End Role="Municipio" EntitySet="Municipio" />
+            <End Role="Colonia" EntitySet="Colonia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Estado_Pais" Association="PlataformaComercio.Data.Entities.Store.FK_Estado_Pais">
+            <End Role="Pais" EntitySet="Pais" />
+            <End Role="Estado" EntitySet="Estado" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InventarioCategoria_Inventario" Association="PlataformaComercio.Data.Entities.Store.FK_InventarioCategoria_Inventario">
+            <End Role="Inventory" EntitySet="Inventory" />
+            <End Role="InventoryCategory" EntitySet="InventoryCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InventarioProducto_Inventario" Association="PlataformaComercio.Data.Entities.Store.FK_InventarioProducto_Inventario">
+            <End Role="Inventory" EntitySet="Inventory" />
+            <End Role="InventoryProductCategory" EntitySet="InventoryProductCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InventarioProducto_InventarioCategoria" Association="PlataformaComercio.Data.Entities.Store.FK_InventarioProducto_InventarioCategoria">
+            <End Role="InventoryCategory" EntitySet="InventoryCategory" />
+            <End Role="InventoryProductCategory" EntitySet="InventoryProductCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InventarioProducto_Producto" Association="PlataformaComercio.Data.Entities.Store.FK_InventarioProducto_Producto">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="InventoryProductCategory" EntitySet="InventoryProductCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InventoryProduct_Inventory" Association="PlataformaComercio.Data.Entities.Store.FK_InventoryProduct_Inventory">
+            <End Role="Inventory" EntitySet="Inventory" />
+            <End Role="InventoryProduct" EntitySet="InventoryProduct" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InventoryProduct_Product" Association="PlataformaComercio.Data.Entities.Store.FK_InventoryProduct_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="InventoryProduct" EntitySet="InventoryProduct" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Municipio_Estado" Association="PlataformaComercio.Data.Entities.Store.FK_Municipio_Estado">
+            <End Role="Estado" EntitySet="Estado" />
+            <End Role="Municipio" EntitySet="Municipio" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Usuario" Association="PlataformaComercio.Data.Entities.Store.FK_Order_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderLine_Order" Association="PlataformaComercio.Data.Entities.Store.FK_OrderLine_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="OrderLine" EntitySet="OrderLine" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderLineDetail_OrderLine" Association="PlataformaComercio.Data.Entities.Store.FK_OrderLineDetail_OrderLine">
+            <End Role="OrderLine" EntitySet="OrderLine" />
+            <End Role="OrderLineDetail" EntitySet="OrderLineDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderPayment_Order" Association="PlataformaComercio.Data.Entities.Store.FK_OrderPayment_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="OrderPayment" EntitySet="OrderPayment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderPayment_Payment" Association="PlataformaComercio.Data.Entities.Store.FK_OrderPayment_Payment">
+            <End Role="Payment" EntitySet="Payment" />
+            <End Role="OrderPayment" EntitySet="OrderPayment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderPaymentPayPal_OrderPayment" Association="PlataformaComercio.Data.Entities.Store.FK_OrderPaymentPayPal_OrderPayment">
+            <End Role="OrderPayment" EntitySet="OrderPayment" />
+            <End Role="OrderPaymentPayPal" EntitySet="OrderPaymentPayPal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderPaymentPayPal_Payment" Association="PlataformaComercio.Data.Entities.Store.FK_OrderPaymentPayPal_Payment">
+            <End Role="Payment" EntitySet="Payment" />
+            <End Role="OrderPaymentPayPal" EntitySet="OrderPaymentPayPal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderShipping_Order" Association="PlataformaComercio.Data.Entities.Store.FK_OrderShipping_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="OrderShipping" EntitySet="OrderShipping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderShipping_OrderShippingAddress" Association="PlataformaComercio.Data.Entities.Store.FK_OrderShipping_OrderShippingAddress">
+            <End Role="OrderShippingAddress" EntitySet="OrderShippingAddress" />
+            <End Role="OrderShipping" EntitySet="OrderShipping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Producto_Marca" Association="PlataformaComercio.Data.Entities.Store.FK_Producto_Marca">
+            <End Role="Trade" EntitySet="Trade" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SearchNotFound_Inventory" Association="PlataformaComercio.Data.Entities.Store.FK_SearchNotFound_Inventory">
+            <End Role="Inventory" EntitySet="Inventory" />
+            <End Role="SearchNotFound" EntitySet="SearchNotFound" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShippingCost_ShippingCompany" Association="PlataformaComercio.Data.Entities.Store.FK_ShippingCost_ShippingCompany">
+            <End Role="ShippingCompany" EntitySet="ShippingCompany" />
+            <End Role="ShippingCost" EntitySet="ShippingCost" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShippingCost_ShippingType" Association="PlataformaComercio.Data.Entities.Store.FK_ShippingCost_ShippingType">
+            <End Role="ShippingType" EntitySet="ShippingType" />
+            <End Role="ShippingCost" EntitySet="ShippingCost" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioDireccion_Usuario" Association="PlataformaComercio.Data.Entities.Store.FK_UsuarioDireccion_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="UsuarioDireccion" EntitySet="UsuarioDireccion" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Basket">
+          <Key>
+            <PropertyRef Name="BasketId" />
+          </Key>
+          <Property Name="BasketId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastUpdateDate" Type="datetime" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BasketDetail">
+          <Key>
+            <PropertyRef Name="BasketId" />
+            <PropertyRef Name="LineId" />
+            <PropertyRef Name="BasketDetailId" />
+          </Key>
+          <Property Name="BasketId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="LineId" Type="int" Nullable="false" />
+          <Property Name="BasketDetailId" Type="int" Nullable="false" />
+          <Property Name="InventoryId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ProductId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ProductCategoryId" Type="int" />
+          <Property Name="Quantity" Type="decimal" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BasketLine">
+          <Key>
+            <PropertyRef Name="BasketId" />
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="BasketId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="LineId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="BasketPayment">
+          <Key>
+            <PropertyRef Name="BasketID" />
+            <PropertyRef Name="PaymentID" />
+          </Key>
+          <Property Name="BasketID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PaymentID" Type="int" Nullable="false" />
+          <Property Name="TotalPayed" Type="money" Nullable="false" />
+          <Property Name="Status" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BasketPaymentPayPal">
+          <Key>
+            <PropertyRef Name="BasketID" />
+            <PropertyRef Name="PaymentID" />
+          </Key>
+          <Property Name="BasketID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PaymentID" Type="int" Nullable="false" />
+          <Property Name="Token" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="PayerID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Status" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BasketShipping">
+          <Key>
+            <PropertyRef Name="BasketID" />
+            <PropertyRef Name="ShippingID" />
+          </Key>
+          <Property Name="BasketID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ShippingID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BasketShippingAddress">
+          <Key>
+            <PropertyRef Name="BasketID" />
+            <PropertyRef Name="ShippingId" />
+          </Key>
+          <Property Name="BasketID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ShippingId" Type="int" Nullable="false" />
+          <Property Name="CountryId" Type="int" Nullable="false" />
+          <Property Name="ZipCode" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="NeighborghoodID" Type="int" Nullable="false" />
+          <Property Name="Street" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="StreetNumber" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="StreetInternalNumber" Type="varchar" MaxLength="20" />
+          <Property Name="StreetBetween" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="AddressName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="TelephoneContact" Type="varchar" MaxLength="10" />
+          <Property Name="Comments" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="BasketShippingMethod">
+          <Key>
+            <PropertyRef Name="BasketId" />
+            <PropertyRef Name="ShippingId" />
+          </Key>
+          <Property Name="BasketId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ShippingId" Type="int" Nullable="false" />
+          <Property Name="ShippingCostId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Colonia">
+          <Key>
+            <PropertyRef Name="IdPais" />
+            <PropertyRef Name="IdEstado" />
+            <PropertyRef Name="IdMunicipio" />
+            <PropertyRef Name="IdColonia" />
+          </Key>
+          <Property Name="IdPais" Type="int" Nullable="false" />
+          <Property Name="IdEstado" Type="int" Nullable="false" />
+          <Property Name="IdMunicipio" Type="int" Nullable="false" />
+          <Property Name="IdColonia" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CodigoPostal" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="UltimaActualizacion" Type="datetime" Nullable="false" />
+          <Property Name="Activo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ControlId">
+          <Key>
+            <PropertyRef Name="ControlId" />
+          </Key>
+          <Property Name="ControlId" Type="int" Nullable="false" />
+          <Property Name="CurrentID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Estado">
+          <Key>
+            <PropertyRef Name="IdPais" />
+            <PropertyRef Name="IdEstado" />
+          </Key>
+          <Property Name="IdPais" Type="int" Nullable="false" />
+          <Property Name="IdEstado" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Abreviado" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="RangoDe" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="RangoAl" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Activo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Inventory">
+          <Key>
+            <PropertyRef Name="InventoryID" />
+          </Key>
+          <Property Name="InventoryID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="InventoryCategory">
+          <Key>
+            <PropertyRef Name="InventoryID" />
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Name="InventoryID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="FatherID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="text" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="Show" Type="bit" Nullable="false" />
+          <Property Name="Order" Type="smallint" Nullable="false" />
+          <Property Name="ShortDescription" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="InventoryProduct">
+          <Key>
+            <PropertyRef Name="InventoryID" />
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="InventoryID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ProductID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="InventoryProductCategory">
+          <Key>
+            <PropertyRef Name="InventoryID" />
+            <PropertyRef Name="CategoryID" />
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="InventoryID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="ProductID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="IsPrimary" Type="bit" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="Order" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Municipio">
+          <Key>
+            <PropertyRef Name="IdPais" />
+            <PropertyRef Name="IdEstado" />
+            <PropertyRef Name="IdMunicipio" />
+          </Key>
+          <Property Name="IdPais" Type="int" Nullable="false" />
+          <Property Name="IdEstado" Type="int" Nullable="false" />
+          <Property Name="IdMunicipio" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Activo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LasUpdateDate" Type="datetime" Nullable="false" />
+          <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Status" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OrderLine">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="LineID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="OrderLineDetail">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="LineId" />
+            <PropertyRef Name="OrderLineDetailID" />
+          </Key>
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="LineId" Type="int" Nullable="false" />
+          <Property Name="OrderLineDetailID" Type="int" Nullable="false" />
+          <Property Name="InventoryId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ProductId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ProductCategoryId" Type="int" />
+          <Property Name="Quantity" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OrderPayment">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="PaymentID" />
+          </Key>
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="PaymentID" Type="int" Nullable="false" />
+          <Property Name="TotalPayed" Type="money" Nullable="false" />
+          <Property Name="Status" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OrderPaymentPayPal">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="PaymentID" />
+          </Key>
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="PaymentID" Type="int" Nullable="false" />
+          <Property Name="Token" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="PayerID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Status" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OrderShipping">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="OrderShippingID" />
+          </Key>
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="OrderShippingID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OrderShippingAddress">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="OrderShippingID" />
+          </Key>
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="OrderShippingID" Type="int" Nullable="false" />
+          <Property Name="CountryId" Type="int" Nullable="false" />
+          <Property Name="ZipCode" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="NeighborghoodID" Type="int" Nullable="false" />
+          <Property Name="Street" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="StreetNumber" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="StreetInternalNumber" Type="varchar" MaxLength="20" />
+          <Property Name="StreetBetween" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="AddressName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="TelephoneContact" Type="varchar" MaxLength="10" />
+          <Property Name="Comments" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Pais">
+          <Key>
+            <PropertyRef Name="IdPais" />
+          </Key>
+          <Property Name="IdPais" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ISO3166-1-3" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="ISO3166-1-2" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="Activo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Payment">
+          <Key>
+            <PropertyRef Name="PaymentID" />
+          </Key>
+          <Property Name="PaymentID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ProductID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ShortDescription" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="LargeDescription" Type="text" Nullable="false" />
+          <Property Name="LargeDescriptionRaw" Type="text" Nullable="false" />
+          <Property Name="Price" Type="decimal" Nullable="false" Scale="2" />
+          <Property Name="TradeID" Type="int" Nullable="false" />
+          <Property Name="Image128" Type="bit" Nullable="false" />
+          <Property Name="Image256" Type="bit" Nullable="false" />
+          <Property Name="Weight" Type="decimal" Nullable="false" Scale="2" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="Measure" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="LastMod" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'espaciomascota.com.dbo.SearchNotFound' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="SearchNotFound">
+          <Key>
+            <PropertyRef Name="InventoryId" />
+            <PropertyRef Name="SearchString" />
+          </Key>
+          <Property Name="InventoryId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="SearchString" Type="varchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="ShippingCompany">
+          <Key>
+            <PropertyRef Name="ShippingCompanyId" />
+          </Key>
+          <Property Name="ShippingCompanyId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShippingCost">
+          <Key>
+            <PropertyRef Name="ShippingCostId" />
+          </Key>
+          <Property Name="ShippingCostId" Type="int" Nullable="false" />
+          <Property Name="ShippingCompanyId" Type="int" Nullable="false" />
+          <Property Name="ShippingTypeId" Type="int" Nullable="false" />
+          <Property Name="ShippingCostKey" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Cost" Type="decimal" Nullable="false" Scale="2" />
+          <Property Name="MaxWeight" Type="decimal" Nullable="false" Scale="2" />
+          <Property Name="AditionalCost" Type="decimal" Nullable="false" Scale="2" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShippingType">
+          <Key>
+            <PropertyRef Name="ShippingTypeId" />
+          </Key>
+          <Property Name="ShippingTypeId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="SiteMap">
+          <Key>
+            <PropertyRef Name="SiteMapId" />
+          </Key>
+          <Property Name="SiteMapId" Type="int" Nullable="false" />
+          <Property Name="PageUrl" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="LastMod" Type="datetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Trade">
+          <Key>
+            <PropertyRef Name="TradeID" />
+          </Key>
+          <Property Name="TradeID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ShortDescription" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Description" Type="text" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="HasSubSite" Type="bit" Nullable="false" />
+          <Property Name="LastMod" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="LastName" Type="varchar" MaxLength="50" />
+          <Property Name="EmailAddress" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="BirthDate" Type="date" Nullable="false" />
+          <Property Name="PhoneNumber" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="PhoneNumberExt" Type="varchar" MaxLength="10" />
+          <Property Name="MobileNumber" Type="varchar" MaxLength="10" />
+          <Property Name="Sex" Type="bit" Nullable="false" />
+          <Property Name="SendInfo" Type="bit" Nullable="false" />
+          <Property Name="ShareInfo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UsuarioDireccion">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="AddressId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="AddressId" Type="int" Nullable="false" />
+          <Property Name="CountryId" Type="int" Nullable="false" />
+          <Property Name="ZipCode" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="NeighborghoodID" Type="int" Nullable="false" />
+          <Property Name="Street" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="StreetNumber" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="StreetInternalNumber" Type="varchar" MaxLength="20" />
+          <Property Name="StreetBetween" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="AddressName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="TelephoneContact" Type="varchar" MaxLength="10" />
+          <Property Name="Comments" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <Association Name="FK_BasketDetail_BasketLine">
+          <End Role="BasketLine" Type="PlataformaComercio.Data.Entities.Store.BasketLine" Multiplicity="1" />
+          <End Role="BasketDetail" Type="PlataformaComercio.Data.Entities.Store.BasketDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BasketLine">
+              <PropertyRef Name="BasketId" />
+              <PropertyRef Name="LineId" />
+            </Principal>
+            <Dependent Role="BasketDetail">
+              <PropertyRef Name="BasketId" />
+              <PropertyRef Name="LineId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketLine_Basket">
+          <End Role="Basket" Type="PlataformaComercio.Data.Entities.Store.Basket" Multiplicity="1" />
+          <End Role="BasketLine" Type="PlataformaComercio.Data.Entities.Store.BasketLine" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Basket">
+              <PropertyRef Name="BasketId" />
+            </Principal>
+            <Dependent Role="BasketLine">
+              <PropertyRef Name="BasketId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketPayment_Basket">
+          <End Role="Basket" Type="PlataformaComercio.Data.Entities.Store.Basket" Multiplicity="1" />
+          <End Role="BasketPayment" Type="PlataformaComercio.Data.Entities.Store.BasketPayment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Basket">
+              <PropertyRef Name="BasketId" />
+            </Principal>
+            <Dependent Role="BasketPayment">
+              <PropertyRef Name="BasketID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketPayment_Payment">
+          <End Role="Payment" Type="PlataformaComercio.Data.Entities.Store.Payment" Multiplicity="1" />
+          <End Role="BasketPayment" Type="PlataformaComercio.Data.Entities.Store.BasketPayment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Payment">
+              <PropertyRef Name="PaymentID" />
+            </Principal>
+            <Dependent Role="BasketPayment">
+              <PropertyRef Name="PaymentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketPaymentPayPal_Basket">
+          <End Role="Basket" Type="PlataformaComercio.Data.Entities.Store.Basket" Multiplicity="1" />
+          <End Role="BasketPaymentPayPal" Type="PlataformaComercio.Data.Entities.Store.BasketPaymentPayPal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Basket">
+              <PropertyRef Name="BasketId" />
+            </Principal>
+            <Dependent Role="BasketPaymentPayPal">
+              <PropertyRef Name="BasketID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketPaymentPayPal_BasketPayment1">
+          <End Role="BasketPayment" Type="PlataformaComercio.Data.Entities.Store.BasketPayment" Multiplicity="1" />
+          <End Role="BasketPaymentPayPal" Type="PlataformaComercio.Data.Entities.Store.BasketPaymentPayPal" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BasketPayment">
+              <PropertyRef Name="BasketID" />
+              <PropertyRef Name="PaymentID" />
+            </Principal>
+            <Dependent Role="BasketPaymentPayPal">
+              <PropertyRef Name="BasketID" />
+              <PropertyRef Name="PaymentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketPaymentPayPal_Payment">
+          <End Role="Payment" Type="PlataformaComercio.Data.Entities.Store.Payment" Multiplicity="1" />
+          <End Role="BasketPaymentPayPal" Type="PlataformaComercio.Data.Entities.Store.BasketPaymentPayPal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Payment">
+              <PropertyRef Name="PaymentID" />
+            </Principal>
+            <Dependent Role="BasketPaymentPayPal">
+              <PropertyRef Name="PaymentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketShipping_Basket">
+          <End Role="Basket" Type="PlataformaComercio.Data.Entities.Store.Basket" Multiplicity="1" />
+          <End Role="BasketShipping" Type="PlataformaComercio.Data.Entities.Store.BasketShipping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Basket">
+              <PropertyRef Name="BasketId" />
+            </Principal>
+            <Dependent Role="BasketShipping">
+              <PropertyRef Name="BasketID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketShipping_BasketShippingAddress">
+          <End Role="BasketShippingAddress" Type="PlataformaComercio.Data.Entities.Store.BasketShippingAddress" Multiplicity="1" />
+          <End Role="BasketShipping" Type="PlataformaComercio.Data.Entities.Store.BasketShipping" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BasketShippingAddress">
+              <PropertyRef Name="BasketID" />
+              <PropertyRef Name="ShippingId" />
+            </Principal>
+            <Dependent Role="BasketShipping">
+              <PropertyRef Name="BasketID" />
+              <PropertyRef Name="ShippingID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketShippingAddress_Basket">
+          <End Role="Basket" Type="PlataformaComercio.Data.Entities.Store.Basket" Multiplicity="1" />
+          <End Role="BasketShippingAddress" Type="PlataformaComercio.Data.Entities.Store.BasketShippingAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Basket">
+              <PropertyRef Name="BasketId" />
+            </Principal>
+            <Dependent Role="BasketShippingAddress">
+              <PropertyRef Name="BasketID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketShippingAddress_Pais">
+          <End Role="Pais" Type="PlataformaComercio.Data.Entities.Store.Pais" Multiplicity="1" />
+          <End Role="BasketShippingAddress" Type="PlataformaComercio.Data.Entities.Store.BasketShippingAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pais">
+              <PropertyRef Name="IdPais" />
+            </Principal>
+            <Dependent Role="BasketShippingAddress">
+              <PropertyRef Name="CountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Colonia_Municipio">
+          <End Role="Municipio" Type="PlataformaComercio.Data.Entities.Store.Municipio" Multiplicity="1" />
+          <End Role="Colonia" Type="PlataformaComercio.Data.Entities.Store.Colonia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Municipio">
+              <PropertyRef Name="IdPais" />
+              <PropertyRef Name="IdEstado" />
+              <PropertyRef Name="IdMunicipio" />
+            </Principal>
+            <Dependent Role="Colonia">
+              <PropertyRef Name="IdPais" />
+              <PropertyRef Name="IdEstado" />
+              <PropertyRef Name="IdMunicipio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Estado_Pais">
+          <End Role="Pais" Type="PlataformaComercio.Data.Entities.Store.Pais" Multiplicity="1" />
+          <End Role="Estado" Type="PlataformaComercio.Data.Entities.Store.Estado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pais">
+              <PropertyRef Name="IdPais" />
+            </Principal>
+            <Dependent Role="Estado">
+              <PropertyRef Name="IdPais" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InventarioCategoria_Inventario">
+          <End Role="Inventory" Type="PlataformaComercio.Data.Entities.Store.Inventory" Multiplicity="1" />
+          <End Role="InventoryCategory" Type="PlataformaComercio.Data.Entities.Store.InventoryCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Inventory">
+              <PropertyRef Name="InventoryID" />
+            </Principal>
+            <Dependent Role="InventoryCategory">
+              <PropertyRef Name="InventoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InventarioProducto_Inventario">
+          <End Role="Inventory" Type="PlataformaComercio.Data.Entities.Store.Inventory" Multiplicity="1" />
+          <End Role="InventoryProductCategory" Type="PlataformaComercio.Data.Entities.Store.InventoryProductCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Inventory">
+              <PropertyRef Name="InventoryID" />
+            </Principal>
+            <Dependent Role="InventoryProductCategory">
+              <PropertyRef Name="InventoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InventarioProducto_InventarioCategoria">
+          <End Role="InventoryCategory" Type="PlataformaComercio.Data.Entities.Store.InventoryCategory" Multiplicity="1" />
+          <End Role="InventoryProductCategory" Type="PlataformaComercio.Data.Entities.Store.InventoryProductCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="InventoryCategory">
+              <PropertyRef Name="InventoryID" />
+              <PropertyRef Name="CategoryID" />
+            </Principal>
+            <Dependent Role="InventoryProductCategory">
+              <PropertyRef Name="InventoryID" />
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InventarioProducto_Producto">
+          <End Role="Product" Type="PlataformaComercio.Data.Entities.Store.Product" Multiplicity="1" />
+          <End Role="InventoryProductCategory" Type="PlataformaComercio.Data.Entities.Store.InventoryProductCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductID" />
+            </Principal>
+            <Dependent Role="InventoryProductCategory">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InventoryProduct_Inventory">
+          <End Role="Inventory" Type="PlataformaComercio.Data.Entities.Store.Inventory" Multiplicity="1" />
+          <End Role="InventoryProduct" Type="PlataformaComercio.Data.Entities.Store.InventoryProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Inventory">
+              <PropertyRef Name="InventoryID" />
+            </Principal>
+            <Dependent Role="InventoryProduct">
+              <PropertyRef Name="InventoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InventoryProduct_Product">
+          <End Role="Product" Type="PlataformaComercio.Data.Entities.Store.Product" Multiplicity="1" />
+          <End Role="InventoryProduct" Type="PlataformaComercio.Data.Entities.Store.InventoryProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductID" />
+            </Principal>
+            <Dependent Role="InventoryProduct">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Municipio_Estado">
+          <End Role="Estado" Type="PlataformaComercio.Data.Entities.Store.Estado" Multiplicity="1" />
+          <End Role="Municipio" Type="PlataformaComercio.Data.Entities.Store.Municipio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estado">
+              <PropertyRef Name="IdPais" />
+              <PropertyRef Name="IdEstado" />
+            </Principal>
+            <Dependent Role="Municipio">
+              <PropertyRef Name="IdPais" />
+              <PropertyRef Name="IdEstado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Usuario">
+          <End Role="Usuario" Type="PlataformaComercio.Data.Entities.Store.Usuario" Multiplicity="1" />
+          <End Role="Order" Type="PlataformaComercio.Data.Entities.Store.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderLine_Order">
+          <End Role="Order" Type="PlataformaComercio.Data.Entities.Store.Order" Multiplicity="1" />
+          <End Role="OrderLine" Type="PlataformaComercio.Data.Entities.Store.OrderLine" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderID" />
+            </Principal>
+            <Dependent Role="OrderLine">
+              <PropertyRef Name="OrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderLineDetail_OrderLine">
+          <End Role="OrderLine" Type="PlataformaComercio.Data.Entities.Store.OrderLine" Multiplicity="1" />
+          <End Role="OrderLineDetail" Type="PlataformaComercio.Data.Entities.Store.OrderLineDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OrderLine">
+              <PropertyRef Name="OrderID" />
+              <PropertyRef Name="LineID" />
+            </Principal>
+            <Dependent Role="OrderLineDetail">
+              <PropertyRef Name="OrderID" />
+              <PropertyRef Name="LineId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderPayment_Order">
+          <End Role="Order" Type="PlataformaComercio.Data.Entities.Store.Order" Multiplicity="1" />
+          <End Role="OrderPayment" Type="PlataformaComercio.Data.Entities.Store.OrderPayment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderID" />
+            </Principal>
+            <Dependent Role="OrderPayment">
+              <PropertyRef Name="OrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderPayment_Payment">
+          <End Role="Payment" Type="PlataformaComercio.Data.Entities.Store.Payment" Multiplicity="1" />
+          <End Role="OrderPayment" Type="PlataformaComercio.Data.Entities.Store.OrderPayment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Payment">
+              <PropertyRef Name="PaymentID" />
+            </Principal>
+            <Dependent Role="OrderPayment">
+              <PropertyRef Name="PaymentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderPaymentPayPal_OrderPayment">
+          <End Role="OrderPayment" Type="PlataformaComercio.Data.Entities.Store.OrderPayment" Multiplicity="1" />
+          <End Role="OrderPaymentPayPal" Type="PlataformaComercio.Data.Entities.Store.OrderPaymentPayPal" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="OrderPayment">
+              <PropertyRef Name="OrderID" />
+              <PropertyRef Name="PaymentID" />
+            </Principal>
+            <Dependent Role="OrderPaymentPayPal">
+              <PropertyRef Name="OrderID" />
+              <PropertyRef Name="PaymentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderPaymentPayPal_Payment">
+          <End Role="Payment" Type="PlataformaComercio.Data.Entities.Store.Payment" Multiplicity="1" />
+          <End Role="OrderPaymentPayPal" Type="PlataformaComercio.Data.Entities.Store.OrderPaymentPayPal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Payment">
+              <PropertyRef Name="PaymentID" />
+            </Principal>
+            <Dependent Role="OrderPaymentPayPal">
+              <PropertyRef Name="PaymentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderShipping_Order">
+          <End Role="Order" Type="PlataformaComercio.Data.Entities.Store.Order" Multiplicity="1" />
+          <End Role="OrderShipping" Type="PlataformaComercio.Data.Entities.Store.OrderShipping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderID" />
+            </Principal>
+            <Dependent Role="OrderShipping">
+              <PropertyRef Name="OrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderShipping_OrderShippingAddress">
+          <End Role="OrderShippingAddress" Type="PlataformaComercio.Data.Entities.Store.OrderShippingAddress" Multiplicity="1" />
+          <End Role="OrderShipping" Type="PlataformaComercio.Data.Entities.Store.OrderShipping" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="OrderShippingAddress">
+              <PropertyRef Name="OrderID" />
+              <PropertyRef Name="OrderShippingID" />
+            </Principal>
+            <Dependent Role="OrderShipping">
+              <PropertyRef Name="OrderID" />
+              <PropertyRef Name="OrderShippingID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Producto_Marca">
+          <End Role="Trade" Type="PlataformaComercio.Data.Entities.Store.Trade" Multiplicity="1" />
+          <End Role="Product" Type="PlataformaComercio.Data.Entities.Store.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Trade">
+              <PropertyRef Name="TradeID" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="TradeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SearchNotFound_Inventory">
+          <End Role="Inventory" Type="PlataformaComercio.Data.Entities.Store.Inventory" Multiplicity="1" />
+          <End Role="SearchNotFound" Type="PlataformaComercio.Data.Entities.Store.SearchNotFound" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Inventory">
+              <PropertyRef Name="InventoryID" />
+            </Principal>
+            <Dependent Role="SearchNotFound">
+              <PropertyRef Name="InventoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShippingCost_ShippingCompany">
+          <End Role="ShippingCompany" Type="PlataformaComercio.Data.Entities.Store.ShippingCompany" Multiplicity="1" />
+          <End Role="ShippingCost" Type="PlataformaComercio.Data.Entities.Store.ShippingCost" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShippingCompany">
+              <PropertyRef Name="ShippingCompanyId" />
+            </Principal>
+            <Dependent Role="ShippingCost">
+              <PropertyRef Name="ShippingCompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShippingCost_ShippingType">
+          <End Role="ShippingType" Type="PlataformaComercio.Data.Entities.Store.ShippingType" Multiplicity="1" />
+          <End Role="ShippingCost" Type="PlataformaComercio.Data.Entities.Store.ShippingCost" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShippingType">
+              <PropertyRef Name="ShippingTypeId" />
+            </Principal>
+            <Dependent Role="ShippingCost">
+              <PropertyRef Name="ShippingTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioDireccion_Usuario">
+          <End Role="Usuario" Type="PlataformaComercio.Data.Entities.Store.Usuario" Multiplicity="1" />
+          <End Role="UsuarioDireccion" Type="PlataformaComercio.Data.Entities.Store.UsuarioDireccion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="UsuarioDireccion">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PlataformaComercio.Data.Entities" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="PlataformaComercioEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="Basket" EntityType="PlataformaComercio.Data.Entities.Basket" />
+          <EntitySet Name="BasketDetail" EntityType="PlataformaComercio.Data.Entities.BasketDetail" />
+          <EntitySet Name="BasketLine" EntityType="PlataformaComercio.Data.Entities.BasketLine" />
+          <EntitySet Name="BasketPayment" EntityType="PlataformaComercio.Data.Entities.BasketPayment" />
+          <EntitySet Name="BasketPaymentPayPal" EntityType="PlataformaComercio.Data.Entities.BasketPaymentPayPal" />
+          <EntitySet Name="BasketShipping" EntityType="PlataformaComercio.Data.Entities.BasketShipping" />
+          <EntitySet Name="BasketShippingAddress" EntityType="PlataformaComercio.Data.Entities.BasketShippingAddress" />
+          <EntitySet Name="BasketShippingMethod" EntityType="PlataformaComercio.Data.Entities.BasketShippingMethod" />
+          <EntitySet Name="Colonia" EntityType="PlataformaComercio.Data.Entities.Colonia" />
+          <EntitySet Name="ControlId" EntityType="PlataformaComercio.Data.Entities.ControlId" />
+          <EntitySet Name="Estado" EntityType="PlataformaComercio.Data.Entities.Estado" />
+          <EntitySet Name="Inventory" EntityType="PlataformaComercio.Data.Entities.Inventory" />
+          <EntitySet Name="InventoryCategory" EntityType="PlataformaComercio.Data.Entities.InventoryCategory" />
+          <EntitySet Name="InventoryProduct" EntityType="PlataformaComercio.Data.Entities.InventoryProduct" />
+          <EntitySet Name="InventoryProductCategory" EntityType="PlataformaComercio.Data.Entities.InventoryProductCategory" />
+          <EntitySet Name="Municipio" EntityType="PlataformaComercio.Data.Entities.Municipio" />
+          <EntitySet Name="Order" EntityType="PlataformaComercio.Data.Entities.Order" />
+          <EntitySet Name="OrderLine" EntityType="PlataformaComercio.Data.Entities.OrderLine" />
+          <EntitySet Name="OrderLineDetail" EntityType="PlataformaComercio.Data.Entities.OrderLineDetail" />
+          <EntitySet Name="OrderPayment" EntityType="PlataformaComercio.Data.Entities.OrderPayment" />
+          <EntitySet Name="OrderPaymentPayPal" EntityType="PlataformaComercio.Data.Entities.OrderPaymentPayPal" />
+          <EntitySet Name="OrderShipping" EntityType="PlataformaComercio.Data.Entities.OrderShipping" />
+          <EntitySet Name="OrderShippingAddress" EntityType="PlataformaComercio.Data.Entities.OrderShippingAddress" />
+          <EntitySet Name="Pais" EntityType="PlataformaComercio.Data.Entities.Pais" />
+          <EntitySet Name="Payment" EntityType="PlataformaComercio.Data.Entities.Payment" />
+          <EntitySet Name="Product" EntityType="PlataformaComercio.Data.Entities.Product" />
+          <EntitySet Name="SearchNotFound" EntityType="PlataformaComercio.Data.Entities.SearchNotFound" />
+          <EntitySet Name="ShippingCompany" EntityType="PlataformaComercio.Data.Entities.ShippingCompany" />
+          <EntitySet Name="ShippingCost" EntityType="PlataformaComercio.Data.Entities.ShippingCost" />
+          <EntitySet Name="ShippingType" EntityType="PlataformaComercio.Data.Entities.ShippingType" />
+          <EntitySet Name="SiteMap" EntityType="PlataformaComercio.Data.Entities.SiteMap" />
+          <EntitySet Name="sysdiagrams" EntityType="PlataformaComercio.Data.Entities.sysdiagrams" />
+          <EntitySet Name="Trade" EntityType="PlataformaComercio.Data.Entities.Trade" />
+          <EntitySet Name="Usuario" EntityType="PlataformaComercio.Data.Entities.Usuario" />
+          <EntitySet Name="UsuarioDireccion" EntityType="PlataformaComercio.Data.Entities.UsuarioDireccion" />
+          <AssociationSet Name="FK_BasketLine_Basket" Association="PlataformaComercio.Data.Entities.FK_BasketLine_Basket">
+            <End Role="Basket" EntitySet="Basket" />
+            <End Role="BasketLine" EntitySet="BasketLine" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketPayment_Basket" Association="PlataformaComercio.Data.Entities.FK_BasketPayment_Basket">
+            <End Role="Basket" EntitySet="Basket" />
+            <End Role="BasketPayment" EntitySet="BasketPayment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketPaymentPayPal_Basket" Association="PlataformaComercio.Data.Entities.FK_BasketPaymentPayPal_Basket">
+            <End Role="Basket" EntitySet="Basket" />
+            <End Role="BasketPaymentPayPal" EntitySet="BasketPaymentPayPal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketShipping_Basket" Association="PlataformaComercio.Data.Entities.FK_BasketShipping_Basket">
+            <End Role="Basket" EntitySet="Basket" />
+            <End Role="BasketShipping" EntitySet="BasketShipping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketShippingAddress_Basket" Association="PlataformaComercio.Data.Entities.FK_BasketShippingAddress_Basket">
+            <End Role="Basket" EntitySet="Basket" />
+            <End Role="BasketShippingAddress" EntitySet="BasketShippingAddress" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketDetail_BasketLine" Association="PlataformaComercio.Data.Entities.FK_BasketDetail_BasketLine">
+            <End Role="BasketLine" EntitySet="BasketLine" />
+            <End Role="BasketDetail" EntitySet="BasketDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketPayment_Payment" Association="PlataformaComercio.Data.Entities.FK_BasketPayment_Payment">
+            <End Role="Payment" EntitySet="Payment" />
+            <End Role="BasketPayment" EntitySet="BasketPayment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketPaymentPayPal_BasketPayment1" Association="PlataformaComercio.Data.Entities.FK_BasketPaymentPayPal_BasketPayment1">
+            <End Role="BasketPayment" EntitySet="BasketPayment" />
+            <End Role="BasketPaymentPayPal" EntitySet="BasketPaymentPayPal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketPaymentPayPal_Payment" Association="PlataformaComercio.Data.Entities.FK_BasketPaymentPayPal_Payment">
+            <End Role="Payment" EntitySet="Payment" />
+            <End Role="BasketPaymentPayPal" EntitySet="BasketPaymentPayPal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketShipping_BasketShippingAddress" Association="PlataformaComercio.Data.Entities.FK_BasketShipping_BasketShippingAddress">
+            <End Role="BasketShippingAddress" EntitySet="BasketShippingAddress" />
+            <End Role="BasketShipping" EntitySet="BasketShipping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasketShippingAddress_Pais" Association="PlataformaComercio.Data.Entities.FK_BasketShippingAddress_Pais">
+            <End Role="Pais" EntitySet="Pais" />
+            <End Role="BasketShippingAddress" EntitySet="BasketShippingAddress" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Colonia_Municipio" Association="PlataformaComercio.Data.Entities.FK_Colonia_Municipio">
+            <End Role="Municipio" EntitySet="Municipio" />
+            <End Role="Colonia" EntitySet="Colonia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Estado_Pais" Association="PlataformaComercio.Data.Entities.FK_Estado_Pais">
+            <End Role="Pais" EntitySet="Pais" />
+            <End Role="Estado" EntitySet="Estado" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Municipio_Estado" Association="PlataformaComercio.Data.Entities.FK_Municipio_Estado">
+            <End Role="Estado" EntitySet="Estado" />
+            <End Role="Municipio" EntitySet="Municipio" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InventarioCategoria_Inventario" Association="PlataformaComercio.Data.Entities.FK_InventarioCategoria_Inventario">
+            <End Role="Inventory" EntitySet="Inventory" />
+            <End Role="InventoryCategory" EntitySet="InventoryCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InventarioProducto_Inventario" Association="PlataformaComercio.Data.Entities.FK_InventarioProducto_Inventario">
+            <End Role="Inventory" EntitySet="Inventory" />
+            <End Role="InventoryProductCategory" EntitySet="InventoryProductCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InventoryProduct_Inventory" Association="PlataformaComercio.Data.Entities.FK_InventoryProduct_Inventory">
+            <End Role="Inventory" EntitySet="Inventory" />
+            <End Role="InventoryProduct" EntitySet="InventoryProduct" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SearchNotFound_Inventory" Association="PlataformaComercio.Data.Entities.FK_SearchNotFound_Inventory">
+            <End Role="Inventory" EntitySet="Inventory" />
+            <End Role="SearchNotFound" EntitySet="SearchNotFound" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InventarioProducto_InventarioCategoria" Association="PlataformaComercio.Data.Entities.FK_InventarioProducto_InventarioCategoria">
+            <End Role="InventoryCategory" EntitySet="InventoryCategory" />
+            <End Role="InventoryProductCategory" EntitySet="InventoryProductCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InventoryProduct_Product" Association="PlataformaComercio.Data.Entities.FK_InventoryProduct_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="InventoryProduct" EntitySet="InventoryProduct" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InventarioProducto_Producto" Association="PlataformaComercio.Data.Entities.FK_InventarioProducto_Producto">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="InventoryProductCategory" EntitySet="InventoryProductCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Usuario" Association="PlataformaComercio.Data.Entities.FK_Order_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderLine_Order" Association="PlataformaComercio.Data.Entities.FK_OrderLine_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="OrderLine" EntitySet="OrderLine" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderPayment_Order" Association="PlataformaComercio.Data.Entities.FK_OrderPayment_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="OrderPayment" EntitySet="OrderPayment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderShipping_Order" Association="PlataformaComercio.Data.Entities.FK_OrderShipping_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="OrderShipping" EntitySet="OrderShipping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderLineDetail_OrderLine" Association="PlataformaComercio.Data.Entities.FK_OrderLineDetail_OrderLine">
+            <End Role="OrderLine" EntitySet="OrderLine" />
+            <End Role="OrderLineDetail" EntitySet="OrderLineDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderPayment_Payment" Association="PlataformaComercio.Data.Entities.FK_OrderPayment_Payment">
+            <End Role="Payment" EntitySet="Payment" />
+            <End Role="OrderPayment" EntitySet="OrderPayment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderPaymentPayPal_OrderPayment" Association="PlataformaComercio.Data.Entities.FK_OrderPaymentPayPal_OrderPayment">
+            <End Role="OrderPayment" EntitySet="OrderPayment" />
+            <End Role="OrderPaymentPayPal" EntitySet="OrderPaymentPayPal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderPaymentPayPal_Payment" Association="PlataformaComercio.Data.Entities.FK_OrderPaymentPayPal_Payment">
+            <End Role="Payment" EntitySet="Payment" />
+            <End Role="OrderPaymentPayPal" EntitySet="OrderPaymentPayPal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderShipping_OrderShippingAddress" Association="PlataformaComercio.Data.Entities.FK_OrderShipping_OrderShippingAddress">
+            <End Role="OrderShippingAddress" EntitySet="OrderShippingAddress" />
+            <End Role="OrderShipping" EntitySet="OrderShipping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Producto_Marca" Association="PlataformaComercio.Data.Entities.FK_Producto_Marca">
+            <End Role="Trade" EntitySet="Trade" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShippingCost_ShippingCompany" Association="PlataformaComercio.Data.Entities.FK_ShippingCost_ShippingCompany">
+            <End Role="ShippingCompany" EntitySet="ShippingCompany" />
+            <End Role="ShippingCost" EntitySet="ShippingCost" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShippingCost_ShippingType" Association="PlataformaComercio.Data.Entities.FK_ShippingCost_ShippingType">
+            <End Role="ShippingType" EntitySet="ShippingType" />
+            <End Role="ShippingCost" EntitySet="ShippingCost" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioDireccion_Usuario" Association="PlataformaComercio.Data.Entities.FK_UsuarioDireccion_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="UsuarioDireccion" EntitySet="UsuarioDireccion" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Basket">
+          <Key>
+            <PropertyRef Name="BasketId" />
+          </Key>
+          <Property Name="BasketId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" />
+          <Property Name="LastUpdateDate" Type="DateTime" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BasketLine" Relationship="PlataformaComercio.Data.Entities.FK_BasketLine_Basket" FromRole="Basket" ToRole="BasketLine" />
+          <NavigationProperty Name="BasketPayment" Relationship="PlataformaComercio.Data.Entities.FK_BasketPayment_Basket" FromRole="Basket" ToRole="BasketPayment" />
+          <NavigationProperty Name="BasketPaymentPayPal" Relationship="PlataformaComercio.Data.Entities.FK_BasketPaymentPayPal_Basket" FromRole="Basket" ToRole="BasketPaymentPayPal" />
+          <NavigationProperty Name="BasketShipping" Relationship="PlataformaComercio.Data.Entities.FK_BasketShipping_Basket" FromRole="Basket" ToRole="BasketShipping" />
+          <NavigationProperty Name="BasketShippingAddress" Relationship="PlataformaComercio.Data.Entities.FK_BasketShippingAddress_Basket" FromRole="Basket" ToRole="BasketShippingAddress" />
+        </EntityType>
+        <EntityType Name="BasketDetail">
+          <Key>
+            <PropertyRef Name="BasketId" />
+            <PropertyRef Name="LineId" />
+            <PropertyRef Name="BasketDetailId" />
+          </Key>
+          <Property Name="BasketId" Type="Guid" Nullable="false" />
+          <Property Name="LineId" Type="Int32" Nullable="false" />
+          <Property Name="BasketDetailId" Type="Int32" Nullable="false" />
+          <Property Name="InventoryId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ProductId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ProductCategoryId" Type="Int32" />
+          <Property Name="Quantity" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <NavigationProperty Name="BasketLine" Relationship="PlataformaComercio.Data.Entities.FK_BasketDetail_BasketLine" FromRole="BasketDetail" ToRole="BasketLine" />
+        </EntityType>
+        <EntityType Name="BasketLine">
+          <Key>
+            <PropertyRef Name="BasketId" />
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="BasketId" Type="Guid" Nullable="false" />
+          <Property Name="LineId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Basket" Relationship="PlataformaComercio.Data.Entities.FK_BasketLine_Basket" FromRole="BasketLine" ToRole="Basket" />
+          <NavigationProperty Name="BasketDetail" Relationship="PlataformaComercio.Data.Entities.FK_BasketDetail_BasketLine" FromRole="BasketLine" ToRole="BasketDetail" />
+        </EntityType>
+        <EntityType Name="BasketPayment">
+          <Key>
+            <PropertyRef Name="BasketID" />
+            <PropertyRef Name="PaymentID" />
+          </Key>
+          <Property Name="BasketID" Type="Guid" Nullable="false" />
+          <Property Name="PaymentID" Type="Int32" Nullable="false" />
+          <Property Name="TotalPayed" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="Status" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="Basket" Relationship="PlataformaComercio.Data.Entities.FK_BasketPayment_Basket" FromRole="BasketPayment" ToRole="Basket" />
+          <NavigationProperty Name="Payment" Relationship="PlataformaComercio.Data.Entities.FK_BasketPayment_Payment" FromRole="BasketPayment" ToRole="Payment" />
+          <NavigationProperty Name="BasketPaymentPayPal" Relationship="PlataformaComercio.Data.Entities.FK_BasketPaymentPayPal_BasketPayment1" FromRole="BasketPayment" ToRole="BasketPaymentPayPal" />
+        </EntityType>
+        <EntityType Name="BasketPaymentPayPal">
+          <Key>
+            <PropertyRef Name="BasketID" />
+            <PropertyRef Name="PaymentID" />
+          </Key>
+          <Property Name="BasketID" Type="Guid" Nullable="false" />
+          <Property Name="PaymentID" Type="Int32" Nullable="false" />
+          <Property Name="Token" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PayerID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="Basket" Relationship="PlataformaComercio.Data.Entities.FK_BasketPaymentPayPal_Basket" FromRole="BasketPaymentPayPal" ToRole="Basket" />
+          <NavigationProperty Name="BasketPayment" Relationship="PlataformaComercio.Data.Entities.FK_BasketPaymentPayPal_BasketPayment1" FromRole="BasketPaymentPayPal" ToRole="BasketPayment" />
+          <NavigationProperty Name="Payment" Relationship="PlataformaComercio.Data.Entities.FK_BasketPaymentPayPal_Payment" FromRole="BasketPaymentPayPal" ToRole="Payment" />
+        </EntityType>
+        <EntityType Name="BasketShipping">
+          <Key>
+            <PropertyRef Name="BasketID" />
+            <PropertyRef Name="ShippingID" />
+          </Key>
+          <Property Name="BasketID" Type="Guid" Nullable="false" />
+          <Property Name="ShippingID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Basket" Relationship="PlataformaComercio.Data.Entities.FK_BasketShipping_Basket" FromRole="BasketShipping" ToRole="Basket" />
+          <NavigationProperty Name="BasketShippingAddress" Relationship="PlataformaComercio.Data.Entities.FK_BasketShipping_BasketShippingAddress" FromRole="BasketShipping" ToRole="BasketShippingAddress" />
+        </EntityType>
+        <EntityType Name="BasketShippingAddress">
+          <Key>
+            <PropertyRef Name="BasketID" />
+            <PropertyRef Name="ShippingId" />
+          </Key>
+          <Property Name="BasketID" Type="Guid" Nullable="false" />
+          <Property Name="ShippingId" Type="Int32" Nullable="false" />
+          <Property Name="CountryId" Type="Int32" Nullable="false" />
+          <Property Name="ZipCode" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="NeighborghoodID" Type="Int32" Nullable="false" />
+          <Property Name="Street" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="StreetNumber" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="StreetInternalNumber" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="StreetBetween" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="AddressName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TelephoneContact" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Comments" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Basket" Relationship="PlataformaComercio.Data.Entities.FK_BasketShippingAddress_Basket" FromRole="BasketShippingAddress" ToRole="Basket" />
+          <NavigationProperty Name="BasketShipping" Relationship="PlataformaComercio.Data.Entities.FK_BasketShipping_BasketShippingAddress" FromRole="BasketShippingAddress" ToRole="BasketShipping" />
+          <NavigationProperty Name="Pais" Relationship="PlataformaComercio.Data.Entities.FK_BasketShippingAddress_Pais" FromRole="BasketShippingAddress" ToRole="Pais" />
+        </EntityType>
+        <EntityType Name="BasketShippingMethod">
+          <Key>
+            <PropertyRef Name="BasketId" />
+            <PropertyRef Name="ShippingId" />
+          </Key>
+          <Property Name="BasketId" Type="Guid" Nullable="false" />
+          <Property Name="ShippingId" Type="Int32" Nullable="false" />
+          <Property Name="ShippingCostId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Colonia">
+          <Key>
+            <PropertyRef Name="IdPais" />
+            <PropertyRef Name="IdEstado" />
+            <PropertyRef Name="IdMunicipio" />
+            <PropertyRef Name="IdColonia" />
+          </Key>
+          <Property Name="IdPais" Type="Int32" Nullable="false" />
+          <Property Name="IdEstado" Type="Int32" Nullable="false" />
+          <Property Name="IdMunicipio" Type="Int32" Nullable="false" />
+          <Property Name="IdColonia" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CodigoPostal" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="UltimaActualizacion" Type="DateTime" Nullable="false" />
+          <Property Name="Activo" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Municipio" Relationship="PlataformaComercio.Data.Entities.FK_Colonia_Municipio" FromRole="Colonia" ToRole="Municipio" />
+        </EntityType>
+        <EntityType Name="ControlId">
+          <Key>
+            <PropertyRef Name="ControlId1" />
+          </Key>
+          <Property Name="ControlId1" Type="Int32" Nullable="false" />
+          <Property Name="CurrentID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Estado">
+          <Key>
+            <PropertyRef Name="IdPais" />
+            <PropertyRef Name="IdEstado" />
+          </Key>
+          <Property Name="IdPais" Type="Int32" Nullable="false" />
+          <Property Name="IdEstado" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Abreviado" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="RangoDe" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="RangoAl" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Activo" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Pais" Relationship="PlataformaComercio.Data.Entities.FK_Estado_Pais" FromRole="Estado" ToRole="Pais" />
+          <NavigationProperty Name="Municipio" Relationship="PlataformaComercio.Data.Entities.FK_Municipio_Estado" FromRole="Estado" ToRole="Municipio" />
+        </EntityType>
+        <EntityType Name="Inventory">
+          <Key>
+            <PropertyRef Name="InventoryID" />
+          </Key>
+          <Property Name="InventoryID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="InventoryCategory" Relationship="PlataformaComercio.Data.Entities.FK_InventarioCategoria_Inventario" FromRole="Inventory" ToRole="InventoryCategory" />
+          <NavigationProperty Name="InventoryProductCategory" Relationship="PlataformaComercio.Data.Entities.FK_InventarioProducto_Inventario" FromRole="Inventory" ToRole="InventoryProductCategory" />
+          <NavigationProperty Name="InventoryProduct" Relationship="PlataformaComercio.Data.Entities.FK_InventoryProduct_Inventory" FromRole="Inventory" ToRole="InventoryProduct" />
+          <NavigationProperty Name="SearchNotFound" Relationship="PlataformaComercio.Data.Entities.FK_SearchNotFound_Inventory" FromRole="Inventory" ToRole="SearchNotFound" />
+        </EntityType>
+        <EntityType Name="InventoryCategory">
+          <Key>
+            <PropertyRef Name="InventoryID" />
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Name="InventoryID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CategoryID" Type="Int32" Nullable="false" />
+          <Property Name="FatherID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="Show" Type="Boolean" Nullable="false" />
+          <Property Name="Order" Type="Int16" Nullable="false" />
+          <Property Name="ShortDescription" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Inventory" Relationship="PlataformaComercio.Data.Entities.FK_InventarioCategoria_Inventario" FromRole="InventoryCategory" ToRole="Inventory" />
+          <NavigationProperty Name="InventoryProductCategory" Relationship="PlataformaComercio.Data.Entities.FK_InventarioProducto_InventarioCategoria" FromRole="InventoryCategory" ToRole="InventoryProductCategory" />
+        </EntityType>
+        <EntityType Name="InventoryProduct">
+          <Key>
+            <PropertyRef Name="InventoryID" />
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="InventoryID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ProductID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Inventory" Relationship="PlataformaComercio.Data.Entities.FK_InventoryProduct_Inventory" FromRole="InventoryProduct" ToRole="Inventory" />
+          <NavigationProperty Name="Product" Relationship="PlataformaComercio.Data.Entities.FK_InventoryProduct_Product" FromRole="InventoryProduct" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="InventoryProductCategory">
+          <Key>
+            <PropertyRef Name="InventoryID" />
+            <PropertyRef Name="CategoryID" />
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="InventoryID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CategoryID" Type="Int32" Nullable="false" />
+          <Property Name="ProductID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IsPrimary" Type="Boolean" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="Order" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="Inventory" Relationship="PlataformaComercio.Data.Entities.FK_InventarioProducto_Inventario" FromRole="InventoryProductCategory" ToRole="Inventory" />
+          <NavigationProperty Name="InventoryCategory" Relationship="PlataformaComercio.Data.Entities.FK_InventarioProducto_InventarioCategoria" FromRole="InventoryProductCategory" ToRole="InventoryCategory" />
+          <NavigationProperty Name="Product" Relationship="PlataformaComercio.Data.Entities.FK_InventarioProducto_Producto" FromRole="InventoryProductCategory" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Municipio">
+          <Key>
+            <PropertyRef Name="IdPais" />
+            <PropertyRef Name="IdEstado" />
+            <PropertyRef Name="IdMunicipio" />
+          </Key>
+          <Property Name="IdPais" Type="Int32" Nullable="false" />
+          <Property Name="IdEstado" Type="Int32" Nullable="false" />
+          <Property Name="IdMunicipio" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Activo" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Colonia" Relationship="PlataformaComercio.Data.Entities.FK_Colonia_Municipio" FromRole="Municipio" ToRole="Colonia" />
+          <NavigationProperty Name="Estado" Relationship="PlataformaComercio.Data.Entities.FK_Municipio_Estado" FromRole="Municipio" ToRole="Estado" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" />
+          <Property Name="LasUpdateDate" Type="DateTime" Nullable="false" />
+          <Property Name="UserID" Type="Guid" Nullable="false" />
+          <Property Name="Status" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="Usuario" Relationship="PlataformaComercio.Data.Entities.FK_Order_Usuario" FromRole="Order" ToRole="Usuario" />
+          <NavigationProperty Name="OrderLine" Relationship="PlataformaComercio.Data.Entities.FK_OrderLine_Order" FromRole="Order" ToRole="OrderLine" />
+          <NavigationProperty Name="OrderPayment" Relationship="PlataformaComercio.Data.Entities.FK_OrderPayment_Order" FromRole="Order" ToRole="OrderPayment" />
+          <NavigationProperty Name="OrderShipping" Relationship="PlataformaComercio.Data.Entities.FK_OrderShipping_Order" FromRole="Order" ToRole="OrderShipping" />
+        </EntityType>
+        <EntityType Name="OrderLine">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="LineID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Order" Relationship="PlataformaComercio.Data.Entities.FK_OrderLine_Order" FromRole="OrderLine" ToRole="Order" />
+          <NavigationProperty Name="OrderLineDetail" Relationship="PlataformaComercio.Data.Entities.FK_OrderLineDetail_OrderLine" FromRole="OrderLine" ToRole="OrderLineDetail" />
+        </EntityType>
+        <EntityType Name="OrderLineDetail">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="LineId" />
+            <PropertyRef Name="OrderLineDetailID" />
+          </Key>
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="LineId" Type="Int32" Nullable="false" />
+          <Property Name="OrderLineDetailID" Type="Int32" Nullable="false" />
+          <Property Name="InventoryId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ProductId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ProductCategoryId" Type="Int32" />
+          <Property Name="Quantity" Type="Double" Nullable="false" />
+          <NavigationProperty Name="OrderLine" Relationship="PlataformaComercio.Data.Entities.FK_OrderLineDetail_OrderLine" FromRole="OrderLineDetail" ToRole="OrderLine" />
+        </EntityType>
+        <EntityType Name="OrderPayment">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="PaymentID" />
+          </Key>
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="PaymentID" Type="Int32" Nullable="false" />
+          <Property Name="TotalPayed" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="Status" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="Order" Relationship="PlataformaComercio.Data.Entities.FK_OrderPayment_Order" FromRole="OrderPayment" ToRole="Order" />
+          <NavigationProperty Name="Payment" Relationship="PlataformaComercio.Data.Entities.FK_OrderPayment_Payment" FromRole="OrderPayment" ToRole="Payment" />
+          <NavigationProperty Name="OrderPaymentPayPal" Relationship="PlataformaComercio.Data.Entities.FK_OrderPaymentPayPal_OrderPayment" FromRole="OrderPayment" ToRole="OrderPaymentPayPal" />
+        </EntityType>
+        <EntityType Name="OrderPaymentPayPal">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="PaymentID" />
+          </Key>
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="PaymentID" Type="Int32" Nullable="false" />
+          <Property Name="Token" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PayerID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="OrderPayment" Relationship="PlataformaComercio.Data.Entities.FK_OrderPaymentPayPal_OrderPayment" FromRole="OrderPaymentPayPal" ToRole="OrderPayment" />
+          <NavigationProperty Name="Payment" Relationship="PlataformaComercio.Data.Entities.FK_OrderPaymentPayPal_Payment" FromRole="OrderPaymentPayPal" ToRole="Payment" />
+        </EntityType>
+        <EntityType Name="OrderShipping">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="OrderShippingID" />
+          </Key>
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="OrderShippingID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Order" Relationship="PlataformaComercio.Data.Entities.FK_OrderShipping_Order" FromRole="OrderShipping" ToRole="Order" />
+          <NavigationProperty Name="OrderShippingAddress" Relationship="PlataformaComercio.Data.Entities.FK_OrderShipping_OrderShippingAddress" FromRole="OrderShipping" ToRole="OrderShippingAddress" />
+        </EntityType>
+        <EntityType Name="OrderShippingAddress">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="OrderShippingID" />
+          </Key>
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="OrderShippingID" Type="Int32" Nullable="false" />
+          <Property Name="CountryId" Type="Int32" Nullable="false" />
+          <Property Name="ZipCode" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="NeighborghoodID" Type="Int32" Nullable="false" />
+          <Property Name="Street" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="StreetNumber" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="StreetInternalNumber" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="StreetBetween" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="AddressName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TelephoneContact" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Comments" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="OrderShipping" Relationship="PlataformaComercio.Data.Entities.FK_OrderShipping_OrderShippingAddress" FromRole="OrderShippingAddress" ToRole="OrderShipping" />
+        </EntityType>
+        <EntityType Name="Pais">
+          <Key>
+            <PropertyRef Name="IdPais" />
+          </Key>
+          <Property Name="IdPais" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ISO3166_1_3" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="ISO3166_1_2" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="Activo" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BasketShippingAddress" Relationship="PlataformaComercio.Data.Entities.FK_BasketShippingAddress_Pais" FromRole="Pais" ToRole="BasketShippingAddress" />
+          <NavigationProperty Name="Estado" Relationship="PlataformaComercio.Data.Entities.FK_Estado_Pais" FromRole="Pais" ToRole="Estado" />
+        </EntityType>
+        <EntityType Name="Payment">
+          <Key>
+            <PropertyRef Name="PaymentID" />
+          </Key>
+          <Property Name="PaymentID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BasketPayment" Relationship="PlataformaComercio.Data.Entities.FK_BasketPayment_Payment" FromRole="Payment" ToRole="BasketPayment" />
+          <NavigationProperty Name="BasketPaymentPayPal" Relationship="PlataformaComercio.Data.Entities.FK_BasketPaymentPayPal_Payment" FromRole="Payment" ToRole="BasketPaymentPayPal" />
+          <NavigationProperty Name="OrderPayment" Relationship="PlataformaComercio.Data.Entities.FK_OrderPayment_Payment" FromRole="Payment" ToRole="OrderPayment" />
+          <NavigationProperty Name="OrderPaymentPayPal" Relationship="PlataformaComercio.Data.Entities.FK_OrderPaymentPayPal_Payment" FromRole="Payment" ToRole="OrderPaymentPayPal" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ProductID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ShortDescription" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="LargeDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="LargeDescriptionRaw" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Price" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="TradeID" Type="Int32" Nullable="false" />
+          <Property Name="Image128" Type="Boolean" Nullable="false" />
+          <Property Name="Image256" Type="Boolean" Nullable="false" />
+          <Property Name="Weight" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="Measure" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="LastMod" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="InventoryProduct" Relationship="PlataformaComercio.Data.Entities.FK_InventoryProduct_Product" FromRole="Product" ToRole="InventoryProduct" />
+          <NavigationProperty Name="InventoryProductCategory" Relationship="PlataformaComercio.Data.Entities.FK_InventarioProducto_Producto" FromRole="Product" ToRole="InventoryProductCategory" />
+          <NavigationProperty Name="Trade" Relationship="PlataformaComercio.Data.Entities.FK_Producto_Marca" FromRole="Product" ToRole="Trade" />
+        </EntityType>
+        <EntityType Name="SearchNotFound">
+          <Key>
+            <PropertyRef Name="InventoryId" />
+            <PropertyRef Name="SearchString" />
+          </Key>
+          <Property Name="InventoryId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SearchString" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Inventory" Relationship="PlataformaComercio.Data.Entities.FK_SearchNotFound_Inventory" FromRole="SearchNotFound" ToRole="Inventory" />
+        </EntityType>
+        <EntityType Name="ShippingCompany">
+          <Key>
+            <PropertyRef Name="ShippingCompanyId" />
+          </Key>
+          <Property Name="ShippingCompanyId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ShippingCost" Relationship="PlataformaComercio.Data.Entities.FK_ShippingCost_ShippingCompany" FromRole="ShippingCompany" ToRole="ShippingCost" />
+        </EntityType>
+        <EntityType Name="ShippingCost">
+          <Key>
+            <PropertyRef Name="ShippingCostId" />
+          </Key>
+          <Property Name="ShippingCostId" Type="Int32" Nullable="false" />
+          <Property Name="ShippingCompanyId" Type="Int32" Nullable="false" />
+          <Property Name="ShippingTypeId" Type="Int32" Nullable="false" />
+          <Property Name="ShippingCostKey" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Cost" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="MaxWeight" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="AditionalCost" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ShippingCompany" Relationship="PlataformaComercio.Data.Entities.FK_ShippingCost_ShippingCompany" FromRole="ShippingCost" ToRole="ShippingCompany" />
+          <NavigationProperty Name="ShippingType" Relationship="PlataformaComercio.Data.Entities.FK_ShippingCost_ShippingType" FromRole="ShippingCost" ToRole="ShippingType" />
+        </EntityType>
+        <EntityType Name="ShippingType">
+          <Key>
+            <PropertyRef Name="ShippingTypeId" />
+          </Key>
+          <Property Name="ShippingTypeId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="ShippingCost" Relationship="PlataformaComercio.Data.Entities.FK_ShippingCost_ShippingType" FromRole="ShippingType" ToRole="ShippingCost" />
+        </EntityType>
+        <EntityType Name="SiteMap">
+          <Key>
+            <PropertyRef Name="SiteMapId" />
+          </Key>
+          <Property Name="SiteMapId" Type="Int32" Nullable="false" />
+          <Property Name="PageUrl" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="LastMod" Type="DateTime" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Trade">
+          <Key>
+            <PropertyRef Name="TradeID" />
+          </Key>
+          <Property Name="TradeID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ShortDescription" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="HasSubSite" Type="Boolean" Nullable="false" />
+          <Property Name="LastMod" Type="DateTime" />
+          <NavigationProperty Name="Product" Relationship="PlataformaComercio.Data.Entities.FK_Producto_Marca" FromRole="Trade" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EmailAddress" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="BirthDate" Type="DateTime" Nullable="false" />
+          <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="PhoneNumberExt" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="MobileNumber" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Sex" Type="Boolean" Nullable="false" />
+          <Property Name="SendInfo" Type="Boolean" Nullable="false" />
+          <Property Name="ShareInfo" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Order" Relationship="PlataformaComercio.Data.Entities.FK_Order_Usuario" FromRole="Usuario" ToRole="Order" />
+          <NavigationProperty Name="UsuarioDireccion" Relationship="PlataformaComercio.Data.Entities.FK_UsuarioDireccion_Usuario" FromRole="Usuario" ToRole="UsuarioDireccion" />
+        </EntityType>
+        <EntityType Name="UsuarioDireccion">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="AddressId" />
+          </Key>
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="AddressId" Type="Int32" Nullable="false" />
+          <Property Name="CountryId" Type="Int32" Nullable="false" />
+          <Property Name="ZipCode" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="NeighborghoodID" Type="Int32" Nullable="false" />
+          <Property Name="Street" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="StreetNumber" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="StreetInternalNumber" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="StreetBetween" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="AddressName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TelephoneContact" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Comments" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Usuario" Relationship="PlataformaComercio.Data.Entities.FK_UsuarioDireccion_Usuario" FromRole="UsuarioDireccion" ToRole="Usuario" />
+        </EntityType>
+        <Association Name="FK_BasketLine_Basket">
+          <End Role="Basket" Type="PlataformaComercio.Data.Entities.Basket" Multiplicity="1" />
+          <End Role="BasketLine" Type="PlataformaComercio.Data.Entities.BasketLine" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Basket">
+              <PropertyRef Name="BasketId" />
+            </Principal>
+            <Dependent Role="BasketLine">
+              <PropertyRef Name="BasketId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketPayment_Basket">
+          <End Role="Basket" Type="PlataformaComercio.Data.Entities.Basket" Multiplicity="1" />
+          <End Role="BasketPayment" Type="PlataformaComercio.Data.Entities.BasketPayment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Basket">
+              <PropertyRef Name="BasketId" />
+            </Principal>
+            <Dependent Role="BasketPayment">
+              <PropertyRef Name="BasketID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketPaymentPayPal_Basket">
+          <End Role="Basket" Type="PlataformaComercio.Data.Entities.Basket" Multiplicity="1" />
+          <End Role="BasketPaymentPayPal" Type="PlataformaComercio.Data.Entities.BasketPaymentPayPal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Basket">
+              <PropertyRef Name="BasketId" />
+            </Principal>
+            <Dependent Role="BasketPaymentPayPal">
+              <PropertyRef Name="BasketID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketShipping_Basket">
+          <End Role="Basket" Type="PlataformaComercio.Data.Entities.Basket" Multiplicity="1" />
+          <End Role="BasketShipping" Type="PlataformaComercio.Data.Entities.BasketShipping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Basket">
+              <PropertyRef Name="BasketId" />
+            </Principal>
+            <Dependent Role="BasketShipping">
+              <PropertyRef Name="BasketID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketShippingAddress_Basket">
+          <End Role="Basket" Type="PlataformaComercio.Data.Entities.Basket" Multiplicity="1" />
+          <End Role="BasketShippingAddress" Type="PlataformaComercio.Data.Entities.BasketShippingAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Basket">
+              <PropertyRef Name="BasketId" />
+            </Principal>
+            <Dependent Role="BasketShippingAddress">
+              <PropertyRef Name="BasketID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketDetail_BasketLine">
+          <End Role="BasketLine" Type="PlataformaComercio.Data.Entities.BasketLine" Multiplicity="1" />
+          <End Role="BasketDetail" Type="PlataformaComercio.Data.Entities.BasketDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BasketLine">
+              <PropertyRef Name="BasketId" />
+              <PropertyRef Name="LineId" />
+            </Principal>
+            <Dependent Role="BasketDetail">
+              <PropertyRef Name="BasketId" />
+              <PropertyRef Name="LineId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketPayment_Payment">
+          <End Role="Payment" Type="PlataformaComercio.Data.Entities.Payment" Multiplicity="1" />
+          <End Role="BasketPayment" Type="PlataformaComercio.Data.Entities.BasketPayment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Payment">
+              <PropertyRef Name="PaymentID" />
+            </Principal>
+            <Dependent Role="BasketPayment">
+              <PropertyRef Name="PaymentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketPaymentPayPal_BasketPayment1">
+          <End Role="BasketPayment" Type="PlataformaComercio.Data.Entities.BasketPayment" Multiplicity="1" />
+          <End Role="BasketPaymentPayPal" Type="PlataformaComercio.Data.Entities.BasketPaymentPayPal" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BasketPayment">
+              <PropertyRef Name="BasketID" />
+              <PropertyRef Name="PaymentID" />
+            </Principal>
+            <Dependent Role="BasketPaymentPayPal">
+              <PropertyRef Name="BasketID" />
+              <PropertyRef Name="PaymentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketPaymentPayPal_Payment">
+          <End Role="Payment" Type="PlataformaComercio.Data.Entities.Payment" Multiplicity="1" />
+          <End Role="BasketPaymentPayPal" Type="PlataformaComercio.Data.Entities.BasketPaymentPayPal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Payment">
+              <PropertyRef Name="PaymentID" />
+            </Principal>
+            <Dependent Role="BasketPaymentPayPal">
+              <PropertyRef Name="PaymentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketShipping_BasketShippingAddress">
+          <End Role="BasketShippingAddress" Type="PlataformaComercio.Data.Entities.BasketShippingAddress" Multiplicity="1" />
+          <End Role="BasketShipping" Type="PlataformaComercio.Data.Entities.BasketShipping" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BasketShippingAddress">
+              <PropertyRef Name="BasketID" />
+              <PropertyRef Name="ShippingId" />
+            </Principal>
+            <Dependent Role="BasketShipping">
+              <PropertyRef Name="BasketID" />
+              <PropertyRef Name="ShippingID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasketShippingAddress_Pais">
+          <End Role="Pais" Type="PlataformaComercio.Data.Entities.Pais" Multiplicity="1" />
+          <End Role="BasketShippingAddress" Type="PlataformaComercio.Data.Entities.BasketShippingAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pais">
+              <PropertyRef Name="IdPais" />
+            </Principal>
+            <Dependent Role="BasketShippingAddress">
+              <PropertyRef Name="CountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Colonia_Municipio">
+          <End Role="Municipio" Type="PlataformaComercio.Data.Entities.Municipio" Multiplicity="1" />
+          <End Role="Colonia" Type="PlataformaComercio.Data.Entities.Colonia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Municipio">
+              <PropertyRef Name="IdPais" />
+              <PropertyRef Name="IdEstado" />
+              <PropertyRef Name="IdMunicipio" />
+            </Principal>
+            <Dependent Role="Colonia">
+              <PropertyRef Name="IdPais" />
+              <PropertyRef Name="IdEstado" />
+              <PropertyRef Name="IdMunicipio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Estado_Pais">
+          <End Role="Pais" Type="PlataformaComercio.Data.Entities.Pais" Multiplicity="1" />
+          <End Role="Estado" Type="PlataformaComercio.Data.Entities.Estado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pais">
+              <PropertyRef Name="IdPais" />
+            </Principal>
+            <Dependent Role="Estado">
+              <PropertyRef Name="IdPais" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Municipio_Estado">
+          <End Role="Estado" Type="PlataformaComercio.Data.Entities.Estado" Multiplicity="1" />
+          <End Role="Municipio" Type="PlataformaComercio.Data.Entities.Municipio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estado">
+              <PropertyRef Name="IdPais" />
+              <PropertyRef Name="IdEstado" />
+            </Principal>
+            <Dependent Role="Municipio">
+              <PropertyRef Name="IdPais" />
+              <PropertyRef Name="IdEstado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InventarioCategoria_Inventario">
+          <End Role="Inventory" Type="PlataformaComercio.Data.Entities.Inventory" Multiplicity="1" />
+          <End Role="InventoryCategory" Type="PlataformaComercio.Data.Entities.InventoryCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Inventory">
+              <PropertyRef Name="InventoryID" />
+            </Principal>
+            <Dependent Role="InventoryCategory">
+              <PropertyRef Name="InventoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InventarioProducto_Inventario">
+          <End Role="Inventory" Type="PlataformaComercio.Data.Entities.Inventory" Multiplicity="1" />
+          <End Role="InventoryProductCategory" Type="PlataformaComercio.Data.Entities.InventoryProductCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Inventory">
+              <PropertyRef Name="InventoryID" />
+            </Principal>
+            <Dependent Role="InventoryProductCategory">
+              <PropertyRef Name="InventoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InventoryProduct_Inventory">
+          <End Role="Inventory" Type="PlataformaComercio.Data.Entities.Inventory" Multiplicity="1" />
+          <End Role="InventoryProduct" Type="PlataformaComercio.Data.Entities.InventoryProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Inventory">
+              <PropertyRef Name="InventoryID" />
+            </Principal>
+            <Dependent Role="InventoryProduct">
+              <PropertyRef Name="InventoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SearchNotFound_Inventory">
+          <End Role="Inventory" Type="PlataformaComercio.Data.Entities.Inventory" Multiplicity="1" />
+          <End Role="SearchNotFound" Type="PlataformaComercio.Data.Entities.SearchNotFound" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Inventory">
+              <PropertyRef Name="InventoryID" />
+            </Principal>
+            <Dependent Role="SearchNotFound">
+              <PropertyRef Name="InventoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InventarioProducto_InventarioCategoria">
+          <End Role="InventoryCategory" Type="PlataformaComercio.Data.Entities.InventoryCategory" Multiplicity="1" />
+          <End Role="InventoryProductCategory" Type="PlataformaComercio.Data.Entities.InventoryProductCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="InventoryCategory">
+              <PropertyRef Name="InventoryID" />
+              <PropertyRef Name="CategoryID" />
+            </Principal>
+            <Dependent Role="InventoryProductCategory">
+              <PropertyRef Name="InventoryID" />
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InventoryProduct_Product">
+          <End Role="Product" Type="PlataformaComercio.Data.Entities.Product" Multiplicity="1" />
+          <End Role="InventoryProduct" Type="PlataformaComercio.Data.Entities.InventoryProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductID" />
+            </Principal>
+            <Dependent Role="InventoryProduct">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InventarioProducto_Producto">
+          <End Role="Product" Type="PlataformaComercio.Data.Entities.Product" Multiplicity="1" />
+          <End Role="InventoryProductCategory" Type="PlataformaComercio.Data.Entities.InventoryProductCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductID" />
+            </Principal>
+            <Dependent Role="InventoryProductCategory">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Usuario">
+          <End Role="Usuario" Type="PlataformaComercio.Data.Entities.Usuario" Multiplicity="1" />
+          <End Role="Order" Type="PlataformaComercio.Data.Entities.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderLine_Order">
+          <End Role="Order" Type="PlataformaComercio.Data.Entities.Order" Multiplicity="1" />
+          <End Role="OrderLine" Type="PlataformaComercio.Data.Entities.OrderLine" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderID" />
+            </Principal>
+            <Dependent Role="OrderLine">
+              <PropertyRef Name="OrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderPayment_Order">
+          <End Role="Order" Type="PlataformaComercio.Data.Entities.Order" Multiplicity="1" />
+          <End Role="OrderPayment" Type="PlataformaComercio.Data.Entities.OrderPayment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderID" />
+            </Principal>
+            <Dependent Role="OrderPayment">
+              <PropertyRef Name="OrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderShipping_Order">
+          <End Role="Order" Type="PlataformaComercio.Data.Entities.Order" Multiplicity="1" />
+          <End Role="OrderShipping" Type="PlataformaComercio.Data.Entities.OrderShipping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderID" />
+            </Principal>
+            <Dependent Role="OrderShipping">
+              <PropertyRef Name="OrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderLineDetail_OrderLine">
+          <End Role="OrderLine" Type="PlataformaComercio.Data.Entities.OrderLine" Multiplicity="1" />
+          <End Role="OrderLineDetail" Type="PlataformaComercio.Data.Entities.OrderLineDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OrderLine">
+              <PropertyRef Name="OrderID" />
+              <PropertyRef Name="LineID" />
+            </Principal>
+            <Dependent Role="OrderLineDetail">
+              <PropertyRef Name="OrderID" />
+              <PropertyRef Name="LineId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderPayment_Payment">
+          <End Role="Payment" Type="PlataformaComercio.Data.Entities.Payment" Multiplicity="1" />
+          <End Role="OrderPayment" Type="PlataformaComercio.Data.Entities.OrderPayment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Payment">
+              <PropertyRef Name="PaymentID" />
+            </Principal>
+            <Dependent Role="OrderPayment">
+              <PropertyRef Name="PaymentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderPaymentPayPal_OrderPayment">
+          <End Role="OrderPayment" Type="PlataformaComercio.Data.Entities.OrderPayment" Multiplicity="1" />
+          <End Role="OrderPaymentPayPal" Type="PlataformaComercio.Data.Entities.OrderPaymentPayPal" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="OrderPayment">
+              <PropertyRef Name="OrderID" />
+              <PropertyRef Name="PaymentID" />
+            </Principal>
+            <Dependent Role="OrderPaymentPayPal">
+              <PropertyRef Name="OrderID" />
+              <PropertyRef Name="PaymentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderPaymentPayPal_Payment">
+          <End Role="Payment" Type="PlataformaComercio.Data.Entities.Payment" Multiplicity="1" />
+          <End Role="OrderPaymentPayPal" Type="PlataformaComercio.Data.Entities.OrderPaymentPayPal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Payment">
+              <PropertyRef Name="PaymentID" />
+            </Principal>
+            <Dependent Role="OrderPaymentPayPal">
+              <PropertyRef Name="PaymentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderShipping_OrderShippingAddress">
+          <End Role="OrderShippingAddress" Type="PlataformaComercio.Data.Entities.OrderShippingAddress" Multiplicity="1" />
+          <End Role="OrderShipping" Type="PlataformaComercio.Data.Entities.OrderShipping" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="OrderShippingAddress">
+              <PropertyRef Name="OrderID" />
+              <PropertyRef Name="OrderShippingID" />
+            </Principal>
+            <Dependent Role="OrderShipping">
+              <PropertyRef Name="OrderID" />
+              <PropertyRef Name="OrderShippingID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Producto_Marca">
+          <End Role="Trade" Type="PlataformaComercio.Data.Entities.Trade" Multiplicity="1" />
+          <End Role="Product" Type="PlataformaComercio.Data.Entities.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Trade">
+              <PropertyRef Name="TradeID" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="TradeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShippingCost_ShippingCompany">
+          <End Role="ShippingCompany" Type="PlataformaComercio.Data.Entities.ShippingCompany" Multiplicity="1" />
+          <End Role="ShippingCost" Type="PlataformaComercio.Data.Entities.ShippingCost" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShippingCompany">
+              <PropertyRef Name="ShippingCompanyId" />
+            </Principal>
+            <Dependent Role="ShippingCost">
+              <PropertyRef Name="ShippingCompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShippingCost_ShippingType">
+          <End Role="ShippingType" Type="PlataformaComercio.Data.Entities.ShippingType" Multiplicity="1" />
+          <End Role="ShippingCost" Type="PlataformaComercio.Data.Entities.ShippingCost" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShippingType">
+              <PropertyRef Name="ShippingTypeId" />
+            </Principal>
+            <Dependent Role="ShippingCost">
+              <PropertyRef Name="ShippingTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioDireccion_Usuario">
+          <End Role="Usuario" Type="PlataformaComercio.Data.Entities.Usuario" Multiplicity="1" />
+          <End Role="UsuarioDireccion" Type="PlataformaComercio.Data.Entities.UsuarioDireccion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="UsuarioDireccion">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PlataformaComercioDataEntitiesStoreContainer" CdmEntityContainer="PlataformaComercioEntities">
+          <EntitySetMapping Name="Basket"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.Basket"><MappingFragment StoreEntitySet="Basket">
+            <ScalarProperty Name="BasketId" ColumnName="BasketId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+            <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="BasketDetail"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.BasketDetail"><MappingFragment StoreEntitySet="BasketDetail">
+            <ScalarProperty Name="BasketId" ColumnName="BasketId" />
+            <ScalarProperty Name="LineId" ColumnName="LineId" />
+            <ScalarProperty Name="BasketDetailId" ColumnName="BasketDetailId" />
+            <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+            <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+            <ScalarProperty Name="ProductCategoryId" ColumnName="ProductCategoryId" />
+            <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="BasketLine"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.BasketLine"><MappingFragment StoreEntitySet="BasketLine">
+            <ScalarProperty Name="BasketId" ColumnName="BasketId" />
+            <ScalarProperty Name="LineId" ColumnName="LineId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="BasketPayment"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.BasketPayment"><MappingFragment StoreEntitySet="BasketPayment">
+            <ScalarProperty Name="BasketID" ColumnName="BasketID" />
+            <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+            <ScalarProperty Name="TotalPayed" ColumnName="TotalPayed" />
+            <ScalarProperty Name="Status" ColumnName="Status" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="BasketPaymentPayPal"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.BasketPaymentPayPal"><MappingFragment StoreEntitySet="BasketPaymentPayPal">
+            <ScalarProperty Name="BasketID" ColumnName="BasketID" />
+            <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+            <ScalarProperty Name="Token" ColumnName="Token" />
+            <ScalarProperty Name="PayerID" ColumnName="PayerID" />
+            <ScalarProperty Name="Status" ColumnName="Status" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="BasketShipping"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.BasketShipping"><MappingFragment StoreEntitySet="BasketShipping">
+            <ScalarProperty Name="BasketID" ColumnName="BasketID" />
+            <ScalarProperty Name="ShippingID" ColumnName="ShippingID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="BasketShippingAddress"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.BasketShippingAddress"><MappingFragment StoreEntitySet="BasketShippingAddress">
+            <ScalarProperty Name="BasketID" ColumnName="BasketID" />
+            <ScalarProperty Name="ShippingId" ColumnName="ShippingId" />
+            <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+            <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+            <ScalarProperty Name="NeighborghoodID" ColumnName="NeighborghoodID" />
+            <ScalarProperty Name="Street" ColumnName="Street" />
+            <ScalarProperty Name="StreetNumber" ColumnName="StreetNumber" />
+            <ScalarProperty Name="StreetInternalNumber" ColumnName="StreetInternalNumber" />
+            <ScalarProperty Name="StreetBetween" ColumnName="StreetBetween" />
+            <ScalarProperty Name="AddressName" ColumnName="AddressName" />
+            <ScalarProperty Name="TelephoneContact" ColumnName="TelephoneContact" />
+            <ScalarProperty Name="Comments" ColumnName="Comments" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="BasketShippingMethod"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.BasketShippingMethod"><MappingFragment StoreEntitySet="BasketShippingMethod">
+            <ScalarProperty Name="BasketId" ColumnName="BasketId" />
+            <ScalarProperty Name="ShippingId" ColumnName="ShippingId" />
+            <ScalarProperty Name="ShippingCostId" ColumnName="ShippingCostId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Colonia"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.Colonia"><MappingFragment StoreEntitySet="Colonia">
+            <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+            <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+            <ScalarProperty Name="IdMunicipio" ColumnName="IdMunicipio" />
+            <ScalarProperty Name="IdColonia" ColumnName="IdColonia" />
+            <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+            <ScalarProperty Name="CodigoPostal" ColumnName="CodigoPostal" />
+            <ScalarProperty Name="UltimaActualizacion" ColumnName="UltimaActualizacion" />
+            <ScalarProperty Name="Activo" ColumnName="Activo" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ControlId"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.ControlId"><MappingFragment StoreEntitySet="ControlId">
+            <ScalarProperty Name="ControlId1" ColumnName="ControlId" />
+            <ScalarProperty Name="CurrentID" ColumnName="CurrentID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Estado"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.Estado"><MappingFragment StoreEntitySet="Estado">
+            <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+            <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+            <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+            <ScalarProperty Name="Abreviado" ColumnName="Abreviado" />
+            <ScalarProperty Name="RangoDe" ColumnName="RangoDe" />
+            <ScalarProperty Name="RangoAl" ColumnName="RangoAl" />
+            <ScalarProperty Name="Activo" ColumnName="Activo" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Inventory"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.Inventory"><MappingFragment StoreEntitySet="Inventory">
+            <ScalarProperty Name="InventoryID" ColumnName="InventoryID" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="InventoryCategory"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.InventoryCategory"><MappingFragment StoreEntitySet="InventoryCategory">
+            <ScalarProperty Name="InventoryID" ColumnName="InventoryID" />
+            <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+            <ScalarProperty Name="FatherID" ColumnName="FatherID" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+            <ScalarProperty Name="Show" ColumnName="Show" />
+            <ScalarProperty Name="Order" ColumnName="Order" />
+            <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="InventoryProduct"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.InventoryProduct"><MappingFragment StoreEntitySet="InventoryProduct">
+            <ScalarProperty Name="InventoryID" ColumnName="InventoryID" />
+            <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+            <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+            <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="InventoryProductCategory"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.InventoryProductCategory"><MappingFragment StoreEntitySet="InventoryProductCategory">
+            <ScalarProperty Name="InventoryID" ColumnName="InventoryID" />
+            <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+            <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+            <ScalarProperty Name="IsPrimary" ColumnName="IsPrimary" />
+            <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+            <ScalarProperty Name="Order" ColumnName="Order" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Municipio"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.Municipio"><MappingFragment StoreEntitySet="Municipio">
+            <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+            <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+            <ScalarProperty Name="IdMunicipio" ColumnName="IdMunicipio" />
+            <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+            <ScalarProperty Name="Activo" ColumnName="Activo" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Order"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.Order"><MappingFragment StoreEntitySet="Order">
+            <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+            <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+            <ScalarProperty Name="LasUpdateDate" ColumnName="LasUpdateDate" />
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="Status" ColumnName="Status" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="OrderLine"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.OrderLine"><MappingFragment StoreEntitySet="OrderLine">
+            <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+            <ScalarProperty Name="LineID" ColumnName="LineID" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="OrderLineDetail"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.OrderLineDetail"><MappingFragment StoreEntitySet="OrderLineDetail">
+            <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+            <ScalarProperty Name="LineId" ColumnName="LineId" />
+            <ScalarProperty Name="OrderLineDetailID" ColumnName="OrderLineDetailID" />
+            <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+            <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+            <ScalarProperty Name="ProductCategoryId" ColumnName="ProductCategoryId" />
+            <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="OrderPayment"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.OrderPayment"><MappingFragment StoreEntitySet="OrderPayment">
+            <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+            <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+            <ScalarProperty Name="TotalPayed" ColumnName="TotalPayed" />
+            <ScalarProperty Name="Status" ColumnName="Status" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="OrderPaymentPayPal"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.OrderPaymentPayPal"><MappingFragment StoreEntitySet="OrderPaymentPayPal">
+            <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+            <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+            <ScalarProperty Name="Token" ColumnName="Token" />
+            <ScalarProperty Name="PayerID" ColumnName="PayerID" />
+            <ScalarProperty Name="Status" ColumnName="Status" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="OrderShipping"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.OrderShipping"><MappingFragment StoreEntitySet="OrderShipping">
+            <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+            <ScalarProperty Name="OrderShippingID" ColumnName="OrderShippingID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="OrderShippingAddress"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.OrderShippingAddress"><MappingFragment StoreEntitySet="OrderShippingAddress">
+            <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+            <ScalarProperty Name="OrderShippingID" ColumnName="OrderShippingID" />
+            <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+            <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+            <ScalarProperty Name="NeighborghoodID" ColumnName="NeighborghoodID" />
+            <ScalarProperty Name="Street" ColumnName="Street" />
+            <ScalarProperty Name="StreetNumber" ColumnName="StreetNumber" />
+            <ScalarProperty Name="StreetInternalNumber" ColumnName="StreetInternalNumber" />
+            <ScalarProperty Name="StreetBetween" ColumnName="StreetBetween" />
+            <ScalarProperty Name="AddressName" ColumnName="AddressName" />
+            <ScalarProperty Name="TelephoneContact" ColumnName="TelephoneContact" />
+            <ScalarProperty Name="Comments" ColumnName="Comments" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Pais"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.Pais"><MappingFragment StoreEntitySet="Pais">
+            <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+            <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+            <ScalarProperty Name="ISO3166_1_3" ColumnName="ISO3166-1-3" />
+            <ScalarProperty Name="ISO3166_1_2" ColumnName="ISO3166-1-2" />
+            <ScalarProperty Name="Activo" ColumnName="Activo" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Payment"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.Payment"><MappingFragment StoreEntitySet="Payment">
+            <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Product"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.Product"><MappingFragment StoreEntitySet="Product">
+            <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+            <ScalarProperty Name="LargeDescription" ColumnName="LargeDescription" />
+            <ScalarProperty Name="LargeDescriptionRaw" ColumnName="LargeDescriptionRaw" />
+            <ScalarProperty Name="Price" ColumnName="Price" />
+            <ScalarProperty Name="TradeID" ColumnName="TradeID" />
+            <ScalarProperty Name="Image128" ColumnName="Image128" />
+            <ScalarProperty Name="Image256" ColumnName="Image256" />
+            <ScalarProperty Name="Weight" ColumnName="Weight" />
+            <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+            <ScalarProperty Name="Measure" ColumnName="Measure" />
+            <ScalarProperty Name="LastMod" ColumnName="LastMod" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SearchNotFound"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.SearchNotFound"><MappingFragment StoreEntitySet="SearchNotFound">
+            <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+            <ScalarProperty Name="SearchString" ColumnName="SearchString" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ShippingCompany"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.ShippingCompany"><MappingFragment StoreEntitySet="ShippingCompany">
+            <ScalarProperty Name="ShippingCompanyId" ColumnName="ShippingCompanyId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ShippingCost"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.ShippingCost"><MappingFragment StoreEntitySet="ShippingCost">
+            <ScalarProperty Name="ShippingCostId" ColumnName="ShippingCostId" />
+            <ScalarProperty Name="ShippingCompanyId" ColumnName="ShippingCompanyId" />
+            <ScalarProperty Name="ShippingTypeId" ColumnName="ShippingTypeId" />
+            <ScalarProperty Name="ShippingCostKey" ColumnName="ShippingCostKey" />
+            <ScalarProperty Name="Cost" ColumnName="Cost" />
+            <ScalarProperty Name="MaxWeight" ColumnName="MaxWeight" />
+            <ScalarProperty Name="AditionalCost" ColumnName="AditionalCost" />
+            <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ShippingType"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.ShippingType"><MappingFragment StoreEntitySet="ShippingType">
+            <ScalarProperty Name="ShippingTypeId" ColumnName="ShippingTypeId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SiteMap"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.SiteMap"><MappingFragment StoreEntitySet="SiteMap">
+            <ScalarProperty Name="SiteMapId" ColumnName="SiteMapId" />
+            <ScalarProperty Name="PageUrl" ColumnName="PageUrl" />
+            <ScalarProperty Name="LastMod" ColumnName="LastMod" />
+            <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.sysdiagrams"><MappingFragment StoreEntitySet="sysdiagrams">
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+            <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+            <ScalarProperty Name="version" ColumnName="version" />
+            <ScalarProperty Name="definition" ColumnName="definition" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Trade"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.Trade"><MappingFragment StoreEntitySet="Trade">
+            <ScalarProperty Name="TradeID" ColumnName="TradeID" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+            <ScalarProperty Name="HasSubSite" ColumnName="HasSubSite" />
+            <ScalarProperty Name="LastMod" ColumnName="LastMod" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Usuario"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.Usuario"><MappingFragment StoreEntitySet="Usuario">
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="UserName" ColumnName="UserName" />
+            <ScalarProperty Name="Password" ColumnName="Password" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="LastName" ColumnName="LastName" />
+            <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+            <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+            <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+            <ScalarProperty Name="PhoneNumberExt" ColumnName="PhoneNumberExt" />
+            <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+            <ScalarProperty Name="Sex" ColumnName="Sex" />
+            <ScalarProperty Name="SendInfo" ColumnName="SendInfo" />
+            <ScalarProperty Name="ShareInfo" ColumnName="ShareInfo" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UsuarioDireccion"><EntityTypeMapping TypeName="PlataformaComercio.Data.Entities.UsuarioDireccion"><MappingFragment StoreEntitySet="UsuarioDireccion">
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+            <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+            <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+            <ScalarProperty Name="NeighborghoodID" ColumnName="NeighborghoodID" />
+            <ScalarProperty Name="Street" ColumnName="Street" />
+            <ScalarProperty Name="StreetNumber" ColumnName="StreetNumber" />
+            <ScalarProperty Name="StreetInternalNumber" ColumnName="StreetInternalNumber" />
+            <ScalarProperty Name="StreetBetween" ColumnName="StreetBetween" />
+            <ScalarProperty Name="AddressName" ColumnName="AddressName" />
+            <ScalarProperty Name="TelephoneContact" ColumnName="TelephoneContact" />
+            <ScalarProperty Name="Comments" ColumnName="Comments" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer>
+    <edmx:Connection>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <edmx:DesignerProperty Name="EnablePluralization" Value="False" />
+        <edmx:DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <edmx:Diagram Name="PlataformaComercioModel">
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.Basket" Width="1.5" PointX="0.75" PointY="7.375" Height="3.1340950520833326" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.BasketDetail" Width="1.5" PointX="5.25" PointY="7.625" Height="2.5571907552083317" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.BasketLine" Width="1.5" PointX="3" PointY="8" Height="1.9802864583333317" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.BasketPayment" Width="1.5" PointX="3" PointY="4.75" Height="2.3648893229166656" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.BasketPaymentPayPal" Width="1.5" PointX="8.25" PointY="6.375" Height="2.5571907552083317" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.BasketShipping" Width="1.5" PointX="3" PointY="11" Height="1.7879850260416674" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.BasketShippingAddress" Width="1.5" PointX="6" PointY="3" Height="3.9033007812499996" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.BasketShippingMethod" Width="1.5" PointX="10.75" PointY="5.625" Height="1.5956835937499996" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.Colonia" Width="1.5" PointX="10.5" PointY="26.375" Height="2.749492187499996" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.ControlId" Width="1.5" PointX="5.75" PointY="11.625" Height="1.4033821614583317" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.Estado" Width="1.5" PointX="6" PointY="26.375" Height="2.7494921875000031" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.Inventory" Width="1.5" PointX="14.75" PointY="20.25" Height="2.3648893229166745" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.InventoryCategory" Width="1.5" PointX="17" PointY="18.625" Height="3.1340950520833388" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.InventoryProduct" Width="1.5" PointX="20" PointY="23.25" Height="2.172587890624996" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.InventoryProductCategory" Width="1.5" PointX="19.25" PointY="19.25" Height="2.7494921875000031" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.Municipio" Width="1.5" PointX="8.25" PointY="26.625" Height="2.3648893229166674" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.Order" Width="1.5" PointX="10" PointY="13.125" Height="2.7494921875000031" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.OrderLine" Width="1.5" PointX="12.25" PointY="13.5" Height="1.9802864583333388" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.OrderLineDetail" Width="1.5" PointX="14.5" PointY="13.25" Height="2.5571907552083388" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.OrderPayment" Width="1.5" PointX="12.25" PointY="8.625" Height="2.3648893229166674" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.OrderPaymentPayPal" Width="1.5" PointX="14.5" PointY="6.125" Height="2.3648893229166674" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.OrderShipping" Width="1.5" PointX="12.25" PointY="16.625" Height="1.7879850260416674" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.OrderShippingAddress" Width="1.5" PointX="10" PointY="21.75" Height="3.5186979166666674" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.Pais" Width="1.5" PointX="3.75" PointY="0.75" Height="2.3648893229166674" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.Payment" Width="1.5" PointX="0.75" PointY="3.75" Height="2.3648893229166674" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.Product" Width="1.5" PointX="17" PointY="28.5" Height="4.0956022135416639" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.SearchNotFound" Width="1.5" PointX="17" PointY="25.5" Height="1.595683593749996" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.ShippingCompany" Width="1.5" PointX="8.75" PointY="2.5" Height="1.7879850260416674" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.ShippingCost" Width="1.5" PointX="11" PointY="1.875" Height="2.9417936197916674" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.ShippingType" Width="1.5" PointX="8.75" PointY="10.625" Height="1.595683593749996" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.SiteMap" Width="1.5" PointX="0.75" PointY="13.625" Height="1.7879850260416674" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.sysdiagrams" Width="1.5" PointX="2.75" PointY="13.625" Height="1.9802864583333246" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.Trade" Width="1.5" PointX="14.75" PointY="29.375" Height="2.5571907552083246" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.Usuario" Width="1.5" PointX="7.75" PointY="14.625" Height="3.9033007812500102" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="PlataformaComercio.Data.Entities.UsuarioDireccion" Width="1.5" PointX="10" PointY="16.625" Height="3.5186979166666674" IsExpanded="true" />
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_BasketLine_Basket" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="2.25" PointY="8.9901432291666659" />
+          <edmx:ConnectorPoint PointX="3" PointY="8.9901432291666659" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_BasketPayment_Basket" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="2.25" PointY="7.375" />
+          <edmx:ConnectorPoint PointX="2.625" PointY="7" />
+          <edmx:ConnectorPoint PointX="2.625" PointY="7.4898893229166656" />
+          <edmx:ConnectorPoint PointX="3" PointY="7.1148893229166656" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_BasketPaymentPayPal_Basket" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="2.25" PointY="7.5000025" />
+          <edmx:ConnectorPoint PointX="4.791666666666667" PointY="7.500002499999999" />
+          <edmx:ConnectorPoint PointX="4.958333333333333" PointY="7.5000025" />
+          <edmx:ConnectorPoint PointX="7.072916666666667" PointY="7.500002499999999" />
+          <edmx:ConnectorPoint PointX="7.239583333333333" PointY="7.5000025" />
+          <edmx:ConnectorPoint PointX="7.322916666666667" PointY="7.500002499999999" />
+          <edmx:ConnectorPoint PointX="7.489583333333333" PointY="7.5000025" />
+          <edmx:ConnectorPoint PointX="7.791666666666667" PointY="7.500002499999999" />
+          <edmx:ConnectorPoint PointX="8.0833333333333339" PointY="7.5000025" />
+          <edmx:ConnectorPoint PointX="8.25" PointY="7.5000025" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_BasketShipping_Basket" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="1.5" PointY="10.509095052083332" />
+          <edmx:ConnectorPoint PointX="1.5" PointY="11.893992513020834" />
+          <edmx:ConnectorPoint PointX="3" PointY="11.893992513020834" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_BasketShippingAddress_Basket" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="2.25" PointY="10.376892903645832" />
+          <edmx:ConnectorPoint PointX="4.791666666666667" PointY="10.376892903645832" />
+          <edmx:ConnectorPoint PointX="4.958333333333333" PointY="10.376892903645832" />
+          <edmx:ConnectorPoint PointX="7.15625" PointY="10.376892903645832" />
+          <edmx:ConnectorPoint PointX="7.15625" PointY="6.90330078125" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_BasketDetail_BasketLine" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="4.5" PointY="8.9901432291666659" />
+          <edmx:ConnectorPoint PointX="4.791666666666667" PointY="8.9901432291666659" />
+          <edmx:ConnectorPoint PointX="4.958333333333333" PointY="8.9901432291666659" />
+          <edmx:ConnectorPoint PointX="5.25" PointY="8.9901432291666659" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_BasketPayment_Payment" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="2.25" PointY="5.4324446614583337" />
+          <edmx:ConnectorPoint PointX="2.6666666666666665" PointY="5.4324446614583328" />
+          <edmx:ConnectorPoint PointX="2.8333333333333335" PointY="5.4324446614583337" />
+          <edmx:ConnectorPoint PointX="3" PointY="5.4324446614583337" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_BasketPaymentPayPal_BasketPayment1" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="4.5" PointY="7.0403450520833326" />
+          <edmx:ConnectorPoint PointX="4.791666666666667" PointY="7.0403450520833317" />
+          <edmx:ConnectorPoint PointX="4.958333333333333" PointY="7.0403450520833326" />
+          <edmx:ConnectorPoint PointX="7.072916666666667" PointY="7.0403450520833317" />
+          <edmx:ConnectorPoint PointX="7.239583333333333" PointY="7.0403450520833326" />
+          <edmx:ConnectorPoint PointX="7.322916666666667" PointY="7.0403450520833317" />
+          <edmx:ConnectorPoint PointX="7.489583333333333" PointY="7.0403450520833326" />
+          <edmx:ConnectorPoint PointX="8.0416666666666661" PointY="7.0403450520833317" />
+          <edmx:ConnectorPoint PointX="8.2083333333333339" PointY="7.0403450520833326" />
+          <edmx:ConnectorPoint PointX="8.25" PointY="7.0403450520833326" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_BasketPaymentPayPal_Payment" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="1.5" PointY="6.1148893229166674" />
+          <edmx:ConnectorPoint PointX="1.5" PointY="7.125" />
+          <edmx:ConnectorPoint PointX="2.5" PointY="7.125" />
+          <edmx:ConnectorPoint PointX="2.5" PointY="7.375" />
+          <edmx:ConnectorPoint PointX="2.5416666666666665" PointY="7.3749999999999991" />
+          <edmx:ConnectorPoint PointX="2.8232226562499991" PointY="7.375" />
+          <edmx:ConnectorPoint PointX="4.791666666666667" PointY="7.3749999999999991" />
+          <edmx:ConnectorPoint PointX="4.958333333333333" PointY="7.375" />
+          <edmx:ConnectorPoint PointX="7.072916666666667" PointY="7.3749999999999991" />
+          <edmx:ConnectorPoint PointX="7.239583333333333" PointY="7.375" />
+          <edmx:ConnectorPoint PointX="7.322916666666667" PointY="7.3749999999999991" />
+          <edmx:ConnectorPoint PointX="7.489583333333333" PointY="7.375" />
+          <edmx:ConnectorPoint PointX="7.875" PointY="7.375" />
+          <edmx:ConnectorPoint PointX="7.875" PointY="8.2473486276041665" />
+          <edmx:ConnectorPoint PointX="7.916666666666667" PointY="8.2473486276041665" />
+          <edmx:ConnectorPoint PointX="8.0833333333333339" PointY="8.2473486276041665" />
+          <edmx:ConnectorPoint PointX="8.25" PointY="8.2473486276041665" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_BasketShipping_BasketShippingAddress" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="7.40625" PointY="6.90330078125" />
+          <edmx:ConnectorPoint PointX="7.40625" PointY="11.28125" />
+          <edmx:ConnectorPoint PointX="4.958333333333333" PointY="11.28125" />
+          <edmx:ConnectorPoint PointX="4.791666666666667" PointY="11.28125" />
+          <edmx:ConnectorPoint PointX="4.5" PointY="11.28125" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_BasketShippingAddress_Pais" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="5.25" PointY="1.8749995" />
+          <edmx:ConnectorPoint PointX="6.75" PointY="1.8749995" />
+          <edmx:ConnectorPoint PointX="6.75" PointY="3" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_Colonia_Municipio" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="9.75" PointY="27.807444661458334" />
+          <edmx:ConnectorPoint PointX="10.5" PointY="27.807444661458334" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_Estado_Pais" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="4.875" PointY="3.1148893229166674" />
+          <edmx:ConnectorPoint PointX="4.875" PointY="27.74974609375" />
+          <edmx:ConnectorPoint PointX="6" PointY="27.74974609375" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_Municipio_Estado" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="7.5" PointY="27.807444661458334" />
+          <edmx:ConnectorPoint PointX="8.25" PointY="27.807444661458334" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_InventarioCategoria_Inventario" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="16.25" PointY="21.004547526041669" />
+          <edmx:ConnectorPoint PointX="17" PointY="21.004547526041669" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_InventarioProducto_Inventario" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="16.25" PointY="21.910543619791671" />
+          <edmx:ConnectorPoint PointX="19.25" PointY="21.910543619791671" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_InventoryProduct_Inventory" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="16.25" PointY="22.338440755208339" />
+          <edmx:ConnectorPoint PointX="19.510416666666668" PointY="22.338440755208339" />
+          <edmx:ConnectorPoint PointX="19.677083333333332" PointY="22.338440755208339" />
+          <edmx:ConnectorPoint PointX="21.15625" PointY="22.338440755208339" />
+          <edmx:ConnectorPoint PointX="21.15625" PointY="23.25" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_SearchNotFound_Inventory" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="15.5" PointY="22.614889322916675" />
+          <edmx:ConnectorPoint PointX="15.5" PointY="26.297841796874998" />
+          <edmx:ConnectorPoint PointX="17" PointY="26.297841796874998" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_InventarioProducto_InventarioCategoria" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="18.5" PointY="20.504547526041669" />
+          <edmx:ConnectorPoint PointX="19.25" PointY="20.504547526041669" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_InventoryProduct_Product" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="18.5" PointY="30.547801106770834" />
+          <edmx:ConnectorPoint PointX="20.75" PointY="30.547801106770834" />
+          <edmx:ConnectorPoint PointX="20.75" PointY="25.422587890624996" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_InventarioProducto_Producto" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="18.5" PointY="29.492648053385423" />
+          <edmx:ConnectorPoint PointX="19.59375" PointY="29.492648053385423" />
+          <edmx:ConnectorPoint PointX="19.59375" PointY="21.999492187500003" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_Order_Usuario" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="9.25" PointY="15.249746093750002" />
+          <edmx:ConnectorPoint PointX="10" PointY="15.249746093750002" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_OrderLine_Order" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="11.5" PointY="14.490143229166669" />
+          <edmx:ConnectorPoint PointX="12.25" PointY="14.490143229166669" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_OrderPayment_Order" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="10.90625" PointY="13.125" />
+          <edmx:ConnectorPoint PointX="10.90625" PointY="9.59375" />
+          <edmx:ConnectorPoint PointX="11.666666666666666" PointY="9.59375" />
+          <edmx:ConnectorPoint PointX="11.833333333333334" PointY="9.59375" />
+          <edmx:ConnectorPoint PointX="12.25" PointY="9.59375" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_OrderShipping_Order" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="11.5" PointY="15.874492187500003" />
+          <edmx:ConnectorPoint PointX="11.875" PointY="16.249492187500003" />
+          <edmx:ConnectorPoint PointX="11.875" PointY="17.518992513020834" />
+          <edmx:ConnectorPoint PointX="12.25" PointY="17.518992513020834" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_OrderLineDetail_OrderLine" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="13.75" PointY="14.490143229166669" />
+          <edmx:ConnectorPoint PointX="14.5" PointY="14.490143229166669" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_OrderPayment_Payment" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="2.25" PointY="4.5599703307291737" />
+          <edmx:ConnectorPoint PointX="2.75" PointY="4.5599703307291737" />
+          <edmx:ConnectorPoint PointX="2.75" PointY="7.2398893229166656" />
+          <edmx:ConnectorPoint PointX="2.7916666666666665" PointY="7.2398893229166648" />
+          <edmx:ConnectorPoint PointX="2.9583333333333335" PointY="7.2398893229166656" />
+          <edmx:ConnectorPoint PointX="4.791666666666667" PointY="7.2398893229166648" />
+          <edmx:ConnectorPoint PointX="4.958333333333333" PointY="7.2398893229166656" />
+          <edmx:ConnectorPoint PointX="7.072916666666667" PointY="7.2398893229166648" />
+          <edmx:ConnectorPoint PointX="7.239583333333333" PointY="7.2398893229166656" />
+          <edmx:ConnectorPoint PointX="7.322916666666667" PointY="7.2398893229166648" />
+          <edmx:ConnectorPoint PointX="7.489583333333333" PointY="7.2398893229166656" />
+          <edmx:ConnectorPoint PointX="8" PointY="7.2398893229166656" />
+          <edmx:ConnectorPoint PointX="8" PointY="9.1821907552083317" />
+          <edmx:ConnectorPoint PointX="11.666666666666666" PointY="9.1821907552083317" />
+          <edmx:ConnectorPoint PointX="11.833333333333334" PointY="9.1821907552083317" />
+          <edmx:ConnectorPoint PointX="12" PointY="9.1821907552083317" />
+          <edmx:ConnectorPoint PointX="12" PointY="8.375" />
+          <edmx:ConnectorPoint PointX="13" PointY="8.375" />
+          <edmx:ConnectorPoint PointX="13" PointY="8.625" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_OrderPaymentPayPal_OrderPayment" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="13.75" PointY="9.8074446614583337" />
+          <edmx:ConnectorPoint PointX="15.25" PointY="9.8074446614583337" />
+          <edmx:ConnectorPoint PointX="15.25" PointY="8.4898893229166674" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_OrderPaymentPayPal_Payment" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="1.9062519999999998" PointY="6.1148893229166674" />
+          <edmx:ConnectorPoint PointX="1.9062519999999998" PointY="6.875" />
+          <edmx:ConnectorPoint PointX="2.6666666666666665" PointY="6.8749999999999991" />
+          <edmx:ConnectorPoint PointX="2.8333333333333335" PointY="6.875" />
+          <edmx:ConnectorPoint PointX="2.875" PointY="6.875" />
+          <edmx:ConnectorPoint PointX="2.875" PointY="7.3023893229166656" />
+          <edmx:ConnectorPoint PointX="4.791666666666667" PointY="7.3023893229166648" />
+          <edmx:ConnectorPoint PointX="4.958333333333333" PointY="7.3023893229166656" />
+          <edmx:ConnectorPoint PointX="7.072916666666667" PointY="7.3023893229166648" />
+          <edmx:ConnectorPoint PointX="7.239583333333333" PointY="7.3023893229166656" />
+          <edmx:ConnectorPoint PointX="7.322916666666667" PointY="7.3023893229166648" />
+          <edmx:ConnectorPoint PointX="7.489583333333333" PointY="7.3023893229166656" />
+          <edmx:ConnectorPoint PointX="8.125" PointY="7.3023893229166656" />
+          <edmx:ConnectorPoint PointX="8.125" PointY="6.125" />
+          <edmx:ConnectorPoint PointX="10.5" PointY="6.125" />
+          <edmx:ConnectorPoint PointX="10.5" PointY="7.47068359375" />
+          <edmx:ConnectorPoint PointX="12.416666666666666" PointY="7.4706835937499987" />
+          <edmx:ConnectorPoint PointX="12.583333333333334" PointY="7.47068359375" />
+          <edmx:ConnectorPoint PointX="14.125" PointY="7.47068359375" />
+          <edmx:ConnectorPoint PointX="14.125" PointY="7.3074446614583337" />
+          <edmx:ConnectorPoint PointX="14.5" PointY="7.3074446614583337" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_OrderShipping_OrderShippingAddress" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="11.5" PointY="23.509348958333334" />
+          <edmx:ConnectorPoint PointX="13" PointY="23.509348958333334" />
+          <edmx:ConnectorPoint PointX="13" PointY="18.412985026041667" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_Producto_Marca" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="16.25" PointY="30.653595377604162" />
+          <edmx:ConnectorPoint PointX="17" PointY="30.653595377604162" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_ShippingCost_ShippingCompany" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="10.25" PointY="3.3939925130208337" />
+          <edmx:ConnectorPoint PointX="11" PointY="3.3939925130208337" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_ShippingCost_ShippingType" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="10.25" PointY="11.422841796874998" />
+          <edmx:ConnectorPoint PointX="10.822916666666666" PointY="11.422841796874998" />
+          <edmx:ConnectorPoint PointX="10.989583333333334" PointY="11.422841796874998" />
+          <edmx:ConnectorPoint PointX="11.75" PointY="11.422841796874998" />
+          <edmx:ConnectorPoint PointX="11.75" PointY="7.72068359375" />
+          <edmx:ConnectorPoint PointX="12.5" PointY="7.72068359375" />
+          <edmx:ConnectorPoint PointX="12.5" PointY="5.1917936197916674" />
+          <edmx:ConnectorPoint PointX="11.75" PointY="5.1917936197916674" />
+          <edmx:ConnectorPoint PointX="11.75" PointY="4.8167936197916674" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="PlataformaComercio.Data.Entities.FK_UsuarioDireccion_Usuario" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="9.25" PointY="17.576650390625005" />
+          <edmx:ConnectorPoint PointX="10" PointY="17.576650390625005" />
+        </edmx:AssociationConnector>
+      </edmx:Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

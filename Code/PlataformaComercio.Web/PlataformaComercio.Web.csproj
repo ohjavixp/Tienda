@@ -1,0 +1,1263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20826</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA6E24EC-4134-4184-AE29-BD5ABBD1571A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PlataformaComercio.Web</RootNamespace>
+    <AssemblyName>PlataformaComercio.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+    <PublishDatabases>false</PublishDatabases>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PublishDatabases>false</PublishDatabases>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.5.7.1005, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AjaxControlToolkit.7.1005\lib\45\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\packages\AjaxMin.5.3.5068.16463\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="AntiXSSLibrary">
+      <HintPath>..\..\bin\SanitizerProviders\AntiXSSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.1.Core, Version=13.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.1.Core, Version=13.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v13.1, Version=13.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v13.1, Version=13.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress\DXperience 13.1\Bin\Framework\DevExpress.Web.ASPxSpellChecker.v13.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v13.1, Version=13.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FreeTextBox">
+      <HintPath>..\..\bin\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary">
+      <HintPath>..\..\bin\SanitizerProviders\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\EntLib5.0Src\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=5.0.414.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\EntLib5.0Src\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Recaptcha, Version=1.0.5.0, Culture=neutral, PublicKeyToken=9afc4d65b28c38c2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Downloads\recaptcha-dotnet-1.0.5.0-binary\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Routing">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Advertisements.xml" />
+    <Content Include="blank.gif" />
+    <Content Include="contacto.aspx" />
+    <Content Include="Content\bootstrap-responsive.min.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="css\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="css\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="css\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="css\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="css\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="css\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="css\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="css\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="css\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="css\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="css\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="css\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\cupertino\jquery-ui-1.7.2.custom.css" />
+    <Content Include="css\FooTable-2\css\fonts\footable.svg" />
+    <Content Include="css\FooTable-2\css\footable.core.css" />
+    <Content Include="css\FooTable-2\css\footable.core.min.css" />
+    <Content Include="css\FooTable-2\css\footable.metro.css" />
+    <Content Include="css\FooTable-2\css\footable.metro.min.css" />
+    <Content Include="css\FooTable-2\css\footable.standalone.css" />
+    <Content Include="css\FooTable-2\css\footable.standalone.min.css" />
+    <Content Include="css\FooTable-2\js\footable.filter.js" />
+    <Content Include="css\FooTable-2\js\footable.js" />
+    <Content Include="css\FooTable-2\js\footable.paginate.js" />
+    <Content Include="css\FooTable-2\js\footable.plugin.template.js" />
+    <Content Include="css\FooTable-2\js\footable.sort.js" />
+    <Content Include="css\FooTable-2\js\footable.striping.js" />
+    <Content Include="css\iecss.css" />
+    <Content Include="css\iepngfix.htc" />
+    <Content Include="css\jGrowl\jquery.jgrowl.css" />
+    <Content Include="css\jGrowl\jquery.jgrowl.js" />
+    <Content Include="css\shop-homepage.css" />
+    <Content Include="css\src\jGlideMenuNotAbsolute.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\banner.png" />
+    <Content Include="images\banners\autentidocbanner.jpg" />
+    <Content Include="images\banners\emicorporativobanner.jpg" />
+    <Content Include="images\banners\emigobiernobaner.jpg" />
+    <Content Include="images\banners\identitumbanner.jpg" />
+    <Content Include="images\banners\imgz1.png" />
+    <Content Include="images\banners\imgz2.png" />
+    <Content Include="images\banners\imgz3.png" />
+    <Content Include="images\banners\imgz4.png" />
+    <Content Include="images\banners\prodautentidoc.png" />
+    <Content Include="images\banners\prodemicorporativo.png" />
+    <Content Include="images\banners\prodemigobierno.png" />
+    <Content Include="images\banners\prodidentitum.png" />
+    <Content Include="images\bar_bg.png" />
+    <Content Include="images\bk_compra.jpg" />
+    <Content Include="images\cart_bg.png" />
+    <Content Include="images\detailscart.jpg" />
+    <Content Include="images\downpdf.jpg" />
+    <Content Include="images\fondoheader.jpg" />
+    <Content Include="images\iconos\cuadritobio.ico" />
+    <Content Include="images\identitumbanner.jpg" />
+    <Content Include="images\logo-minimini.png" />
+    <Content Include="images\LOGO50X50COLOR.png" />
+    <Content Include="images\menu.jpg" />
+    <Content Include="images\menulogo.jpg" />
+    <Content Include="images\menutip.jpg" />
+    <Content Include="images\menu_left.png" />
+    <Content Include="images\menu_right.png" />
+    <Content Include="images\menu_title_bg.png" />
+    <Content Include="images\mini-logo.png" />
+    <Content Include="images\paging\FirstHoverBoot.gif" />
+    <Content Include="images\paging\LastHoverBoot.gif" />
+    <Content Include="images\paging\NextHoverBoot.gif" />
+    <Content Include="images\paging\PreviousHoverBoot.gif" />
+    <Content Include="images\products\128\ba-200100.png" />
+    <Content Include="images\products\128\ba-83014-001.png" />
+    <Content Include="images\products\128\ba-88003-001.png" />
+    <Content Include="images\products\128\ba-88004-001.png" />
+    <Content Include="images\products\128\ba-920075.png" />
+    <Content Include="images\products\128\ba-920081.png" />
+    <Content Include="images\products\128\ba-920121.png" />
+    <Content Include="images\products\128\ba-920136.png" />
+    <Content Include="images\products\128\ba-afs510.png" />
+    <Content Include="images\products\128\ba-biofobblue.png" />
+    <Content Include="images\products\128\BA-BUNDLE PAQUETE.png" />
+    <Content Include="images\products\128\ba-carmen ff softwar.png" />
+    <Content Include="images\products\128\ba-carmen park softw.png" />
+    <Content Include="images\products\128\ba-carmenff-dsoftwar.png" />
+    <Content Include="images\products\128\BA-CarmenFF-QSoftwar.png" />
+    <Content Include="images\products\128\ba-combo scan.png" />
+    <Content Include="images\products\128\ba-combosmart uv led.png" />
+    <Content Include="images\products\128\ba-digid mini.png" />
+    <Content Include="images\products\128\ba-digid xs.png" />
+    <Content Include="images\products\128\ba-expressid_afis.png" />
+    <Content Include="images\products\128\ba-fpsdk.png" />
+    <Content Include="images\products\128\ba-fpsdk5.png" />
+    <Content Include="images\products\128\ba-freewaycam.png" />
+    <Content Include="images\products\128\ba-fs50.png" />
+    <Content Include="images\products\128\ba-fxcam ibw 2000.png" />
+    <Content Include="images\products\128\ba-icam td100.png" />
+    <Content Include="images\products\128\ba-icam7-pwr.png" />
+    <Content Include="images\products\128\ba-icam7111-u1.png" />
+    <Content Include="images\products\128\ba-idkit pc sdk.png" />
+    <Content Include="images\products\128\ba-innidkm10k-10.png" />
+    <Content Include="images\products\128\ba-insight® duo iris.png" />
+    <Content Include="images\products\128\ba-lscan guardian f.png" />
+    <Content Include="images\products\128\ba-m301-00-xx.png" />
+    <Content Include="images\products\128\ba-ma j-bio.png" />
+    <Content Include="images\products\128\ba-ma500.png" />
+    <Content Include="images\products\128\ba-megamsdkext.png" />
+    <Content Include="images\products\128\ba-megamsdkstd.png" />
+    <Content Include="images\products\128\ba-oa 1000 mercury.png" />
+    <Content Include="images\products\128\BA-OCR-PKD2.png" />
+    <Content Include="images\products\128\ba-oma 520 d.png" />
+    <Content Include="images\products\128\ba-parkit access cc.png" />
+    <Content Include="images\products\128\ba-prmc 233 reader.png" />
+    <Content Include="images\products\128\ba-prmc233.png" />
+    <Content Include="images\products\128\ba-realscan10.png" />
+    <Content Include="images\products\128\ba-sentisight sdk.png" />
+    <Content Include="images\products\128\BA-UareU-5160.png" />
+    <Content Include="images\products\128\ba-v302-02-s-usb01-1.png" />
+    <Content Include="images\products\128\ba-veriesdkext.png" />
+    <Content Include="images\products\128\ba-veriesdkstd.png" />
+    <Content Include="images\products\128\ba-verifext.png" />
+    <Content Include="images\products\128\ba-verifmat.png" />
+    <Content Include="images\products\128\ba-verifsdkext.png" />
+    <Content Include="images\products\128\ba-verifsdkstd.png" />
+    <Content Include="images\products\128\ba-verilook surveillance sdk.png" />
+    <Content Include="images\products\128\ba-verilsdkext.png" />
+    <Content Include="images\products\128\ba-verilsdkstd.png" />
+    <Content Include="images\products\128\BA-VeriSpeak extd.png" />
+    <Content Include="images\products\128\BA-VeriSpeak std.png" />
+    <Content Include="images\products\128\BA-VL-SURVEILLANCE.png" />
+    <Content Include="images\products\128\ba-vp9805.png" />
+    <Content Include="images\products\128\ba-vp9808.png" />
+    <Content Include="images\products\128\lamp6.png" />
+    <Content Include="images\products\128\Roy-p-senscod6.5.png" />
+    <Content Include="images\products\128\Roy-p-skisu10.png" />
+    <Content Include="images\products\128\Roy-p-skisu2.5.png" />
+    <Content Include="images\products\128\Roy-p-skisu4.5.png" />
+    <Content Include="images\products\128\Roy-p-urinsol0.39.png" />
+    <Content Include="images\products\128\sba18.png" />
+    <Content Include="images\products\128\sba6.png" />
+    <Content Include="images\products\128\sbp18.png" />
+    <Content Include="images\products\128\sbp6.png" />
+    <Content Include="images\products\128\sin18.png" />
+    <Content Include="images\products\128\sin35.png" />
+    <Content Include="images\products\128\sin6.png" />
+    <Content Include="images\products\128\hh62610.png" />
+    <Content Include="images\products\128\TE16150.png" />
+    <Content Include="images\products\128\TE16212.png" />
+    <Content Include="images\products\128\te16212a.png" />
+    <Content Include="images\products\128\TE16315.png" />
+    <Content Include="images\products\128\TE16441.png" />
+    <Content Include="images\products\128\te16441a.png" />
+    <Content Include="images\products\128\TE16514.png" />
+    <Content Include="images\products\128\te16514a.png" />
+    <Content Include="images\products\128\TE16598.png" />
+    <Content Include="images\products\128\TE16838.png" />
+    <Content Include="images\products\128\TE77035.png" />
+    <Content Include="images\products\128\te77104.png" />
+    <Content Include="images\products\128\te77104a.png" />
+    <Content Include="images\products\128\TE77115.png" />
+    <Content Include="images\products\128\TE77127.png" />
+    <Content Include="images\products\128\te77127a.png" />
+    <Content Include="images\products\128\TE77148.png" />
+    <Content Include="images\products\128\TE77150.png" />
+    <Content Include="images\products\128\TE77150a.png" />
+    <Content Include="images\products\128\TE77195.png" />
+    <Content Include="images\products\128\te77196.png" />
+    <Content Include="images\products\128\TE77818.png" />
+    <Content Include="images\products\128\te77818a.png" />
+    <Content Include="images\products\128\WAT1693.png" />
+    <Content Include="images\products\128\WAT450.png" />
+    <Content Include="images\products\128\WAT577.png" />
+    <Content Include="images\products\256\ba-200100.png" />
+    <Content Include="images\products\256\ba-83014-001.png" />
+    <Content Include="images\products\256\ba-88003-001.png" />
+    <Content Include="images\products\256\ba-88004-001.png" />
+    <Content Include="images\products\256\ba-920075.png" />
+    <Content Include="images\products\256\ba-920081.png" />
+    <Content Include="images\products\256\ba-920121.png" />
+    <Content Include="images\products\256\ba-920136.png" />
+    <Content Include="images\products\256\ba-afs510.png" />
+    <Content Include="images\products\256\ba-biofobblue.png" />
+    <Content Include="images\products\256\BA-BUNDLE PAQUETE.png" />
+    <Content Include="images\products\256\ba-carmen ff softwar.png" />
+    <Content Include="images\products\256\ba-carmen park softw.png" />
+    <Content Include="images\products\256\ba-carmenff-dsoftwar.png" />
+    <Content Include="images\products\256\BA-CarmenFF-QSoftwar.png" />
+    <Content Include="images\products\256\ba-combo scan.png" />
+    <Content Include="images\products\256\ba-combosmart uv led.png" />
+    <Content Include="images\products\256\ba-digid mini.png" />
+    <Content Include="images\products\256\ba-digid xs.png" />
+    <Content Include="images\products\256\ba-expressid_afis.png" />
+    <Content Include="images\products\256\ba-fpsdk.png" />
+    <Content Include="images\products\256\ba-fpsdk5.png" />
+    <Content Include="images\products\256\ba-freewaycam.png" />
+    <Content Include="images\products\256\ba-fs50.png" />
+    <Content Include="images\products\256\ba-fxcam ibw 2000.png" />
+    <Content Include="images\products\256\ba-icam td100.png" />
+    <Content Include="images\products\256\ba-icam7-pwr.png" />
+    <Content Include="images\products\256\ba-icam7111-u1.png" />
+    <Content Include="images\products\256\ba-idkit pc sdk.png" />
+    <Content Include="images\products\256\ba-innidkm10k-10.png" />
+    <Content Include="images\products\256\ba-insight® duo iris.png" />
+    <Content Include="images\products\256\ba-lscan guardian f.png" />
+    <Content Include="images\products\256\ba-m301-00-xx.png" />
+    <Content Include="images\products\256\ba-ma j-bio.png" />
+    <Content Include="images\products\256\ba-ma500.png" />
+    <Content Include="images\products\256\ba-megamsdkext.png" />
+    <Content Include="images\products\256\ba-megamsdkstd.png" />
+    <Content Include="images\products\256\ba-oa 1000 mercury.png" />
+    <Content Include="images\products\256\BA-OCR-PKD2.png" />
+    <Content Include="images\products\256\ba-oma 520 d.png" />
+    <Content Include="images\products\256\ba-parkit access cc.png" />
+    <Content Include="images\products\256\ba-prmc 233 reader.png" />
+    <Content Include="images\products\256\ba-prmc233.png" />
+    <Content Include="images\products\256\ba-realscan10.png" />
+    <Content Include="images\products\256\ba-sentisight sdk.png" />
+    <Content Include="images\products\256\BA-UareU-5160.png" />
+    <Content Include="images\products\256\ba-v302-02-s-usb01-1.png" />
+    <Content Include="images\products\256\ba-veriesdkext.png" />
+    <Content Include="images\products\256\ba-veriesdkstd.png" />
+    <Content Include="images\products\256\ba-verifext.png" />
+    <Content Include="images\products\256\ba-verifmat.png" />
+    <Content Include="images\products\256\ba-verifsdkext.png" />
+    <Content Include="images\products\256\ba-verifsdkstd.png" />
+    <Content Include="images\products\256\ba-verilook surveillance sdk.png" />
+    <Content Include="images\products\256\ba-verilsdkext.png" />
+    <Content Include="images\products\256\ba-verilsdkstd.png" />
+    <Content Include="images\products\256\BA-VeriSpeak extd.png" />
+    <Content Include="images\products\256\BA-VeriSpeak std.png" />
+    <Content Include="images\products\256\BA-VL-SURVEILLANCE.png" />
+    <Content Include="images\products\256\ba-vp9805.png" />
+    <Content Include="images\products\256\ba-vp9808.png" />
+    <Content Include="images\products\256\lamp6.png" />
+    <Content Include="images\products\256\Default256.png" />
+    <Content Include="images\products\256\FL4005.png" />
+    <Content Include="images\products\256\hh62610.png" />
+    <Content Include="images\products\256\hi50.png" />
+    <Content Include="images\products\256\inc6.png" />
+    <Content Include="images\products\256\kit6.png" />
+    <Content Include="images\products\256\lam20.png" />
+    <Content Include="images\products\256\lam40.png" />
+    <Content Include="images\products\256\lam6.png" />
+    <Content Include="images\products\256\lam8.png" />
+    <Content Include="images\products\256\lamp20.png" />
+    <Content Include="images\products\256\lamp40.png" />
+    <Content Include="images\products\256\lamp8.png" />
+    <Content Include="images\products\256\lb60.png" />
+    <Content Include="images\products\256\lite15.png" />
+    <Content Include="images\products\256\lite30.png" />
+    <Content Include="images\products\256\man20.png" />
+    <Content Include="images\products\256\man40.png" />
+    <Content Include="images\products\256\manc20.png" />
+    <Content Include="images\products\256\manc40.png" />
+    <Content Include="images\products\256\manc6.png" />
+    <Content Include="images\products\256\manc8.png" />
+    <Content Include="images\products\256\per20.png" />
+    <Content Include="images\products\256\per40.png" />
+    <Content Include="images\products\256\prem20.png" />
+    <Content Include="images\products\256\prem40.png" />
+    <Content Include="images\products\256\prem8.png" />
+    <Content Include="images\products\256\pro-a-bisc.738.png" />
+    <Content Include="images\products\256\pro-a-comp1.png" />
+    <Content Include="images\products\256\pro-a-comp15.png" />
+    <Content Include="images\products\256\pro-a-comp3.png" />
+    <Content Include="images\products\256\pro-a-comp7.5.png" />
+    <Content Include="images\products\256\pro-a-diet15.png" />
+    <Content Include="images\products\256\pro-a-diet3.png" />
+    <Content Include="images\products\256\pro-a-larg15.png" />
+    <Content Include="images\products\256\pro-a-larg3.png" />
+    <Content Include="images\products\256\pro-a-perf15.png" />
+    <Content Include="images\products\256\pro-a-perf3.png" />
+    <Content Include="images\products\256\pro-a-seni15.png" />
+    <Content Include="images\products\256\pro-a-seni3.png" />
+    <Content Include="images\products\256\pro-a-sensi15.png" />
+    <Content Include="images\products\256\pro-a-sensi3.png" />
+    <Content Include="images\products\256\pro-a-small3.png" />
+    <Content Include="images\products\256\pro-a-small7.5.png" />
+    <Content Include="images\products\256\pro-p-large3.png" />
+    <Content Include="images\products\256\pro-p-large7.5.png" />
+    <Content Include="images\products\256\pro-p-opti01.png" />
+    <Content Include="images\products\256\pro-p-opti03.png" />
+    <Content Include="images\products\256\pro-p-opti15.png" />
+    <Content Include="images\products\256\pro-p-opti7.5.png" />
+    <Content Include="images\products\256\pro-p-sensi15.png" />
+    <Content Include="images\products\256\pro-p-sensi3.png" />
+    <Content Include="images\products\256\pro-p-small3.png" />
+    <Content Include="images\products\256\pro-p-small7.5.png" />
+    <Content Include="images\products\256\pup20.png" />
+    <Content Include="images\products\256\pup40.png" />
+    <Content Include="images\products\256\pup8.png" />
+    <Content Include="images\products\256\ROY-A-SMD2.png" />
+    <Content Include="images\products\256\ROY-A-SMD4.png" />
+    <Content Include="images\products\256\ROY-A-SMD8.png" />
+    <Content Include="images\products\256\ROY-G-DIAC1.5.png" />
+    <Content Include="images\products\256\Roy-g-groso.400.png" />
+    <Content Include="images\products\256\Roy-g-groso2.png" />
+    <Content Include="images\products\256\Roy-g-groso4.png" />
+    <Content Include="images\products\256\ROY-G-INC2.5.png" />
+    <Content Include="images\products\256\Roy-g-matuadu1.5.png" />
+    <Content Include="images\products\256\Roy-g-matuadu10.png" />
+    <Content Include="images\products\256\Roy-g-matuadu3.5.png" />
+    <Content Include="images\products\256\Roy-g-obeso1.5.png" />
+    <Content Include="images\products\256\Roy-g-obeso3.5.png" />
+    <Content Include="images\products\256\Roy-g-perscat1.36.png" />
+    <Content Include="images\products\256\Roy-g-perscat3.18.png" />
+    <Content Include="images\products\256\Roy-g-renspec2.png" />
+    <Content Include="images\products\256\Roy-g-renspec4.png" />
+    <Content Include="images\products\256\Roy-g-sensco1.5.png" />
+    <Content Include="images\products\256\Roy-g-sensco3.5.png" />
+    <Content Include="images\products\256\Roy-g-sensi2.5.png" />
+    <Content Include="images\products\256\Roy-g-senso1.5.png" />
+    <Content Include="images\products\256\Roy-g-senso3.png" />
+    <Content Include="images\products\256\Roy-g-urisohd0.17.png" />
+    <Content Include="images\products\256\Roy-g-urisohd1.5.png" />
+    <Content Include="images\products\256\Roy-g-urisohd3.5.png" />
+    <Content Include="images\products\256\Roy-p-adlar14.png" />
+    <Content Include="images\products\256\Roy-p-adu10.png" />
+    <Content Include="images\products\256\Roy-p-adu4.png" />
+    <Content Include="images\products\256\Roy-p-adugi14.png" />
+    <Content Include="images\products\256\ROY-P-DENS2.png" />
+    <Content Include="images\products\256\Roy-p-diglf0.39.png" />
+    <Content Include="images\products\256\Roy-p-diglf1.5.png" />
+    <Content Include="images\products\256\Roy-p-diglf12.png" />
+    <Content Include="images\products\256\Roy-p-diglf5.png" />
+    <Content Include="images\products\256\ROY-P-EARCA14.png" />
+    <Content Include="images\products\256\ROY-P-EARCA2.png" />
+    <Content Include="images\products\256\ROY-P-HEP1.5.png" />
+    <Content Include="images\products\256\ROY-P-HEP14.png" />
+    <Content Include="images\products\256\ROY-P-HEP7.png" />
+    <Content Include="images\products\256\ROY-P-HYOME1.5.png" />
+    <Content Include="images\products\256\ROY-P-HYPD14.png" />
+    <Content Include="images\products\256\ROY-P-HYPD2.png" />
+    <Content Include="images\products\256\ROY-P-HYPD7.png" />
+    <Content Include="images\products\256\ROY-P-HYPME14.png" />
+    <Content Include="images\products\256\ROY-P-HYPME7.png" />
+    <Content Include="images\products\256\ROY-P-IND14.png" />
+    <Content Include="images\products\256\ROY-P-IND2.png" />
+    <Content Include="images\products\256\ROY-P-IND7.5.png" />
+    <Content Include="images\products\256\Roy-p-jungia14.png" />
+    <Content Include="images\products\256\Roy-p-juni10.png" />
+    <Content Include="images\products\256\Roy-p-juni4.png" />
+    <Content Include="images\products\256\Roy-p-junlar14.png" />
+    <Content Include="images\products\256\Roy-p-junlar4.png" />
+    <Content Include="images\products\256\Roy-p-jusd2.png" />
+    <Content Include="images\products\256\Roy-p-jusd4.png" />
+    <Content Include="images\products\256\Roy-p-matu10.png" />
+    <Content Include="images\products\256\Roy-p-matula14.png" />
+    <Content Include="images\products\256\Roy-p-matusm4.png" />
+    <Content Include="images\products\256\Roy-p-mobisup1.5.png" />
+    <Content Include="images\products\256\Roy-p-mobisup14.png" />
+    <Content Include="images\products\256\Roy-p-mobisup7.png" />
+    <Content Include="images\products\256\Roy-p-mobisupla14.png" />
+    <Content Include="images\products\256\Roy-p-mobisupla6.png" />
+    <Content Include="images\products\256\Roy-p-neujunl12.png" />
+    <Content Include="images\products\256\Roy-p-neujunl4.png" />
+    <Content Include="images\products\256\Roy-p-neutad10.png" />
+    <Content Include="images\products\256\Roy-p-neutad3..png" />
+    <Content Include="images\products\256\Roy-p-neutadsm0.80.png" />
+    <Content Include="images\products\256\Roy-p-neutadsm3.5.png" />
+    <Content Include="images\products\256\Roy-p-neutadull12.png" />
+    <Content Include="images\products\256\Roy-p-neutadull3.5.png" />
+    <Content Include="images\products\256\Roy-p-neutjuni4.png" />
+    <Content Include="images\products\256\Roy-p-obedog1..png" />
+    <Content Include="images\products\256\Roy-p-obedog14.png" />
+    <Content Include="images\products\256\Roy-p-obedog6.png" />
+    <Content Include="images\products\256\Roy-p-renad14.png" />
+    <Content Include="images\products\256\Roy-p-renad2.png" />
+    <Content Include="images\products\256\Roy-p-renad7.png" />
+    <Content Include="images\products\256\Roy-p-renlpla0.39.png" />
+    <Content Include="images\products\256\Roy-p-renmpl0.39.png" />
+    <Content Include="images\products\256\Roy-p-satsu1.5.png" />
+    <Content Include="images\products\256\Roy-p-satsu12.png" />
+    <Content Include="images\products\256\Roy-p-satsu5.png" />
+    <Content Include="images\products\256\Roy-p-senscod1.5.png" />
+    <Content Include="images\products\256\Roy-p-senscod14.png" />
+    <Content Include="images\products\256\Roy-p-senscod6.5.png" />
+    <Content Include="images\products\256\Roy-p-skisu10.png" />
+    <Content Include="images\products\256\Roy-p-skisu2.5.png" />
+    <Content Include="images\products\256\Roy-p-skisu4.5.png" />
+    <Content Include="images\products\256\Roy-p-urinsol0.39.png" />
+    <Content Include="images\products\256\sba18.png" />
+    <Content Include="images\products\256\sba6.png" />
+    <Content Include="images\products\256\sbp18.png" />
+    <Content Include="images\products\256\sbp6.png" />
+    <Content Include="images\products\256\sin18.png" />
+    <Content Include="images\products\256\sin35.png" />
+    <Content Include="images\products\256\sin6.png" />
+    <Content Include="images\products\256\te16150.png" />
+    <Content Include="images\products\256\te16212a.png" />
+    <Content Include="images\products\256\te16315.png" />
+    <Content Include="images\products\256\te16441a.png" />
+    <Content Include="images\products\256\te16514a.png" />
+    <Content Include="images\products\256\te16598.png" />
+    <Content Include="images\products\256\te16838.png" />
+    <Content Include="images\products\256\TE77035.png" />
+    <Content Include="images\products\256\te77104.png" />
+    <Content Include="images\Slider\DEMO-2.png" />
+    <Content Include="images\Slider\DEMO-3.png" />
+    <Content Include="images\Slider\DEMO-4.png" />
+    <Content Include="images\Slider\DEMO-5.png" />
+    <Content Include="images\Slider\DEMO1.png" />
+    <Content Include="LiveSearchSiteAuth.xml" />
+    <Content Include="robots.txt" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\FooTable-2\css\fonts\footable.eot" />
+    <Content Include="css\FooTable-2\css\fonts\footable.ttf" />
+    <Content Include="css\FooTable-2\css\fonts\footable.woff" />
+    <Content Include="css\FooTable-2\js\.jshintrc" />
+    <Content Include="PrincipalBootstrap.Master" />
+    <None Include="Properties\PublishProfiles\ServerTemp.pubxml" />
+    <None Include="scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="scripts\bootbox.min.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\jquery-1.9.1.js" />
+    <Content Include="scripts\jquery-1.9.1.min.js" />
+    <Content Include="scripts\PCScripts.js" />
+    <Content Include="Test.aspx" />
+    <Content Include="vadministration\currencys\addoreditcurrency.aspx" />
+    <Content Include="vadministration\currencys\default.aspx" />
+    <Content Include="vadministration\default.aspx" />
+    <Content Include="vadministration\inventory\default.aspx" />
+    <Content Include="vadministration\inventory\inventory-category.aspx" />
+    <Content Include="vadministration\inventory\inventory.aspx" />
+    <Content Include="vadministration\orders\default.aspx" />
+    <Content Include="vadministration\orders\view-or-edit-order.aspx" />
+    <Content Include="vadministration\products\addoreditbaseproduct.aspx" />
+    <Content Include="vadministration\products\addoreditproduct.aspx" />
+    <Content Include="vadministration\products\default.aspx" />
+    <Content Include="vadministration\trades\addoredittrade.aspx" />
+    <Content Include="vadministration\trades\default.aspx" />
+    <Content Include="vcheckout\thanks-order.aspx" />
+    <Content Include="webcontrols\ProductDisplay.ascx" />
+    <None Include="css\src\layout.css.exclude" />
+    <Content Include="css\src\jquery.jgrowl.css" />
+    <Content Include="css\style.css" />
+    <None Include="default.htm_" />
+    <Content Include="HTMLPage1.htm" />
+    <Content Include="images\addtocart.gif" />
+    <Content Include="images\BankBuilding48.png" />
+    <Content Include="images\BankBuilding64.png" />
+    <Content Include="images\bann1.jpg" />
+    <Content Include="images\bann2.jpg" />
+    <Content Include="images\banners\comprastelefono.png" />
+    <Content Include="images\bar_bg.gif" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\big_pic.jpg" />
+    <Content Include="images\blue-add.png" />
+    <Content Include="images\camera.png" />
+    <Content Include="images\car.png" />
+    <Content Include="images\cart.gif" />
+    <Content Include="images\cart_bg.gif" />
+    <Content Include="images\checked.png" />
+    <Content Include="images\compare.gif" />
+    <Content Include="images\contact-new.png" />
+    <Content Include="images\contact_bt.gif" />
+    <Content Include="images\CreditCardPaypal48.png" />
+    <Content Include="images\CreditCardPaypal64.png" />
+    <Content Include="images\csscreme.jpg" />
+    <Content Include="images\de.gif" />
+    <Content Include="images\details_box_bottom.gif" />
+    <Content Include="images\details_box_center.gif" />
+    <Content Include="images\details_box_top.gif" />
+    <Content Include="images\details_bt_bg.gif" />
+    <Content Include="images\details_bt_bg.png" />
+    <Content Include="images\Edit16.png" />
+    <Content Include="images\en.gif" />
+    <Content Include="images\favorites.gif" />
+    <Content Include="images\favorites.png" />
+    <Content Include="images\favs.gif" />
+    <Content Include="images\favs.png" />
+    <Content Include="images\footer_bg.gif" />
+    <Content Include="images\footer_logo.png" />
+    <Content Include="images\header_bg.jpg" />
+    <Content Include="images\header_divider.png" />
+    <Content Include="images\home.png" />
+    <Content Include="images\iphone.png" />
+    <Content Include="images\laptop.gif" />
+    <Content Include="images\laptop.png" />
+    <Content Include="images\logo-medium-red.png" />
+    <Content Include="images\logo-medium.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\marcas\logo Diamond.jpg" />
+    <Content Include="images\marcas\Logo Hills.jpg" />
+    <Content Include="images\marcas\Logo Nupec.jpg" />
+    <Content Include="images\marcas\Logo ProPlan.jpg" />
+    <Content Include="images\marcas\Logo Royal.jpg" />
+    <Content Include="images\marcas\Logo Ttra.jpg" />
+    <Content Include="images\menu\ajax.gif" />
+    <Content Include="images\menu\arrow.gif" />
+    <Content Include="images\menu\arrow_dn.gif" />
+    <Content Include="images\menu\arrow_up.gif" />
+    <Content Include="images\menu_bg.gif" />
+    <Content Include="images\menu_divider.gif" />
+    <Content Include="images\menu_left.gif" />
+    <Content Include="images\menu_right.gif" />
+    <Content Include="images\menu_title_bg.gif" />
+    <Content Include="images\menu_title_bg_nowidth.png" />
+    <Content Include="images\navbullet.png" />
+    <Content Include="images\p1.gif" />
+    <Content Include="images\p2.gif" />
+    <Content Include="images\p4.gif" />
+    <Content Include="images\p5.gif" />
+    <Content Include="images\paging\First.gif" />
+    <Content Include="images\paging\FirstHover.gif" />
+    <Content Include="images\paging\Last.gif" />
+    <Content Include="images\paging\LastHover.gif" />
+    <Content Include="images\paging\Next.gif" />
+    <Content Include="images\paging\NextHover.gif" />
+    <Content Include="images\paging\Previous.gif" />
+    <Content Include="images\paging\PreviousHover.gif" />
+    <Content Include="images\pag_bg.gif" />
+    <Content Include="images\pag_bg.png" />
+    <Content Include="images\pag_bg_a.gif" />
+    <Content Include="images\pag_bg_a.png" />
+    <Content Include="images\payment.gif" />
+    <Content Include="images\products\128\FL4005.png" />
+    <Content Include="images\products\128\hi50.png" />
+    <Content Include="images\products\128\inc6.png" />
+    <Content Include="images\products\128\kit6.png" />
+    <Content Include="images\products\128\lam20.png" />
+    <Content Include="images\products\128\lam40.png" />
+    <Content Include="images\products\128\lam6.png" />
+    <Content Include="images\products\128\lam8.png" />
+    <Content Include="images\products\128\lamp20.png" />
+    <Content Include="images\products\128\lamp40.png" />
+    <Content Include="images\products\128\lamp8.png" />
+    <Content Include="images\products\128\lb60.png" />
+    <Content Include="images\products\128\lite15.png" />
+    <Content Include="images\products\128\lite30.png" />
+    <Content Include="images\products\128\man20.png" />
+    <Content Include="images\products\128\man40.png" />
+    <Content Include="images\products\128\manc20.png" />
+    <Content Include="images\products\128\manc40.png" />
+    <Content Include="images\products\128\manc6.png" />
+    <Content Include="images\products\128\manc8.png" />
+    <Content Include="images\products\128\per20.png" />
+    <Content Include="images\products\128\per40.png" />
+    <Content Include="images\products\128\prem20.png" />
+    <Content Include="images\products\128\prem40.png" />
+    <Content Include="images\products\128\prem8.png" />
+    <Content Include="images\products\128\pro-a-bisc.738.png" />
+    <Content Include="images\products\128\pro-a-bisc738.png" />
+    <Content Include="images\products\128\pro-a-comp1.png" />
+    <Content Include="images\products\128\pro-a-comp15.png" />
+    <Content Include="images\products\128\pro-a-comp3.png" />
+    <Content Include="images\products\128\pro-a-comp7.5.png" />
+    <Content Include="images\products\128\pro-a-diet15.png" />
+    <Content Include="images\products\128\pro-a-diet3.png" />
+    <Content Include="images\products\128\pro-a-larg15.png" />
+    <Content Include="images\products\128\pro-a-larg3.png" />
+    <Content Include="images\products\128\pro-a-perf15.png" />
+    <Content Include="images\products\128\pro-a-perf3.png" />
+    <Content Include="images\products\128\pro-a-seni15.png" />
+    <Content Include="images\products\128\pro-a-seni3.png" />
+    <Content Include="images\products\128\pro-a-sens15.png" />
+    <Content Include="images\products\128\pro-a-sens3.png" />
+    <Content Include="images\products\128\pro-a-small3.png" />
+    <Content Include="images\products\128\pro-a-small7.5.png" />
+    <Content Include="images\products\128\pro-p-larg15.png" />
+    <Content Include="images\products\128\pro-p-larg3.png" />
+    <Content Include="images\products\128\pro-p-opti01.png" />
+    <Content Include="images\products\128\pro-p-opti03.png" />
+    <Content Include="images\products\128\pro-p-opti1.png" />
+    <Content Include="images\products\128\pro-p-opti15.png" />
+    <Content Include="images\products\128\pro-p-opti3.png" />
+    <Content Include="images\products\128\pro-p-opti7.5.png" />
+    <Content Include="images\products\128\pro-p-sensi15.png" />
+    <Content Include="images\products\128\pro-p-sensi3.png" />
+    <Content Include="images\products\128\pro-p-small3.png" />
+    <Content Include="images\products\128\pro-p-small7.5.png" />
+    <Content Include="images\products\128\pro.p.sensi15.png" />
+    <Content Include="images\products\128\pro.p.sensi3.png" />
+    <Content Include="images\products\128\pup20.png" />
+    <Content Include="images\products\128\pup40.png" />
+    <Content Include="images\products\128\pup8.png" />
+    <Content Include="images\products\128\ROY-A-SMD2.png" />
+    <Content Include="images\products\128\ROY-A-SMD4.png" />
+    <Content Include="images\products\128\ROY-A-SMD8.png" />
+    <Content Include="images\products\128\ROY-G-DIAC1.5.png" />
+    <Content Include="images\products\128\Roy-g-groso.400.png" />
+    <Content Include="images\products\128\Roy-g-groso2.png" />
+    <Content Include="images\products\128\Roy-g-groso4.png" />
+    <Content Include="images\products\128\ROY-G-INC2.5.png" />
+    <Content Include="images\products\128\Roy-g-matuadu1.5.png" />
+    <Content Include="images\products\128\Roy-g-matuadu10.png" />
+    <Content Include="images\products\128\Roy-g-matuadu3.5.png" />
+    <Content Include="images\products\128\Roy-g-obeso1.5.png" />
+    <Content Include="images\products\128\Roy-g-obeso3.5.png" />
+    <Content Include="images\products\128\Roy-g-perscat1.36.png" />
+    <Content Include="images\products\128\Roy-g-perscat3.18.png" />
+    <Content Include="images\products\128\Roy-g-renspec2.png" />
+    <Content Include="images\products\128\Roy-g-renspec4.png" />
+    <Content Include="images\products\128\Roy-g-sensco1.5.png" />
+    <Content Include="images\products\128\Roy-g-sensco3.5.png" />
+    <Content Include="images\products\128\Roy-g-sensi2.5.png" />
+    <Content Include="images\products\128\Roy-g-senso1.5.png" />
+    <Content Include="images\products\128\Roy-g-senso3.png" />
+    <Content Include="images\products\128\Roy-g-urisohd0.17.png" />
+    <Content Include="images\products\128\Roy-g-urisohd1.5.png" />
+    <Content Include="images\products\128\Roy-g-urisohd3.5.png" />
+    <Content Include="images\products\128\Roy-p-adlar14.png" />
+    <Content Include="images\products\128\Roy-p-adu10.png" />
+    <Content Include="images\products\128\Roy-p-adu4.png" />
+    <Content Include="images\products\128\Roy-p-adugi14.png" />
+    <Content Include="images\products\128\ROY-P-DENS2.png" />
+    <Content Include="images\products\128\Roy-p-diglf0.39.png" />
+    <Content Include="images\products\128\Roy-p-diglf1.5.png" />
+    <Content Include="images\products\128\Roy-p-diglf12.png" />
+    <Content Include="images\products\128\Roy-p-diglf5.png" />
+    <Content Include="images\products\128\ROY-P-EARCA14.png" />
+    <Content Include="images\products\128\ROY-P-EARCA2.png" />
+    <Content Include="images\products\128\ROY-P-HEP1.5.png" />
+    <Content Include="images\products\128\ROY-P-HEP14.png" />
+    <Content Include="images\products\128\ROY-P-HEP7.png" />
+    <Content Include="images\products\128\ROY-P-HYOME1.5.png" />
+    <Content Include="images\products\128\ROY-P-HYPD14.png" />
+    <Content Include="images\products\128\ROY-P-HYPD2.png" />
+    <Content Include="images\products\128\ROY-P-HYPD7.png" />
+    <Content Include="images\products\128\ROY-P-HYPME14.png" />
+    <Content Include="images\products\128\ROY-P-HYPME7.png" />
+    <Content Include="images\products\128\ROY-P-IND14.png" />
+    <Content Include="images\products\128\ROY-P-IND2.jpg" />
+    <Content Include="images\products\128\ROY-P-IND2.png" />
+    <Content Include="images\products\128\ROY-P-IND7.5.png" />
+    <Content Include="images\products\128\Roy-p-jungia14.png" />
+    <Content Include="images\products\128\Roy-p-juni10.png" />
+    <Content Include="images\products\128\Roy-p-juni4.png" />
+    <Content Include="images\products\128\Roy-p-junlar14.png" />
+    <Content Include="images\products\128\Roy-p-junlar4.png" />
+    <Content Include="images\products\128\Roy-p-jusd2.png" />
+    <Content Include="images\products\128\Roy-p-jusd4.png" />
+    <Content Include="images\products\128\Roy-p-matu10.png" />
+    <Content Include="images\products\128\Roy-p-matula14.png" />
+    <Content Include="images\products\128\Roy-p-matusm4.png" />
+    <Content Include="images\products\128\Roy-p-mobisup1.5.png" />
+    <Content Include="images\products\128\Roy-p-mobisup14.png" />
+    <Content Include="images\products\128\Roy-p-mobisup7.png" />
+    <Content Include="images\products\128\Roy-p-mobisupla14.png" />
+    <Content Include="images\products\128\Roy-p-mobisupla6.png" />
+    <Content Include="images\products\128\Roy-p-neujunl12.png" />
+    <Content Include="images\products\128\Roy-p-neujunl4.png" />
+    <Content Include="images\products\128\Roy-p-neutad10.png" />
+    <Content Include="images\products\128\Roy-p-neutad3..png" />
+    <Content Include="images\products\128\Roy-p-neutadsm0.80.png" />
+    <Content Include="images\products\128\Roy-p-neutadsm3.5.png" />
+    <Content Include="images\products\128\Roy-p-neutadull12.png" />
+    <Content Include="images\products\128\Roy-p-neutadull3.5.png" />
+    <Content Include="images\products\128\Roy-p-neutjuni4.png" />
+    <Content Include="images\products\128\Roy-p-obedog1..png" />
+    <Content Include="images\products\128\Roy-p-obedog14.png" />
+    <Content Include="images\products\128\Roy-p-obedog6.png" />
+    <Content Include="images\products\128\Roy-p-renad14.png" />
+    <Content Include="images\products\128\Roy-p-renad2.png" />
+    <Content Include="images\products\128\Roy-p-renad7.png" />
+    <Content Include="images\products\128\Roy-p-renlpla0.39.png" />
+    <Content Include="images\products\128\Roy-p-renmpl0.39.png" />
+    <Content Include="images\products\128\Roy-p-satsu1.5.png" />
+    <Content Include="images\products\128\Roy-p-satsu12.png" />
+    <Content Include="images\products\128\Roy-p-satsu5.png" />
+    <Content Include="images\products\128\Roy-p-senscod1.5.png" />
+    <Content Include="images\products\128\Roy-p-senscod14.png" />
+    <Content Include="images\products\256\te77104a.png" />
+    <Content Include="images\products\256\te77115.png" />
+    <Content Include="images\products\256\te77127a.png" />
+    <Content Include="images\products\256\TE77148.png" />
+    <Content Include="images\products\256\TE77150a.png" />
+    <Content Include="images\products\256\te77196.png" />
+    <Content Include="images\products\256\te77818a.png" />
+    <Content Include="images\products\256\WAT1693.png" />
+    <Content Include="images\products\256\wat450.png" />
+    <Content Include="images\products_details_bg.gif" />
+    <Content Include="images\product_box_bottom.gif" />
+    <Content Include="images\product_box_center.gif" />
+    <Content Include="images\product_box_top.gif" />
+    <Content Include="images\RemoveRed16.png" />
+    <Content Include="images\search.gif" />
+    <Content Include="images\services.png" />
+    <Content Include="images\shoppingcart.png" />
+    <Content Include="images\square-blue-add.gif" />
+    <Content Include="images\thumb1.gif" />
+    <Content Include="images\thumb2.gif" />
+    <Content Include="images\top_search_bg.gif" />
+    <Content Include="images\user_add.png" />
+    <Content Include="MailTemplates\order-confirm-transfer.htm" />
+    <Content Include="Resources\CalloutTest.html" />
+    <Content Include="Resources\Images\close_icon.gif" />
+    <Content Include="Resources\Images\details_icon.gif" />
+    <Content Include="Resources\Images\indicator.gif" />
+    <Content Include="Resources\Images\newrecord_icon.gif" />
+    <Content Include="scripts\boxOver.js" />
+    <Content Include="scripts\jquery-1.3.2.min.js" />
+    <Content Include="scripts\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="scripts\jQuery.jGlideMenu.067.js" />
+    <Content Include="scripts\jquery.jgrowl_compressed.js" />
+    <Content Include="spinner_bar.gif" />
+    <Content Include="templates\mail-template.htm" />
+    <Content Include="Test-Hml-Theme.htm" />
+    <Content Include="vcatalogo\productsbytrade.aspx" />
+    <Content Include="vcatalogo\searchresults.aspx" />
+    <Content Include="vcheckout\buycart.aspx" />
+    <Content Include="css\print.css" />
+    <Content Include="css\src\classes.css" />
+    <Content Include="css\src\colors.css" />
+    <Content Include="css\src\forms.css" />
+    <Content Include="css\src\ie.css" />
+    <Content Include="css\src\ie6.css" />
+    <Content Include="css\src\reset.css" />
+    <Content Include="css\src\tables.css" />
+    <Content Include="css\src\type.css" />
+    <Content Include="css\styletemplate.css" />
+    <Content Include="vcheckout\confirm-order-paypal.aspx" />
+    <Content Include="vcheckout\confirm-order.aspx" />
+    <Content Include="vcheckout\selectpaymentmethod.aspx" />
+    <Content Include="vcheckout\sendaddress.aspx" />
+    <Content Include="vcheckout\shipping-method.aspx" />
+    <Content Include="vcheckout\thanks-paypal.aspx" />
+    <Content Include="vcheckout\thanks-transfer.aspx" />
+    <Content Include="vuser\close-session.aspx" />
+    <Content Include="vuser\create.aspx" />
+    <Content Include="vuser\iniciar-sesion.aspx" />
+    <Content Include="vuser\password-recovery.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="webcontrols\MessageControl.ascx" />
+    <Content Include="webcontrols\PayPalErrors.ascx" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Beta - Ftp.pubxml" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <Content Include="vadministration\BootAdministration.master" />
+    <None Include="vadministration\administration.Master">
+      <SubType>Code</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="contacto.aspx.cs">
+      <DependentUpon>contacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contacto.aspx.designer.cs">
+      <DependentUpon>contacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalBootstrap.Master.cs">
+      <DependentUpon>PrincipalBootstrap.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrincipalBootstrap.Master.designer.cs">
+      <DependentUpon>PrincipalBootstrap.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vadministration\administration.Master.cs">
+      <DependentUpon>administration.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vadministration\administration.Master.designer.cs">
+      <DependentUpon>administration.Master</DependentUpon>
+    </Compile>
+    <Compile Include="vadministration\BootAdministration.master.cs">
+      <DependentUpon>BootAdministration.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vadministration\BootAdministration.master.designer.cs">
+      <DependentUpon>BootAdministration.master</DependentUpon>
+    </Compile>
+    <Compile Include="vadministration\currencys\addoreditcurrency.aspx.cs">
+      <DependentUpon>addoreditcurrency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vadministration\currencys\addoreditcurrency.aspx.designer.cs">
+      <DependentUpon>addoreditcurrency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vadministration\currencys\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vadministration\currencys\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vadministration\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vadministration\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vadministration\inventory\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vadministration\inventory\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vadministration\inventory\inventory-category.aspx.cs">
+      <DependentUpon>inventory-category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vadministration\inventory\inventory-category.aspx.designer.cs">
+      <DependentUpon>inventory-category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vadministration\inventory\inventory.aspx.cs">
+      <DependentUpon>inventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vadministration\inventory\inventory.aspx.designer.cs">
+      <DependentUpon>inventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vadministration\orders\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vadministration\orders\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vadministration\orders\view-or-edit-order.aspx.cs">
+      <DependentUpon>view-or-edit-order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vadministration\orders\view-or-edit-order.aspx.designer.cs">
+      <DependentUpon>view-or-edit-order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vadministration\products\addoreditbaseproduct.aspx.cs">
+      <DependentUpon>addoreditbaseproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vadministration\products\addoreditbaseproduct.aspx.designer.cs">
+      <DependentUpon>addoreditbaseproduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vadministration\products\addoreditproduct.aspx.cs">
+      <DependentUpon>addoreditproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vadministration\products\addoreditproduct.aspx.designer.cs">
+      <DependentUpon>addoreditproduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vadministration\products\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vadministration\products\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vadministration\trades\addoredittrade.aspx.cs">
+      <DependentUpon>addoredittrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vadministration\trades\addoredittrade.aspx.designer.cs">
+      <DependentUpon>addoredittrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vadministration\trades\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vadministration\trades\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vcatalogo\productsbytrade.aspx.cs">
+      <DependentUpon>productsbytrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vcatalogo\productsbytrade.aspx.designer.cs">
+      <DependentUpon>productsbytrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vcatalogo\searchresults.aspx.cs">
+      <DependentUpon>searchresults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vcatalogo\searchresults.aspx.designer.cs">
+      <DependentUpon>searchresults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vcheckout\buycart.aspx.cs">
+      <DependentUpon>buycart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vcheckout\buycart.aspx.designer.cs">
+      <DependentUpon>buycart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPagePrincipal.Master.cs">
+      <DependentUpon>MasterPagePrincipal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPagePrincipal.Master.designer.cs">
+      <DependentUpon>MasterPagePrincipal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vcatalogo\showcategory.aspx.cs">
+      <DependentUpon>showcategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vcatalogo\showcategory.aspx.designer.cs">
+      <DependentUpon>showcategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vcheckout\confirm-order-paypal.aspx.cs">
+      <DependentUpon>confirm-order-paypal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vcheckout\confirm-order-paypal.aspx.designer.cs">
+      <DependentUpon>confirm-order-paypal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vcheckout\confirm-order.aspx.cs">
+      <DependentUpon>confirm-order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vcheckout\confirm-order.aspx.designer.cs">
+      <DependentUpon>confirm-order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vcheckout\selectpaymentmethod.aspx.cs">
+      <DependentUpon>selectpaymentmethod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vcheckout\selectpaymentmethod.aspx.designer.cs">
+      <DependentUpon>selectpaymentmethod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vcheckout\sendaddress.aspx.cs">
+      <DependentUpon>sendaddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vcheckout\sendaddress.aspx.designer.cs">
+      <DependentUpon>sendaddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vcheckout\shipping-method.aspx.cs">
+      <DependentUpon>shipping-method.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vcheckout\shipping-method.aspx.designer.cs">
+      <DependentUpon>shipping-method.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vcheckout\thanks-order.aspx.cs">
+      <DependentUpon>thanks-order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vcheckout\thanks-order.aspx.designer.cs">
+      <DependentUpon>thanks-order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vcheckout\thanks-paypal.aspx.cs">
+      <DependentUpon>thanks-paypal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vcheckout\thanks-paypal.aspx.designer.cs">
+      <DependentUpon>thanks-paypal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vcheckout\thanks-transfer.aspx.cs">
+      <DependentUpon>thanks-transfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vcheckout\thanks-transfer.aspx.designer.cs">
+      <DependentUpon>thanks-transfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VProducto\VerDetalleProducto.aspx.cs">
+      <DependentUpon>VerDetalleProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VProducto\VerDetalleProducto.aspx.designer.cs">
+      <DependentUpon>VerDetalleProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vuser\close-session.aspx.cs">
+      <DependentUpon>close-session.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vuser\close-session.aspx.designer.cs">
+      <DependentUpon>close-session.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vuser\create.aspx.cs">
+      <DependentUpon>create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vuser\create.aspx.designer.cs">
+      <DependentUpon>create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vuser\iniciar-sesion.aspx.cs">
+      <DependentUpon>iniciar-sesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vuser\iniciar-sesion.aspx.designer.cs">
+      <DependentUpon>iniciar-sesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vuser\password-recovery.aspx.cs">
+      <DependentUpon>password-recovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vuser\password-recovery.aspx.designer.cs">
+      <DependentUpon>password-recovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webcontrols\MessageControl.ascx.cs">
+      <DependentUpon>MessageControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webcontrols\MessageControl.ascx.designer.cs">
+      <DependentUpon>MessageControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="webcontrols\PayPalErrors.ascx.cs">
+      <DependentUpon>PayPalErrors.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webcontrols\PayPalErrors.ascx.designer.cs">
+      <DependentUpon>PayPalErrors.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="webcontrols\ProductDisplay.ascx.cs">
+      <DependentUpon>ProductDisplay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webcontrols\ProductDisplay.ascx.designer.cs">
+      <DependentUpon>ProductDisplay.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\products\128\Default128.png" />
+    <Content Include="images\Purchase24.png" />
+    <Content Include="MasterPagePrincipal.Master" />
+    <Content Include="vcatalogo\showcategory.aspx" />
+    <Content Include="VProducto\VerDetalleProducto.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PlataformaComercio.Datos.Fachada\PlataformaComercio.Datos.Fachada.csproj">
+      <Project>{7c6c079b-dd86-48f8-81d0-38f0886a69d2}</Project>
+      <Name>PlataformaComercio.Datos.Fachada</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlataformaComercio.Datos.SqlServer\PlataformaComercio.Datos.SqlServer.csproj">
+      <Project>{0EC126FC-04EB-480C-B41A-97D79A72A433}</Project>
+      <Name>PlataformaComercio.Datos.SqlServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlataformaComercio.Entidades\PlataformaComercio.Entities.csproj">
+      <Project>{BFC0D555-9C05-4225-A03B-5FACB33E70B2}</Project>
+      <Name>PlataformaComercio.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlataformaComercio.FrameWork\PlataformaComercio.FrameWork.csproj">
+      <Project>{3B119A6C-3F03-434A-B932-7FE525D5BD30}</Project>
+      <Name>PlataformaComercio.FrameWork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlataformaComercio.Negocio\PlataformaComercio.Business.csproj">
+      <Project>{36B2F2DA-0B6B-4CE1-93C3-41ECEFB087F8}</Project>
+      <Name>PlataformaComercio.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlataformaComercio.UI\PlataformaComercio.UI.csproj">
+      <Project>{DDCA0D56-F43C-4B1E-9787-DB0BDFABD48C}</Project>
+      <Name>PlataformaComercio.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="files\products\" />
+    <Folder Include="Resources\Css\" />
+    <Folder Include="Resources\Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>32609</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

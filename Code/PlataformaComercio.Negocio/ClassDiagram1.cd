@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PlataformaComercio.Business.Base" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.Catalog" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAEAAAABAAAAA=</HashCode>
+      <FileName>Catalog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.Inventory" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIBIgAAAgYIBAAACQAAAABAAAAAgAEAAgAQAAEAAAg=</HashCode>
+      <FileName>Inventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.User" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAABAAAACAAAAAAAIAAAAAAACAQABAAIAEgAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.BasketManagement.Basket" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAFBAAQAQAAEAAAEAAAAAAAAAAkAYAACEAAAABAAAUA=</HashCode>
+      <FileName>BasketManagement\Basket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.BasketManagement.BasketLine" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAgAAAAAAISAQAAAAERAAAUESACBAAAEA=</HashCode>
+      <FileName>BasketManagement\BasketLine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.BasketManagement.BasketLineCollection" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>BasketManagement\BasketLineCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.BasketManagement.PaymentMethod" Collapsed="true">
+    <Position X="20.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAgAAAAAAAEA=</HashCode>
+      <FileName>BasketManagement\BasketPayment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.BasketManagement.BasketPaymentDetail" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasketManagement\BasketPaymentDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.BasketManagement.BasketShipping" Collapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAACAQAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>BasketManagement\BasketShipping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.BasketManagement.BasketShippingAddress" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAgAAAAAAAAAAAAAAAAACAAAAAAAAAEA=</HashCode>
+      <FileName>BasketManagement\BasketShippingAddress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.BasketManagement.BasketShippingMethods" Collapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>BasketManagement\BasketShippingMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.Catalogs.Product" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAEgAAgAAAQAA=</HashCode>
+      <FileName>Catalogs\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.Catalogs.Trade" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgAAgAAAAAg=</HashCode>
+      <FileName>Catalogs\Trade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.Core.EmailManagement" Collapsed="true">
+    <Position X="22.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\EmailManagement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.Core.EmailSendConfig" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAEAIAAAAAAAAACAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Core\EmailSendConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.OrderManagement.Order" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>OrderManagement\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlataformaComercio.Business.PaymentMethods.PayPalPaymentMethod" Collapsed="true">
+    <Position X="22.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAAAAAAAAAAAAAAAAEAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PaymentMethods\PayPalPaymentMethod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="PlataformaComercio.Business.Core.EmailSendTemplate" Collapsed="true">
+    <Position X="18.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\EmailSendTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

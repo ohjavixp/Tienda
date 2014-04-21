@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Espacio Mascota - Venta de alimento y accesorios para mascota en internet</title>
+    <meta name="Description" content="Venta de alimento premium y accesorios para perros, gatos,peces,reptiles,roedores,aves con entrega a domicilio. Manejamos marcas como Diamond, Hill's, Pro Plan, Royal Canin, Tetra y más."/>
+    <meta name="google-site-verification" content="6EbDbKeO7lJS6yM9KDjG8baqc_4RGicpvqGW28i2Mn4" />
+    <style type="text/css">
+        .style1
+        {
+            width: 600px;
+            margin-left:auto; 
+            margin-right:auto;
+            background-color:White;
+            
+            
+        }
+        .style2
+        {
+            width: 181px;
+            height: 100px;
+        }
+        
+        .style4
+        {
+            width: 111px;
+            height: 111px;
+        }
+        .style5
+        {
+            width: 150px;
+            height: 61px;
+        }
+        .style6
+        {
+            width: 105px;
+            height: 108px;
+        }
+        .style7
+        {
+            width: 120px;
+            height: 58px;
+        }
+        
+        img{
+        margin-left:10px;
+            }
+            
+        body
+        {
+            font-family:Verdana,Helvetica,Arial;
+            background-color:#EB913B;
+            font-size:12px;
+        }
+        .style8
+        {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-3688108-7");
+        pageTracker._trackPageview();
+    } catch (err) { }</script>
+</head>
+<body>
+    
+    <table class="style1" cellpadding="4px" cellspacing="10px" border="2px">
+        <tr>
+            <td>
+                <img alt="Logotipo Espacio Mascota" class="style2" 
+                    src="http://www.espaciomascota.com/images/logo-medium.png" />
+                    <br />
+                    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                <b>Pedidos por teléfono:</b> (01-55)-5955-9877 (Envíamos a toda la republica méxicana)
+                </p>
+                <p>
+                <b>Pedidos por correo eléctronico :</b> <a href="mailto:ventas@espaciomascota.com">ventas@espaciomascota.com</a>
+                </p>
+                <br />
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                Venta de alimento premium y accesorios para perros, gatos, peces, reptiles, 
+                roedores, y aves <span class="style8">con entrega domicilio</span>.
+                </p>
+                <p>
+                    El envío en la Ciudad de México es completamente gratis. Incluyendo Sabados y 
+                    Domingos.</p>
+                <p>
+                Manejamos marcas como Diamond, Hill&#39;s, Pro Plan, Royal Canin, Tetra y más.
+                </p>
+                <p>
+                <b>Próximamente podras comprar por internet en nuestra tienda virtual. Inaguración virtual el 15/Dic/09 visitanos para obtener grandes ofertas.</b>
+                </p>
+                <br />
+                
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align:center">
+                <img alt="logotipo diamond"
+                    src="http://www.espaciomascota.com/images/marcas/logo%20Diamond.jpg" /><img 
+                    alt="logotipo hill's" class="style4" 
+                    src="http://www.espaciomascota.com/images/marcas/Logo%20Hills.jpg" /><img 
+                    alt="logotipo pro plan" class="style5" 
+                    src="http://www.espaciomascota.com/images/marcas/Logo%20ProPlan.jpg" />
+                    <br />
+                    <br />
+                    <img  alt="logotipo royal canin" class="style6" 
+                    src="http://www.espaciomascota.com/images/marcas/Logo%20Royal.jpg" /><img 
+                    alt="logotipo tetra-min" class="style7" 
+                    src="http://www.espaciomascota.com/images/marcas/Logo%20Ttra.jpg" /></td>
+        </tr>        
+    </table>
+    
+</body>
+</html>

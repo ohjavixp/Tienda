@@ -1,0 +1,111 @@
+﻿/* -------------------------------------------------------------- 
+   forms.css
+   * Sets up some default styling for forms
+   * Gives you classes to enhance your forms
+   
+   Usage:
+   * For text fields, use class .title or .text
+   
+-------------------------------------------------------------- */
+label {
+	font-weight: bold;
+	text-align: right;	
+}
+fieldset {
+	padding: 1.4em;
+	margin: 0 0 1.5em 0;
+	border: 1px solid #ccc;
+}
+legend {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+/* Form fields
+-------------------------------------------------------------- */
+input.text, input.title, textarea, input.password, select {
+	border: 1px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+input.text:focus, input.title:focus, textarea:focus, select:focus {
+	border: 1px solid #666;
+}
+input.text, input.title {
+	width: 300px;
+	padding: 5px;
+}
+input.title {
+	font-size: 1.5em;
+}
+textarea {
+	padding: 5px;
+}
+/* Success, notice and error boxes
+-------------------------------------------------------------- */
+.error, .notice, .success {
+	padding: .8em;
+	margin-bottom: 1em;
+	border: 2px solid #ddd;
+}
+.error {
+	background: #FBE3E4;
+	color: #8a1f11;
+	border-color: #FBC2C4;
+}
+.notice {
+	background: #FFF6BF;
+	color: #514721;
+	border-color: #FFD324;
+}
+.success {
+	background: #E6EFC2;
+	color: #264409;
+	border-color: #C6D880;
+}
+.error a {
+	color: #8a1f11;
+}
+.notice a {
+	color: #514721;
+}
+.success a {
+	color: #264409;
+}
+
+.FirstLabel{
+	font-weight: bold;
+	width: 200px;
+	height: 20px;
+	text-align: right;
+	display: inline-block;
+}
+
+
+/*Begin Buy Cart */
+.quantity
+{
+    width:20px;
+}
+    
+#QuantityHeader
+{
+    width:70px;
+}    
+
+.TitleNoWidth
+{    
+    height:30px;    
+    background:url(/images/menu_title_bg_nowidth.png) repeat-x;    
+    text-align:center;
+    font-size:13px;
+    font-weight:bold;
+    color:#fff;    
+}
+
+/* End Buy Cart */
+
+
+.NavegationBar
+{
+    color: black; background-color:#E6E6E6; font-family:Arial; font-style:normal; font-size:14px; border:#CCCCCC 1px solid; padding: 0px 10px 0px 10px;
+}

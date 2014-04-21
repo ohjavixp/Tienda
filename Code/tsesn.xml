@@ -1,0 +1,60 @@
+﻿<XML ID="Microsoft Search Thesaurus">
+  <thesaurus xmlns="x-schema:tsSchema.xml">
+    <diacritics_sensitive>0</diacritics_sensitive>
+    <expansion>
+      <sub>ligth</sub>
+      <sub>light</sub>
+      <sub>lite</sub>
+      <sub>bajo calorías</sub>
+    </expansion>
+    <expansion>
+      <sub>alimento</sub>
+      <sub>comida</sub>
+      <sub>meal</sub>
+    </expansion>
+    <expansion>
+      <sub>pro plan</sub>
+      <sub>proplan</sub>
+    </expansion>
+    <expansion>
+      <sub>diamond</sub>
+      <sub>diamont</sub>
+      <sub>diamondt</sub>
+      <sub>diamon</sub>
+    </expansion>
+    <replacement>
+      <pat>NT5</pat>
+      <pat>W2K</pat>
+      <sub>Windows 2000</sub>
+    </replacement>
+    <expansion>
+      <sub>gato</sub>
+      <sub>gatitos</sub>
+      <sub>cat</sub>
+      <sub>kitteen</sub>
+    </expansion>
+    <expansion>
+      <sub>lamb</sub>
+      <sub>cordero</sub>
+    </expansion>
+    <expansion>
+      <sub>rice</sub>
+      <sub>arroz</sub>
+    </expansion>
+    <expansion>
+      <sub>kg</sub>
+      <sub>kilos</sub>
+      <sub>kilo</sub>
+    </expansion>
+    <expansion>
+      <sub>lb</sub>
+      <sub>lbs</sub>
+      <sub>libras</sub>
+    </expansion>
+    <expansion>
+      <sub>puppy</sub>
+      <sub>cachorro</sub>
+      <sub>cachorros</sub>
+    </expansion>
+  </thesaurus>
+</XML>

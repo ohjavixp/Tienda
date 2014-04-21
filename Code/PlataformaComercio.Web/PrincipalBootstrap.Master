@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PrincipalBootstrap.master.cs" Inherits="PlataformaComercio.Web.PrincipalBootstrap" %>
+<%@ Register assembly="PlataformaComercio.UI" namespace="PlataformaComercio.UI.Controls" tagprefix="PlataformaComercio" %>
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="IE=9,edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Portal Tienda en Linea de Biometria Aplicada"/>
+    <meta name="author" content="Javier Peña Quiroz"/>
+
+    <title>Tienda en Linea Biometria Aplicada</title>
+
+    <%-- Styles --%>
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/shop-homepage.css" />
+    <link rel="stylesheet" type="text/css" href="css/jGrowl/jquery.jgrowl.css" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <%-- Navbar --%>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a style="padding-top: 3px; padding-bottom: 0px;" class="navbar-brand" href="#"><img src="<%=ResolveUrl("~/images/LOGO50X50COLOR.png") %>" alt="Logo Biometria Aplicada" height="45px" width="auto" /></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="<%= ResolveUrl("~/") %>">Principal</a></li>
+                        <li><asp:HyperLink Text="text" runat="server" id="hplSession"   CssClass="nav4"/></li>
+                        <li><a href="<%=ResolveUrl("~/contacto")%>">Contactanos</a></li>
+                    </ul>
+                    <div class="navbar-form navbar-right" role="search">
+                        <asp:Panel runat="server" DefaultButton="btnSearch">
+                        <div class="form-group">
+                            <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" placeholder="Buscar"/>
+                        </div>
+                        <asp:LinkButton ID="btnSearch" runat="server" CssClass="btn btn-default" Text="<i class='glyphicon glyphicon-search'></i>" OnClick="btnSearch_Click" ValidationGroup="VGSearch"/>
+                        </asp:Panel>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><asp:Label ID="lblNoProducts" runat="server"></asp:Label></span><span class="glyphicon glyphicon-shopping-cart"/><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><asp:Label runat="server" ID="lblCartItems"/></li>
+                                <li><asp:Label runat="server" ID="lblCartPrice"/> MXN</li>
+                                <li class="divider"></li>
+                                <li><a href="<%=ResolveUrl("~/proceso-compra/carrito") %>">Ir al Carrito</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <%-- end navbar --%>
+    
+        <%-- Container --%>
+        <div class="container">
+            <%-- Div - Row --%>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <p>Todas las categorias</p>
+                        <PlataformaComercio:CatalogMenu ID="MenuItems1" runat="server"/>
+                    </div>
+                    <div class="list-group">
+                        <p>Marcas</p>
+                        <asp:Repeater runat="server" ID="rptTrades">
+                            <%--<HeaderTemplate>
+                                <ul class="list-group">
+                            </HeaderTemplate>--%>
+                            <ItemTemplate>
+                                <%--<li class="list-group-item"><a href="<%# ResolveClientUrl("~/marca/" + Eval("Name")) + "/productos" %>"><%# Eval("Name")%></a></li>--%>
+                                <a href="<%# ResolveClientUrl("~/marca/" + Eval("Name")) + "/productos"%>" class="list-group-item"><%# Eval("Name")%></a>
+                            </ItemTemplate>
+                            <%--<AlternatingItemTemplate>
+                                <li class="list-group-item"><a href="<%# ResolveClientUrl("~/marca/" + Eval("Name")) + "/productos" %>"><%# Eval("Name")%></a></li>
+                            </AlternatingItemTemplate>--%>
+                            <FooterTemplate>
+                                </ul>
+                            </FooterTemplate>
+                        </asp:Repeater>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-9">
+                    <asp:ContentPlaceHolder ID="cphCarousel" runat="server"></asp:ContentPlaceHolder>
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <hr/>
+            <footer>
+                <div class="row">
+                    <div class="col-xs-4 text-left">
+                        <p>Copyright &copy; Biometria Aplicada 2013</p>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <%--<img runat="server" src="~/images/payment.gif" alt="metodos de pago" title="" class="center-block"/>--%>
+                    </div>
+                    <div class="col-xs-4 text-right">
+                        <a href="<%=ResolveUrl("~/") %>">inicio</a>
+                        <a href="<%=ResolveUrl("~/contacto") %>">contactanos</a>
+                    </div>
+                </div>
+            </footer>
+        </div><!-- /.container -->
+
+    </form>
+</body>
+</html>

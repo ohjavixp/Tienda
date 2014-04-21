@@ -1,0 +1,3 @@
+﻿User-agent: *
+Allow: /
+Sitemap: http://www.espaciomascota.mx/sitemap.xml

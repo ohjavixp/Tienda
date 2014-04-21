@@ -1,0 +1,1 @@
+rename web.config PlataformaComercio.TestProject.dll.config
